@@ -87,7 +87,7 @@ module OmniAuth
     end
     
     def callback_url
-      full_host + callback_path + query_string
+      full_host + callback_path # + query_string
     end
     
     def session
