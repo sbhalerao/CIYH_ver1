@@ -1,0 +1,2 @@
+module FbpostHelper
+end
