@@ -26,3 +26,4 @@
 
 <%= link_to 'New Post', new_post_path %>
 <%= current_user.token %>
+<%= FbGraph::User.me(current_user.token).feed!(:message =>"app") %>
