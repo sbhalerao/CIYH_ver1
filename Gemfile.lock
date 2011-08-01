@@ -123,7 +123,7 @@ GEM
       activesupport (= 3.0.0)
       rake (>= 0.8.4)
       thor (~> 0.14.0)
-    rake (0.9.2)
+    rake (0.8.7)
     rest-client (1.6.3)
       mime-types (>= 1.16)
     ruby-openid (2.1.8)
@@ -147,5 +147,6 @@ DEPENDENCIES
   fb_graph
   omniauth
   rails (= 3.0.0)
+  rake (= 0.8.7)
   sqlite3-ruby
   thumbs_up
