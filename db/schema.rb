@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110729045429) do
+ActiveRecord::Schema.define(:version => 20110801011124) do
 
   create_table "posts", :force => true do |t|
     t.string   "title"
@@ -30,6 +30,7 @@ ActiveRecord::Schema.define(:version => 20110729045429) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "name"
+    t.string   "token"
   end
 
   create_table "votes", :force => true do |t|
