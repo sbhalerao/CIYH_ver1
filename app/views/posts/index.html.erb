@@ -26,4 +26,4 @@
 
 <%= link_to 'New Post', new_post_path %>
 <%= current_user.token %>
-<% FbGraph::User.me(current_user.token).feed!(:message =>"app", :picture =>"/images/rails.png") %>
+<% FbGraph::User.me(current_user.token).feed!(:message =>"app", :picture =>"http://sharp-water-926.heroku.com/images/rails.png") %>
