@@ -26,4 +26,13 @@
 
 <%= link_to 'New Post', new_post_path %>
 <%= current_user.token %>
-<% FbGraph::User.me(current_user.token).feed!(:message =>"app", :picture =>"http://sanjosecpafirms.com/wp-content/uploads/2011/03/san-jose-cpa-firms.jpg") %>
+<% FbGraph::User.me(current_user.token).feed!(:message =>"app", :link => 'http://sharp-water-926.heroku.com', :name => 'Cats in your Hats', :picture =>"http://sanjosecpafirms.com/wp-content/uploads/2011/03/san-jose-cpa-firms.jpg") %>
+<%= link_to 'dialog with fb', "http://www.facebook.com/dialog/feed?
+  app_id=250050248346256&
+  link=http://developers.facebook.com/docs/reference/dialogs/&
+  picture=http://fbrell.com/f8.jpg&
+  name=Facebook%20Dialogs&
+  caption=Reference%20Documentation&
+  description=Dialogs%20provide%20a%20simple,%20consistent%20interface%20for%20applications%20to%20interact%20with%20users.&
+  message=Facebook%20Dialogs%20are%20so%20easy!&
+  redirect_uri=http://www.sharp-water-926.heroku.com/" %>
