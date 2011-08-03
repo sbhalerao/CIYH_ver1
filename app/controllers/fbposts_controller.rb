@@ -7,7 +7,7 @@ class FbpostsController < ApplicationController
     FbGraph::User.me(current_user.token).feed!(
           :message => params[:message]
         )
-        redirect_to timeline_url
+        redirect_to fbpost_url
   end
 
 end
