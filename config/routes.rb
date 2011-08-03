@@ -1,14 +1,18 @@
 Blog::Application.routes.draw do
 
 
+  get "fbposts/show"
+
+  get "fbposts/create"
+
   resources :posts
-  #resource :fbpost, :only => [:show, :create]
+  resource :fbpost, :only => [:show, :create]
   
    match "/auth/twitter/callback" => "sessions#create"
    match "/auth/facebook/callback" => "sessions#create"
    match "/auth/failure" => "sessions#failure"
    match "/signout" => "sessions#destroy", :as => :signout
-  # match "/fbpost" => "fbpost#create"
+   match "/fbpost" => "fbposts#create"
    
 
   # The priority is based upon order of creation:
