@@ -71,7 +71,7 @@ class PostsController < ApplicationController
 
   # DELETE /posts/1
   # DELETE /posts/1.xml
-  def destroy
+  def delete
     @post = Post.find(params[:id])
     @post.destroy
 
