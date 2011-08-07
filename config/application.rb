@@ -31,7 +31,7 @@ module Blog
     # config.i18n.default_locale = :de
 
     # JavaScript files you want as :defaults (application.js is always included).
-   config.action_view.javascript_expansions[:defaults] = ['http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js', 'jquery.rails.js']
+   config.action_view.javascript_expansions[:defaults] = ['jquery.js', 'jquery.rails.js']
 
     # Configure the default encoding used in templates for Ruby 1.9.
     config.encoding = "utf-8"
