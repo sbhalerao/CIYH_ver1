@@ -68,6 +68,14 @@ class PostsController < ApplicationController
       end
     end
   end
+  
+  def sayhello
+    @message= params[:msg]
+    render :update do|page|
+      page.replace_html 'show_message', @message
+    end
+  end
+
 
   # DELETE /posts/1
   # DELETE /posts/1.xml
