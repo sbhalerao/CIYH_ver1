@@ -71,7 +71,7 @@ class PostsController < ApplicationController
   
   def sayhello
     
-    @message= params[:msg]
+    @message= "hello world" 
     respond_to do |format|
       format.html { redirect_to(posts_url) }
       format.js
