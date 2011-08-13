@@ -13,6 +13,7 @@ Blog::Application.routes.draw do
    match "/auth/failure" => "sessions#failure"
    match "/signout" => "sessions#destroy", :as => :signout
    match "/fbpost" => "fbposts#create"
+   match "/jmsg" => "posts#sayhello", :as => :jmsg
    
 
   # The priority is based upon order of creation:
