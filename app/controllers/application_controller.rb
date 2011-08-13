@@ -8,7 +8,7 @@ class ApplicationController < ActionController::Base
     end
     
     def j_msg
-      @message=params[:msg]
+      @message=session[:msg]
     end
     
 end
