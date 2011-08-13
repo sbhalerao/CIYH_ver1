@@ -20,7 +20,7 @@
     <td><%= link_to 'Edit', edit_post_path(post) %></td>
     <td><%= button_to 'Destroy', post, :confirm => 'Are you sure?', :method => :delete %></td>
 	<%= link_to 'Message', jmsg_path, :remote => true, :with=> "'msg='+msg" %>
-	<div id = 'show_message'> <%= @message %></div>
+	<div id = 'show_message'> <%= @message.to_s %></div>
 
   </tr>
 <% end %>
