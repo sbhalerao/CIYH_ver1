@@ -8,7 +8,7 @@ class ApplicationController < ActionController::Base
     end
     
     def j_msg
-      @message=session[:msg]
+      @message="hello world"
     end
     
 end
