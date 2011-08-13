@@ -71,8 +71,8 @@ class PostsController < ApplicationController
   
   def sayhello
     @message= params[:msg]
-    render :update do|page|
-      page.replace_html 'show_message', @message
+    respond_to do |format|
+      format.js
     end
   end
 
