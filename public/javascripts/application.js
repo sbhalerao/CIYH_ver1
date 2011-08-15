@@ -5,7 +5,7 @@ $(function(){
        $.ajax({
         type: 'POST',
         url: 'http://your_url/jmsg',
-        data: { msg: "hello world" },
+        data: { "msg": "hello world" },
        });
     });
 });
