@@ -8,7 +8,7 @@ class ApplicationController < ActionController::Base
     end
     
     def j_msg
-      @j_msg = params[:msg]
+      @j_msg = "hello world"
     end
     
 end
