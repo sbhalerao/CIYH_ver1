@@ -1,6 +1,6 @@
 <h1>Listing posts</h1>
 <h2><a href="#" onclick="alert('Hello world!'); return false;">Click Here for a Javascript test</a></h2>
-<%= link_to 'Message', jmsg_path, :remote => true, :with=> "'msg='+msg" %>
+<div id = 'jmsg'></div><%= link_to 'Message', jmsg_path, :remote => true%> </div>
 <div id = 'show_message'></div>
 <table>
   <tr>
