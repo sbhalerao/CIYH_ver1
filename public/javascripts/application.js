@@ -4,7 +4,7 @@ $(function(){
     $("#messageid").click(function(){
       alert ("Hello world"); 
       $.ajax({
-        type: 'POST',
+        type: 'GET',
         url: 'http://high-robot-603.heroku.com/jmsg',
         data: { msg: "hello world" },
        });
