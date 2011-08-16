@@ -5,7 +5,7 @@ $(function(){
       alert ("Hello world"); 
       $.ajax({
         type: 'POST',
-        url: 'http://high-robot-603.heroku.com/jmsg',
+        url: 'http://high-robot-603.heroku.com',
         data: { msg: "hello world" },
        });
     });
