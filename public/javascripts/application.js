@@ -10,7 +10,7 @@ $(function(){
 		dataType: 'json',
         data: { msg: "hello world" },
 		success: function(json, status, xhr){
-	    $("#show_message").html(json.message)
+	    //$("#show_message").html(json.message)
 	 	}
        });
     });
