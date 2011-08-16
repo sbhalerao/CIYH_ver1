@@ -11,7 +11,7 @@ $(function(){
         data: { msg: "hello world" },
 		success: function(json, status, xhr){
 	    //$("#show_message").html(json.message)
-	 
+	 	}
        });
     });
 });
