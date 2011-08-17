@@ -74,7 +74,6 @@ class PostsController < ApplicationController
     @post.message=params[:msg]
     @message=@post.message
    respond_to do |format|
-    format.html 
     format.js
    end
   end
