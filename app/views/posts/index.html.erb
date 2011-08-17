@@ -19,7 +19,7 @@
     <td><%= link_to 'Show', post %></td>
     <td><%= link_to 'Edit', edit_post_path(post) %></td>
     <td><%= button_to 'Destroy', post, :confirm => 'Are you sure?', :method => :delete %></td>
-   <td> <%= link_to 'Message', jmsg_path, :remote => true, {:pid => post.id}, :id => "messageid", :class => "article"%> 
+   <td> <%= link_to 'Message', jmsg_path, :remote => true, :pid => post.id, :id => "messageid", :class => "article"%> 
 	<div id = 'show_message'></div> </td>
 
   </tr>
