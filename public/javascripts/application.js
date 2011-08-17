@@ -8,7 +8,7 @@ $(function(){
 	});
 	
     $("#messageid").click(function(){
-      alert ("Hello world"); 
+      $("#show_message").html("hello world")
       $.ajax({
         type: 'POST',
         url: 'http://high-robot-603.heroku.com/jmsg',
@@ -17,6 +17,7 @@ $(function(){
 		success: function(json, status, xhr){
 	   
 	 	}
-       });
-    });
+       }); 
+   
+     });
 });
