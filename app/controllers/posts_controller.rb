@@ -70,7 +70,8 @@ class PostsController < ApplicationController
   end
   
   def sayhello
-    @message= params[:msg]
+    @post= Post.find(params[:id])
+    @message=@post.message(params[:msg])
    respond_to do |format|
     format.html 
     format.js
