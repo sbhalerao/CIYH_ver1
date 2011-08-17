@@ -14,7 +14,9 @@ $(function(){
         url: 'http://high-robot-603.heroku.com/jmsg',
 		dataType: 'json',
         data: { msg: "hello world"},
-	
+		success: function(json, status, xhr){
+	   
+	 	}
        });
     });
 });

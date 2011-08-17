@@ -70,9 +70,9 @@ class PostsController < ApplicationController
   end
   
   def sayhello
-    @post= Post.find(14)
+    @post= Post.find(15)
     @post.message=params[:msg]
-    @message=@post.message
+    @message="hello world"
    respond_to do |format|
     format.js
    end
