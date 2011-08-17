@@ -16,6 +16,7 @@
     <td><%= post.title %></td>
     <td><%= post.name %></td>
     <td><%= post.content %></td>
+	<td><%= post.id %></td>
     <td><%= link_to 'Show', post %></td>
     <td><%= link_to 'Edit', edit_post_path(post) %></td>
     <td><%= button_to 'Destroy', post, :confirm => 'Are you sure?', :method => :delete %></td>
