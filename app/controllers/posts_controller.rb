@@ -70,7 +70,7 @@ class PostsController < ApplicationController
   end
   
   def sayhello
-    @post= Post.find(params[:id])
+    @post= Post.find(params[:pid])
     @post.message=params[:msg]
     @message=@post.message
    respond_to do |format|
