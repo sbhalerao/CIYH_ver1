@@ -1,7 +1,6 @@
 <h1>Listing posts</h1>
 <h2><a href="#" onclick="alert('Hello world!'); return false;">Click Here for a Javascript test</a></h2>
-<%= link_to 'Message', jmsg_path, :remote => true, :id => "messageid", :class => "article"%> 
-<div id = 'show_message'></div>
+
 <table>
   <tr>
     <th>Title</th>
@@ -20,7 +19,8 @@
     <td><%= link_to 'Show', post %></td>
     <td><%= link_to 'Edit', edit_post_path(post) %></td>
     <td><%= button_to 'Destroy', post, :confirm => 'Are you sure?', :method => :delete %></td>
-
+   <td> <%= link_to 'Message', jmsg_path, :remote => true, :id => "messageid", :class => "article"%> 
+	<div id = 'show_message'></div> </td>
 
   </tr>
 <% end %>
