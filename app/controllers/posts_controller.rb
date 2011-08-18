@@ -72,7 +72,7 @@ class PostsController < ApplicationController
   def sayhello
     @post= Post.find(15)
     @post.message=params[:msg]
-    @message="hello world"
+    @message=@post.message
    respond_to do |format|
     format.js
    end
