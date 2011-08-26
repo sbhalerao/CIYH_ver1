@@ -1,7 +1,7 @@
 class Post < ActiveRecord::Base
  
   has_attached_file :avatar, 
-   :path =>"/avatars/:id/:style/:basename.:extension", :default_url => "/images/cat3.gif"
+   :path =>"/avatars/:id/:style/:basename.:extension", :default_url => "/images/cat3.gif",
    :storage => :s3,
        :bucket => 'catsinyourhats',
        :s3_credentials => {
