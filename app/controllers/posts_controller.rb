@@ -1,4 +1,6 @@
 class PostsController < ApplicationController
+  
+  
   # GET /posts
   # GET /posts.xml
   def index
@@ -24,8 +26,9 @@ class PostsController < ApplicationController
   # GET /posts/new
   # GET /posts/new.xml
   def new
-    @post = Post.new
-
+    @post = Post.new(params [:post])
+    @post.avatar= "/images/cute-kitten.jpg"
+    @post.save
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @post }
@@ -40,6 +43,7 @@ class PostsController < ApplicationController
   # POST /posts
   # POST /posts.xml
   def create
+    images=
     @post = Post.new(:avatar => "/images/cute-kitten.jpg")
     # @post.avatar="/images/cute-kitten.jpg"
 
