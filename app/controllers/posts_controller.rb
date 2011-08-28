@@ -40,8 +40,8 @@ class PostsController < ApplicationController
   # POST /posts
   # POST /posts.xml
   def create
-    @post = Post.new(params[:post], {:avatar => "/images/cute-kitten.jpg"})
-    
+    @post = Post.new(params[:post])
+    @post.avatar="/images/cute-kitten.jpg"
 
     respond_to do |format|
       if @post.save
