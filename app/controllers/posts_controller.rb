@@ -26,8 +26,9 @@ class PostsController < ApplicationController
   # GET /posts/new
   # GET /posts/new.xml
   def new
-    @post = Post.new(params[:post])
-    @post.avatar= "/images/cute-kitten.jpg"
+     tmpfile=Tempfile.new('my_pic')
+      tmpfile.path="/images/cute-kitten.jpg"
+    @post = Post.new(params[:avatar =>tempfile])
     @post.save
     respond_to do |format|
       format.html # new.html.erb
