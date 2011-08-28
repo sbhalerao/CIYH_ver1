@@ -27,11 +27,7 @@ class PostsController < ApplicationController
   # GET /posts/new
   # GET /posts/new.xml
   def new
-     tmpfile=Tempfile.new('my_pic')
-      images=ImageList.new ("/images/cute-kitten.jpg")
-      images.write(tmpfile.path)
-    @post = Post.new(params[:avatar =>tmpfile])
-    @post.save
+     @post=Post.new
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @post }
@@ -46,8 +42,11 @@ class PostsController < ApplicationController
   # POST /posts
   # POST /posts.xml
   def create
-    images=
-    @post = Post.new(:avatar => "/images/cute-kitten.jpg")
+    tmpfile=Tempfile.new('my_pic')
+      images=ImageList.new ("/images/cute-kitten.jpg")
+      images.write(tmpfile.path)
+    @post = Post.new(params[:avatar =>tmpfile])
+    # @post.save
     # @post.avatar="/images/cute-kitten.jpg"
 
     respond_to do |format|
