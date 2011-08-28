@@ -5,5 +5,3 @@ require File.expand_path('../application', __FILE__)
 Blog::Application.initialize!
 
 
-config.gem "rmagick",
-:lib => "RMagick"
