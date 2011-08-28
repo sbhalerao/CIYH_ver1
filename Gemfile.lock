@@ -43,7 +43,7 @@ GEM
       addressable (~> 2.2.4)
       multipart-post (~> 1.1.0)
       rack (>= 1.1.0, < 2)
-    fb_graph (1.9.5)
+    fb_graph (2.0.1)
       httpclient (>= 2.2.0.2)
       rack-oauth2 (>= 0.8.0)
     httpclient (2.2.1)
@@ -128,8 +128,9 @@ GEM
       rake (>= 0.8.4)
       thor (~> 0.14.0)
     rake (0.8.7)
-    rest-client (1.6.6)
+    rest-client (1.6.7)
       mime-types (>= 1.16)
+    rmagick (2.13.1)
     ruby-openid (2.1.8)
     ruby-openid-apps-discovery (1.2.0)
       ruby-openid (>= 2.1.7)
@@ -154,5 +155,6 @@ DEPENDENCIES
   omniauth
   rails (= 3.0.0)
   rake (= 0.8.7)
+  rmagick
   sqlite3-ruby
   thumbs_up
