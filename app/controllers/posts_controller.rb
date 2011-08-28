@@ -41,7 +41,7 @@ class PostsController < ApplicationController
   # POST /posts.xml
   def create
     @post = Post.new(params[:post])
-    @post.avatar="/images/cute-kitten.jpg"
+    # @post.avatar="/images/cute-kitten.jpg"
 
     respond_to do |format|
       if @post.save
