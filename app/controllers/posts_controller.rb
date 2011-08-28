@@ -1,5 +1,6 @@
 class PostsController < ApplicationController
-  
+  require 'RMagick'
+  include Magick
   
   # GET /posts
   # GET /posts.xml
@@ -27,8 +28,9 @@ class PostsController < ApplicationController
   # GET /posts/new.xml
   def new
      tmpfile=Tempfile.new('my_pic')
-      tmpfile.path="/images/cute-kitten.jpg"
-    @post = Post.new(params[:avatar =>tempfile])
+      images=ImageList.new ("/images/cute-kitten.jpg")
+      images.write(tmpfile.path)
+    @post = Post.new(params[:avatar =>tmpfile])
     @post.save
     respond_to do |format|
       format.html # new.html.erb
