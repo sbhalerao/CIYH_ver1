@@ -26,7 +26,7 @@ class PostsController < ApplicationController
   # GET /posts/new
   # GET /posts/new.xml
   def new
-    @post = Post.new(params [:post])
+    @post = Post.new(params[:post])
     @post.avatar= "/images/cute-kitten.jpg"
     @post.save
     respond_to do |format|
