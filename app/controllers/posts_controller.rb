@@ -43,10 +43,9 @@ class PostsController < ApplicationController
   # POST /posts.xml
   def create
     tmpfile=Tempfile.new('my_pic')
-     
-      images=ImageList.new ("#{RAILS_ROOT}/images/cute-kitten.jpg")
-      images.write(tmpfile.path)
-    @post = Post.new(params[:avatar =>tmpfile])
+    images=ImageList.new ("#{RAILS_ROOT}/public/images/cute-kitten.jpg")
+    images.write(tmpfile.path)
+    @post = Post.create(params[:avatar =>tmpfile])
     # @post.save
     # @post.avatar="/images/cute-kitten.jpg"
 
