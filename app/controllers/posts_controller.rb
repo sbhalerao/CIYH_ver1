@@ -46,6 +46,7 @@ class PostsController < ApplicationController
     cat1= "#{RAILS_ROOT}/public/images/cute-kitten.jpg"
     cat2= "#{RAILS_ROOT}/public/images/cat3.gif"
     images=ImageList.new(cat1, cat2)
+    images[1].page=Rectangle.new(images[1].columns, images[1].rows, 100, 200)
     com_img=images.flatten_images
     com_img.write(tmpfile.path)
     @post = Post.create(:avatar => tmpfile)
