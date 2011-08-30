@@ -21,3 +21,5 @@ $(function(){
      });
 });
 */
+
+var $cur= "hello world";
