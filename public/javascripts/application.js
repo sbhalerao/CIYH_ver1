@@ -25,7 +25,7 @@ $(function(){
 		dataType: 'json',
         data: { msg: "hello world"},
 		success: function(json, status, xhr){
-	   
+	   $("#show_message").html("hello world")
 	 	}
        }); 
    
