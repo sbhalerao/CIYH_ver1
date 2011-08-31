@@ -27,7 +27,7 @@ $(function(){
 		success: function(json, status, xhr){ alert ('Success')
 	   //$("#show_message").html("hello world");
 	 	},
-	    error: function(data, status, xhr){if(status=='parsererror" {alert('Error')}; }
+	    error: function(data, status, xhr){if(status=='parsererror') {alert('Error')}; }
        }); 
    
      });
