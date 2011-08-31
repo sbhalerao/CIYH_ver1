@@ -85,7 +85,7 @@ class PostsController < ApplicationController
    @message=params[:msg]
     # @message="hello world "
    respond_to do |format|
-     format.js
+     format.json {render :json => @message}
   
    end
   end
