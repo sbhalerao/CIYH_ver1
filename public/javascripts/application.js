@@ -22,9 +22,10 @@ $(function(){
       $.ajax({
         type: 'POST',
         url: 'http://high-robot-603.heroku.com/jmsg',
-		dataType: 'json',
+		// dataType: 'json',
         data: { msg: "hello world"},
-		success: function(json, status, xhr){ alert ('Success')
+		success: function(json, status, xhr)
+		{ alert ('Success')
 	   //$("#show_message").html("hello world");
 	 	},
 	    error: function(data, status, xhr){if(status=='parsererror') {alert('Error')}; }
