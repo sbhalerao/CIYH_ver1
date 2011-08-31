@@ -84,7 +84,7 @@ class PostsController < ApplicationController
     @post= Post.find(params[:id])
     @message=params[:msg]
    respond_to do |format|
-    format.js
+    format.json {render :json => @message }
    end
   end
 
