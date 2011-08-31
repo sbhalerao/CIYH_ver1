@@ -18,7 +18,7 @@ $(function(){
 	  'beforeSend': function(xhr) { xhr.setRequestHeader("Accept", "text/javascript") }
 	});
 	
-    $("#messageid").click(function(){
+    $("#trialid").click(function(){
       $.ajax({
         type: 'POST',
         url: 'http://high-robot-603.heroku.com/jmsg',
