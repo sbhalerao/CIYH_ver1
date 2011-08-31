@@ -28,7 +28,7 @@ $(function(){
 		{ alert ('Success')
 	   //$("#show_message").html("hello world");
 	 	},
-	    error: function(data, status, xhr){if(status=='parsererror') {alert(data)}; }
+	    error: function(data, status, xhr){if(status=='parsererror') {alert(status)}; }
        }); 
    
      });
