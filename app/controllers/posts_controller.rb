@@ -83,10 +83,10 @@ class PostsController < ApplicationController
   def sayhello
     @post= Post.find(params[:id])
     @message=params[:msg]
-   # respond_to do |format|
-    # format.js
+   respond_to do |format|
+     format.js
   
-   # end
+   end
   end
 
 
