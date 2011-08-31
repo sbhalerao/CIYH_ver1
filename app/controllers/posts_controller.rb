@@ -86,7 +86,7 @@ class PostsController < ApplicationController
    # respond_to do |format|
     # format.js
   
-   end
+   # end
   end
 
 
