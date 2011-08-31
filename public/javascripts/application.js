@@ -24,10 +24,10 @@ $(function(){
         url: 'http://high-robot-603.heroku.com/jmsg',
 		dataType: 'json',
         data: { msg: "hello world"},
-		success: function(json, status, xhr){
-	   $("#show_message").html("hello world");
+		success: function(json, status, xhr){ alert ('Success')
+	   //$("#show_message").html("hello world");
 	 	},
-	    error: function(data, status, xhr){notify (status);}
+	    error: function(data, status, xhr){alert('Error');}
        }); 
    
      });
