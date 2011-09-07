@@ -14,31 +14,36 @@ The XMLHttpRequest object is used to exchange data with a server behind the scen
 
 $(document).ready(function(){
   $("img").resizable({ handles:'n,e,s,w,ne,se,nw,sw' , maxHeight: 300, aspectRatio: true }).parent().draggable({containment: "#droppable", snap:false});  
+  $(function(){
+	$.ajaxSetup({
+	  'beforeSend': function(xhr) { xhr.setRequestHeader("Accept", "text/javascript") }
+	});
+  	$.ajaxSetup({
+	  'beforeSend': function(xhr) { xhr.setRequestHeader("Accept", "text/javascript") }
+	});
   $( "#droppable" ).droppable({
       drop: function( event, ui ) {
         $( this ).find( "p" ).hide();
-		$(function(){
-			$.ajaxSetup({
-			  'beforeSend': function(xhr) { xhr.setRequestHeader("Accept", "text/javascript") }
-			});
-
-		    $("#trialid").click(function(){
-		      $.ajax({
-		        type: 'POST',
-		        url: 'http://high-robot-603.heroku.com/jmsg',
-				dataType: 'json',
-		        data:{ top: ui.position["top"], left: ui.position["left"] },
-				success: function(json, status, xhr)
-				{ alert ('Success')
-			   //$("#show_message").html("hello world");
-			 	},
-			    error: function(data, status, xhr){ {alert(xhr)}; }
-		       }); 
-
-		     });
-		});
-		
+		$.ajax({
+	        type: 'POST',
+	        url: 'http://high-robot-603.heroku.com/jmsg',
+			dataType: 'json',
+	        data:{ top: ui.position["top"], left: ui.position["left"] },
+			success: function(json, status, xhr)
+			{  alert ('Success')
+		   //$("#show_message").html("hello world");
+		 	},
+		    error: function(data, status, xhr){ {alert(xhr)}; }
+	       });
       }
     });
 });
+
+
+
+	
+   
+   
+   
+     
 
