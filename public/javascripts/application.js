@@ -29,8 +29,8 @@ $(document).ready(function(){
 				dataType: 'json',
 		        data:{ top: ui.position["top"], left: ui.position["left"] },
 				success: function(json, status, xhr)
-				{ // alert ('Success')
-			   $("#show_message").html("hello world");
+				{ alert ('Success')
+			   //$("#show_message").html("hello world");
 			 	},
 			    error: function(data, status, xhr){ {alert(xhr)}; }
 		       }); 
