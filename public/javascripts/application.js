@@ -25,7 +25,7 @@ $(document).ready(function(){
 	        type: 'POST',
 	        url: 'http://high-robot-603.heroku.com/jmsg',
 			dataType: 'json',
-	        data:{ top: ui.offset["top"], left: ui.offset["left"] },
+	        data:{ top: ui.offset["top"], left: ui.offset["left"], pid: (ui.draggable).attr("id") },
 			success: function(json, status, xhr)
 			{  alert ('Success')
 		   //$("#show_message").html("hello world");
