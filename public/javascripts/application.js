@@ -16,23 +16,23 @@ $(document).ready(function(){
 	$.ajaxSetup({
 	  'beforeSend': function(xhr) { xhr.setRequestHeader("Accept", "text/javascript") }
 	});
-   $("#cat1").draggable({containment: "#droppable", snap:false, cursor: "move"});	
-  $("img").resizable({ handles:'n,e,s,w,ne,se,nw,sw' , maxHeight: 300, aspectRatio: true,
+	
+  $("#cat1 img").resizable({ handles:'n,e,s,w,ne,se,nw,sw' , maxHeight: 300, aspectRatio: true,
  							stop: function(event, ui) { 
 								$.ajax({
 						        type: 'POST',
 						        url: 'http://high-robot-603.heroku.com/jmsg',
 								dataType: 'json',
-						        data:{ width: ui.size["width"],height: ui.size["height"]},
+						        data:{ width: ui.size["width"],height: ui.size["height"], pid: "cat1"},
 								success: function(json, status, xhr)
-								{  alert ($(ui.originalElement[0]).attr("id"));
+								{  alert ('Success')
 							   //$("#show_message").html("hello world");
 							 	},
 							    error: function(data, status, xhr){alert('Failure')} 
 						       });
 							}
 							});
-    
+    $("#cat1").draggable({containment: "#droppable", snap:false, cursor: "move"}); 
   
   $( "#droppable" ).droppable({
       drop: function( event, ui ) {
