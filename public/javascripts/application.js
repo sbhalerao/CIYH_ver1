@@ -25,7 +25,7 @@ $(document).ready(function(){
 								dataType: 'json',
 						        data:{ width: ui.size["width"],height: ui.size["height"]},
 								success: function(json, status, xhr)
-								{  alert (ui.originalElement[0].attr("id"))
+								{  alert ($(ui.originalElement).attr("id"))
 							   //$("#show_message").html("hello world");
 							 	},
 							    error: function(data, status, xhr){alert('Failure')} 
