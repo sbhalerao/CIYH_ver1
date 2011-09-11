@@ -18,7 +18,7 @@ $(document).ready(function(){
 	});
 	
   $("#cat1 img").resizable({ handles:'n,e,s,w,ne,se,nw,sw' , maxHeight: 300, aspectRatio: true,
- 							resize: function(event, ui) { 
+ 							stop: function(event, ui) { 
 								$.ajax({
 						        type: 'POST',
 						        url: 'http://high-robot-603.heroku.com/jmsg',
