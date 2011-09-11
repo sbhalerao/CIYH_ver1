@@ -17,13 +17,13 @@ $(document).ready(function(){
 	  'beforeSend': function(xhr) { xhr.setRequestHeader("Accept", "text/javascript") }
 	});
 	
-  $("#cat1 img").resizable({ handles:'n,e,s,w,ne,se,nw,sw' , maxHeight: 300, aspectRatio: true,
+  $("#img").resizable({ handles:'n,e,s,w,ne,se,nw,sw' , maxHeight: 300, aspectRatio: true,
  							stop: function(event, ui) { 
 								$.ajax({
 						        type: 'POST',
 						        url: 'http://high-robot-603.heroku.com/jmsg',
 								dataType: 'json',
-						        data:{ width: ui.size["width"],height: ui.size["height"]},
+						        data:{ width: ui.size["width"],height: ui.size["height"], pid: (ui.resizable).attr("id")},
 								success: function(json, status, xhr)
 								{  alert ('Success')
 							   //$("#show_message").html("hello world");
