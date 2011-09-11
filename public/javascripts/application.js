@@ -30,7 +30,7 @@ $(document).ready(function(){
 			{  alert ('Success')
 		   //$("#show_message").html("hello world");
 		 	},
-		    error: function(data, status, xhr){ {alert(xhr)}; }
+		    error: function(data, status, xhr){ {alert('Failure')}; }
 	       });
       }
     });
