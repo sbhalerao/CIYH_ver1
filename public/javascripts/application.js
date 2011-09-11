@@ -23,7 +23,7 @@ $(document).ready(function(){
 						        type: 'POST',
 						        url: 'http://high-robot-603.heroku.com/jmsg',
 								dataType: 'json',
-						        data:{ width: ui.size["width"],height: ui.size["height"], pid: ui.originalElement.attr("id")},
+						        data:{ width: ui.size["width"],height: ui.size["height"], pid: (ui.originalElement[0]).attr("id")},
 								success: function(json, status, xhr)
 								{  alert ('Success')
 							   //$("#show_message").html("hello world");
