@@ -17,7 +17,7 @@ $(document).ready(function(){
 	  'beforeSend': function(xhr) { xhr.setRequestHeader("Accept", "text/javascript") }
 	});
 	
-  $("#cat1 img").resizable({ handles:'n,e,s,w,ne,se,nw,sw' , maxHeight: 300, aspectRatio: true,
+  $("img").resizable({ handles:'n,e,s,w,ne,se,nw,sw' , maxHeight: 300, aspectRatio: true,
  							stop: function(event, ui) { 
 								$.ajax({
 						        type: 'POST',
@@ -32,7 +32,10 @@ $(document).ready(function(){
 						       });
 							}
 							});
+   	
     $("#cat1").draggable({containment: "#droppable", snap:false, cursor: "move"}); 
+	$("#cat2").draggable({containment: "#droppable", snap:false, cursor: "move"}); 
+    $("#cat3").draggable({containment: "#droppable", snap:false, cursor: "move"}); 
   
   $( "#droppable" ).droppable({
       drop: function( event, ui ) {
