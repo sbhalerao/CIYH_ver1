@@ -13,7 +13,21 @@ The XMLHttpRequest object is used to exchange data with a server behind the scen
 */
 
 $(document).ready(function(){
-  $("#cat1 img").resizable({ handles:'n,e,s,w,ne,se,nw,sw' , maxHeight: 300, aspectRatio: true });
+  $("#cat1 img").resizable({ handles:'n,e,s,w,ne,se,nw,sw' , maxHeight: 300, aspectRatio: true,
+ 							resize: function(event, ui) { 
+								$.ajax({
+						        type: 'POST',
+						        url: 'http://high-robot-603.heroku.com/jmsg',
+								dataType: 'json',
+						        data:{ width: ui.width()},
+								success: function(json, status, xhr)
+								{  alert ('Success')
+							   //$("#show_message").html("hello world");
+							 	},
+							    error: function(data, status, xhr){alert('Failure')} 
+						       });
+							}
+							});
     $("#cat1").draggable({containment: "#droppable", snap:false, cursor: "move"}); 
   	$.ajaxSetup({
 	  'beforeSend': function(xhr) { xhr.setRequestHeader("Accept", "text/javascript") }
