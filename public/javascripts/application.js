@@ -25,10 +25,11 @@ $(document).ready(function(){
 								dataType: 'json',
 						        data:{ width: ui.size["width"],height: ui.size["height"], pid:$(this).parent().attr('id')},
 								success: function(json, status, xhr)
-								{  alert ('Success')
+								{ // alert ('Success')
 							   //$("#show_message").html("hello world");
 							 	},
-							    error: function(data, status, xhr){alert('Failure')} 
+							    error: function(data, status, xhr){ //alert('Failure')
+							    } 
 						       });
 							}
 							});

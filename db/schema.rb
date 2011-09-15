@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110817020906) do
+ActiveRecord::Schema.define(:version => 20110912053256) do
 
   create_table "posts", :force => true do |t|
     t.string   "title"
@@ -23,6 +23,10 @@ ActiveRecord::Schema.define(:version => 20110817020906) do
     t.integer  "avtar_file_size"
     t.datetime "avatar_updated_at"
     t.string   "message"
+    t.float    "cat1x",               :default => 100.0
+    t.float    "cat1y",               :default => 100.0
+    t.float    "cat1h",               :default => 300.0
+    t.float    "cat1w",               :default => 300.0
   end
 
   create_table "users", :force => true do |t|
