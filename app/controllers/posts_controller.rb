@@ -27,7 +27,8 @@ class PostsController < ApplicationController
   # GET /posts/new
   # GET /posts/new.xml
   def new
-     @post=Post.new
+     # @post=Post.new
+     @post=Post.create()
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @post }
@@ -44,7 +45,7 @@ class PostsController < ApplicationController
   def create
     tmpfile=Tempfile.new('my_pic')
     cat1= "#{RAILS_ROOT}/public/images/gloria1.jpg"
-    cat2= "#{RAILS_ROOT}/public/images/gloria2.gif"
+    cat2= "#{RAILS_ROOT}/public/images/gloria2.jpg"
     images=ImageList.new(cat1, cat2)
     images[1].page=Rectangle.new(images[1].columns, images[1].rows, 20, 200)
     com_img=images.flatten_images
@@ -67,10 +68,19 @@ class PostsController < ApplicationController
   # PUT /posts/1
   # PUT /posts/1.xml
   def update
-    @post = Post.find(params[:id])
+   # @post = Post.find(params[:id])
+   tmpfile=Tempfile.new('my_pic')
+   cat1= "#{RAILS_ROOT}/public/images/gloria1.jpg"
+   cat2= "#{RAILS_ROOT}/public/images/gloria2.jpg"
+   images=ImageList.new(cat1, cat2)
+   images[1].page=Rectangle.new(images[1].columns, images[1].rows, 20, 200)
+   com_img=images.flatten_images
+   com_img.write(tmpfile.path)
+   @post=Post.last
 
     respond_to do |format|
-      if @post.update_attributes(params[:post])
+      #if @post.update_attributes(params[:post])
+      if @post.update_attributes(:avatar => tmpfile)
         format.html { redirect_to(@post, :notice => 'Post was successfully updated.') }
         format.xml  { head :ok }
       else
