@@ -27,8 +27,7 @@ class PostsController < ApplicationController
   # GET /posts/new
   # GET /posts/new.xml
   def new
-    # @post=Post.new
-    @post=Post.create()
+     @post=Post.new
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @post }
@@ -45,7 +44,7 @@ class PostsController < ApplicationController
   def create
     tmpfile=Tempfile.new('my_pic')
     cat1= "#{RAILS_ROOT}/public/images/cute-kitten.jpg"
-    cat2= "#{RAILS_ROOT}/public/images/cat5.gif"
+    cat2= "#{RAILS_ROOT}/public/images/cat3.gif"
     images=ImageList.new(cat1, cat2)
     images[1].page=Rectangle.new(images[1].columns, images[1].rows, 20, 200)
     com_img=images.flatten_images
@@ -83,7 +82,7 @@ class PostsController < ApplicationController
   
   def sayhello
     # @post= Post.find(params[:id])
-     @message=params[:top]
+    # @message=params[:msg]
    # @message="hello world"
    respond_to do |format|
      format.js
