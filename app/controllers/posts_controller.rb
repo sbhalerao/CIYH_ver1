@@ -69,14 +69,15 @@ class PostsController < ApplicationController
   # PUT /posts/1.xml
   def update
    # @post = Post.find(params[:id])
+     @post=Post.last
    tmpfile=Tempfile.new('my_pic')
    cat1= "#{RAILS_ROOT}/public/images/gloria1.jpg"
    cat2= "#{RAILS_ROOT}/public/images/gloria2.jpg"
    images=ImageList.new(cat1, cat2)
-   images[1].page=Rectangle.new(images[1].columns, images[1].rows, 20, 200)
+   images[1].page=Rectangle.new(images[1].columns, images[1].rows, @post.cat1x, @post.cat1y)
    com_img=images.flatten_images
    com_img.write(tmpfile.path)
-   @post=Post.last
+ 
 
     respond_to do |format|
       #if @post.update_attributes(params[:post])
