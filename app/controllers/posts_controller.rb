@@ -75,7 +75,8 @@ class PostsController < ApplicationController
    cat1= "#{RAILS_ROOT}/public/images/back.jpg"
    cat2= "#{RAILS_ROOT}/public/images/gloria2.jpg"
    images=ImageList.new(cat1, cat2)
-   images[1].page=Rectangle.new(images[1].columns, images[1].rows, @post.cat1x, @post.cat1y)
+   # images[1].page=Rectangle.new(images[1].columns, images[1].rows, @post.cat1x, @post.cat1y)
+   images[1].page=Rectangle.new(140, 110, @post.cat1x, @post.cat1y)
    com_img=images.flatten_images
    com_img.write(tmpfile.path)
  
