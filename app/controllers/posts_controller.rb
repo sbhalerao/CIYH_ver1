@@ -97,8 +97,8 @@ class PostsController < ApplicationController
    # @message="hello world"
    @post=Post.last
   # if params[:pid]=="cat1"
-     @post.cat1x= params[:left]
-     @post.cat1y=params[:top]
+     @post.update_attributes(:cat1x => params[:left])
+     @post.update_attributes(:cat1y => params[:top])
   # end
      
    respond_to do |format|
