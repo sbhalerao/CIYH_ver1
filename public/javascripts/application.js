@@ -47,7 +47,7 @@ $(document).ready(function(){
 			dataType: 'json',
 	        data:{ top: ui.offset["top"], left: ui.offset["left"], pid: (ui.draggable).attr("id") },
 			success: function(json, status, xhr)
-			{  alert ('Success')
+			{  // alert ('Success')
 		   //$("#show_message").html("hello world");
 		 	},
 		    error: function(data, status, xhr){alert('Failure')} 

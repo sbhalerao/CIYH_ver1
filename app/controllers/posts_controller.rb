@@ -95,6 +95,12 @@ class PostsController < ApplicationController
     # @post= Post.find(params[:id])
     # @message=params[:msg]
    # @message="hello world"
+   @post=Post.last
+   if (params[:pid]=="cat1")
+     @post.cat1x= params[:left]
+     @post.cat1y=params[:top]
+   end
+     
    respond_to do |format|
      format.js
   
