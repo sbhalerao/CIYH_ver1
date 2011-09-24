@@ -19,14 +19,13 @@ $(document).ready(function(){
 	
   $("#.cat img").resizable({ handles:'n,e,s,w,ne,se,nw,sw' , maxHeight: 300, aspectRatio: true,
  							stop: function(event, ui) { 
-	                            var width1 = $(event.target).width();
-								var height1 = $(event.target).height();
+	                            
 								
 								$.ajax({
 						        type: 'POST',
 						        url: 'http://high-robot-603.heroku.com/jmsg',
 								dataType: 'json',
-						        data:{ width: width1, height: height1, pid:$(this).parent().attr('id')},
+						        data:{ width: ui.size["width"], height: ui.size["height"], pid:$(this).parent().attr('id')},
 								success: function(json, status, xhr)
 								{ // alert ('Success')
 							   //$("#show_message").html("hello world");
