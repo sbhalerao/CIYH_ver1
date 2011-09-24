@@ -76,8 +76,8 @@ class PostsController < ApplicationController
    cat2= "#{RAILS_ROOT}/public/images/gloria2.jpg"
    images=ImageList.new(cat1, cat2)
    # images[1].page=Rectangle.new(images[1].columns, images[1].rows, @post.cat1x, @post.cat1y)
-   images[1]=images[1].resize_to_fit(200,180)
-   images[1].page=Rectangle.new(200, 180, @post.cat1x+10, @post.cat1y-85)
+   images[1]=images[1].resize_to_fit(150,114)
+   images[1].page=Rectangle.new(150, 114, @post.cat1x+10, @post.cat1y-85)
    com_img=images.flatten_images
    com_img.write(tmpfile.path)
  
