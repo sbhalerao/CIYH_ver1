@@ -76,11 +76,21 @@ class PostsController < ApplicationController
    cat1= "#{RAILS_ROOT}/public/images/gloria2.jpg"
    cat2= "#{RAILS_ROOT}/public/images/gloria2.jpg"
    cat3= "#{RAILS_ROOT}/public/images/gloria2.jpg"
-   images=ImageList.new(cat1, cat2)
+   images=ImageList.new(back, cat1, cat2, cat3)
   
-   dimension= (@post.cat1h) > (@post.cat1w)?(@post.cat1h):(@post.cat1w)
-   images[1]=images[1].resize_to_fit(dimension,dimension)
+   dimension_cat1= (@post.cat1h) > (@post.cat1w)?(@post.cat1h):(@post.cat1w)
+   images[1]=images[1].resize_to_fit(dimension_cat1,dimension_cat1)
    images[1].page=Rectangle.new(@post.cat1h, @post.cat1w, @post.cat1x, (@post.cat1y)-85)
+   
+   dimension_cat2= (@post.cat2h) > (@post.cat2w)?(@post.cat2h):(@post.cat2w)
+    images[2]=images[2].resize_to_fit(dimension_cat2,dimension_cat2)
+    images[2].page=Rectangle.new(@post.cat2h, @post.cat2w, @post.cat2x, (@post.cat2y)-85)
+   
+   dimension_cat3= (@post.cat3h) > (@post.cat3w)?(@post.cat3h):(@post.cat3w)
+      images[3]=images[3].resize_to_fit(dimension_cat3,dimension_cat3)
+      images[3].page=Rectangle.new(@post.cat3h, @post.cat3w, @post.cat3x, (@post.cat3y)-85)
+   
+   
    com_img=images.flatten_images
    com_img.write(tmpfile.path)
  
