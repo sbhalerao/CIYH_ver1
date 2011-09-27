@@ -27,6 +27,14 @@ ActiveRecord::Schema.define(:version => 20110912053256) do
     t.float    "cat1y",               :default => 100.0
     t.float    "cat1h",               :default => 150.0
     t.float    "cat1w",               :default => 115.0
+    t.float    "cat2x",               :default => 100.0
+    t.float    "cat2y",               :default => 100.0
+    t.float    "cat2h",               :default => 150.0
+    t.float    "cat2w",               :default => 115.0
+    t.float    "cat3x",               :default => 100.0
+    t.float    "cat3y",               :default => 100.0
+    t.float    "cat3h",               :default => 150.0
+    t.float    "cat3w",               :default => 115.0
   end
 
   create_table "users", :force => true do |t|

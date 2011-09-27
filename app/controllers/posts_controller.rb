@@ -71,11 +71,13 @@ class PostsController < ApplicationController
    # @post = Post.find(params[:id])
      @post=Post.last
    tmpfile=Tempfile.new('my_pic')
-   #cat1= "#{RAILS_ROOT}/public/images/gloria1.jpg"
-   cat1= "#{RAILS_ROOT}/public/images/back.jpg"
+   
+   back= "#{RAILS_ROOT}/public/images/back.jpg"
+   cat1= "#{RAILS_ROOT}/public/images/gloria2.jpg"
    cat2= "#{RAILS_ROOT}/public/images/gloria2.jpg"
+   cat3= "#{RAILS_ROOT}/public/images/gloria2.jpg"
    images=ImageList.new(cat1, cat2)
-   # images[1].page=Rectangle.new(images[1].columns, images[1].rows, @post.cat1x, @post.cat1y)
+  
    dimension= (@post.cat1h) > (@post.cat1w)?(@post.cat1h):(@post.cat1w)
    images[1]=images[1].resize_to_fit(dimension,dimension)
    images[1].page=Rectangle.new(@post.cat1h, @post.cat1w, @post.cat1x, (@post.cat1y)-85)
@@ -97,18 +99,28 @@ class PostsController < ApplicationController
   end
   
   def sayhello
-    # @post= Post.find(params[:id])
-    # @message=params[:msg]
-   # @message="hello world"
+ 
    @post=Post.last
   if params[:pid]=="cat1"
      @post.update_attributes(:cat1x => params[:left])
      @post.update_attributes(:cat1y => params[:top])
+   elsif params[:pid]=="cat2"
+        @post.update_attributes(:cat2x => params[:left])
+        @post.update_attributes(:cat2y => params[:top])
+   elsif params[:pid]=="cat3"
+            @post.update_attributes(:cat3x => params[:left])
+            @post.update_attributes(:cat3y => params[:top])
    end
    
    if params[:rid]=="cat1"
        @post.update_attributes(:cat1h => params[:height])
        @post.update_attributes(:cat1w => params[:width])
+   elsif params[:rid]=="cat2"
+        @post.update_attributes(:cat2h => params[:height])
+        @post.update_attributes(:cat2w => params[:width])
+   elsif params[:rid]=="cat3"
+            @post.update_attributes(:cat3h => params[:height])
+            @post.update_attributes(:cat3w => params[:width])
    end
      
    respond_to do |format|
