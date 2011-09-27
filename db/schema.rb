@@ -25,8 +25,8 @@ ActiveRecord::Schema.define(:version => 20110912053256) do
     t.string   "message"
     t.float    "cat1x",               :default => 100.0
     t.float    "cat1y",               :default => 100.0
-    t.float    "cat1h",               :default => 300.0
-    t.float    "cat1w",               :default => 300.0
+    t.float    "cat1h",               :default => 150.0
+    t.float    "cat1w",               :default => 115.0
   end
 
   create_table "users", :force => true do |t|
