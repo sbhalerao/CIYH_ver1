@@ -40,10 +40,18 @@ $(document).ready(function(){
 							});
 							
   
+// Making all cats draggable
    	
     $("#cat1").draggable({containment: "#droppable", snap:false, cursor: "move"}); 
 	$("#cat2").draggable({containment: "#droppable", snap:false, cursor: "move"}); 
     $("#cat3").draggable({containment: "#droppable", snap:false, cursor: "move"}); 
+ 
+// Making all hats draggable
+    $("#hat1").draggable({containment: "#droppable", snap:false, cursor: "move"}); 
+	$("#hat2").draggable({containment: "#droppable", snap:false, cursor: "move"}); 
+    $("#hat3").draggable({containment: "#droppable", snap:false, cursor: "move"}); 
+	
+  
   
   $( "#droppable" ).droppable({
       drop: function( event, ui ) {
