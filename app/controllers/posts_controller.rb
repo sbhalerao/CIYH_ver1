@@ -88,7 +88,7 @@ class PostsController < ApplicationController
     
    images=ImageList.new(back, cat1, cat2, cat3, hat1, hat2, hat3)
   
-  # Dimension is the square dimensaion of each image 
+  # Dimension is the square dimension of each image 
    dimension_cat1= (@post.cat1h) > (@post.cat1w)?(@post.cat1h):(@post.cat1w)
    images[1]=images[1].resize_to_fit(dimension_cat1,dimension_cat1)
    images[1].page=Rectangle.new(@post.cat1h, @post.cat1w, @post.cat1x, (@post.cat1y)-80)
