@@ -114,12 +114,12 @@ class PostsController < ApplicationController
 
        # Repeating for hat2
        dimension_hat2= (@post.hat2h) > (@post.hat2w)?(@post.hat2h):(@post.hat2w)
-        images[5]=images[2].resize_to_fit(dimension_hat2,dimension_hat2)
+        images[5]=images[5].resize_to_fit(dimension_hat2,dimension_hat2)
         images[5].page=Rectangle.new(@post.hat2h, @post.hat2w, @post.hat2x, (@post.hat2y)-80)
 
        #Repeating for hat3
        dimension_hat3= (@post.hat3h) > (@post.hat3w)?(@post.hat3h):(@post.hat3w)
-          images[6]=images[3].resize_to_fit(dimension_hat3,dimension_hat3)
+          images[6]=images[6].resize_to_fit(dimension_hat3,dimension_hat3)
           images[6].page=Rectangle.new(@post.hat3h, @post.hat3w, @post.hat3x, (@post.hat3y)-80)
    
    com_img=images.flatten_images
