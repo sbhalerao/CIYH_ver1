@@ -130,6 +130,12 @@ class PostsController < ApplicationController
       #if @post.update_attributes(params[:post])require File.dirname(__FILE__) + '/posts_controller'
       
       if @post.update_attributes(:avatar => tmpfile)
+       if current_user 
+         FbGraph::User.me(current_user.token).feed!(
+         :picture =>@post.avatar.url
+             )   
+      end  
+      
         format.html { redirect_to(@post, :notice => 'Post was successfully updated.') }
         format.xml  { head :ok }
       else
