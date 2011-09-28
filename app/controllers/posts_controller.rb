@@ -141,6 +141,8 @@ class PostsController < ApplicationController
   def sayhello
  
    @post=Post.last
+   
+   # Set co-ordinates for cats
   if params[:pid]=="cat1"
      @post.update_attributes(:cat1x => params[:left])
      @post.update_attributes(:cat1y => params[:top])
@@ -152,6 +154,7 @@ class PostsController < ApplicationController
             @post.update_attributes(:cat3y => params[:top])
    end
    
+   #Set size for cats
    if params[:rid]=="cat1"
        @post.update_attributes(:cat1h => params[:height])
        @post.update_attributes(:cat1w => params[:width])
@@ -162,6 +165,31 @@ class PostsController < ApplicationController
             @post.update_attributes(:cat3h => params[:height])
             @post.update_attributes(:cat3w => params[:width])
    end
+     
+
+   # Set co-ordinates for hats
+   if params[:pid]=="hat1"
+      @post.update_attributes(:hat1x => params[:left])
+      @post.update_attributes(:hat1y => params[:top])
+    elsif params[:pid]=="hat2"
+         @post.update_attributes(:hat2x => params[:left])
+         @post.update_attributes(:hat2y => params[:top])
+    elsif params[:pid]=="hat3"
+             @post.update_attributes(:hat3x => params[:left])
+             @post.update_attributes(:hat3y => params[:top])
+    end
+
+    #Set size for hats
+    if params[:rid]=="hat1"
+        @post.update_attributes(:hat1h => params[:height])
+        @post.update_attributes(:hat1w => params[:width])
+    elsif params[:rid]=="hat2"
+         @post.update_attributes(:hat2h => params[:height])
+         @post.update_attributes(:hat2w => params[:width])
+    elsif params[:rid]=="hat3"
+         @post.update_attributes(:hat3h => params[:height])
+         @post.update_attributes(:hat3w => params[:width])
+    end     
      
    respond_to do |format|
      format.js
