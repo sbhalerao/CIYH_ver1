@@ -82,9 +82,9 @@ class PostsController < ApplicationController
    cat3= "#{RAILS_ROOT}/public/images/cat3.gif"
    
    #hat images
-   hat1= "#{RAILS_ROOT}/public/images/cat1.gif"
-   hat2= "#{RAILS_ROOT}/public/images/cat2.gif"
-   hat3= "#{RAILS_ROOT}/public/images/cat3.gif"
+   hat1= "#{RAILS_ROOT}/public/images/hat1.gif"
+   hat2= "#{RAILS_ROOT}/public/images/hat2.gif"
+   hat3= "#{RAILS_ROOT}/public/images/hat3.gif"
     
    images=ImageList.new(back, cat1, cat2, cat3, hat1, hat2, hat3)
   
