@@ -73,11 +73,20 @@ class PostsController < ApplicationController
    tmpfile=Tempfile.new('my_pic')
   
   #images. All images must be different files 
+   #background image
    back= "#{RAILS_ROOT}/public/images/back.jpg"
+   
+   #cat images
    cat1= "#{RAILS_ROOT}/public/images/cat1.gif"
    cat2= "#{RAILS_ROOT}/public/images/cat2.gif"
    cat3= "#{RAILS_ROOT}/public/images/cat3.gif"
-   images=ImageList.new(back, cat1, cat2, cat3)
+   
+   #hat images
+   hat1= "#{RAILS_ROOT}/public/images/cat1.gif"
+   hat2= "#{RAILS_ROOT}/public/images/cat2.gif"
+   hat3= "#{RAILS_ROOT}/public/images/cat3.gif"
+    
+   images=ImageList.new(back, cat1, cat2, cat3, hat1, hat2, hat3)
   
   # Dimension is the square dimensaion of each image 
    dimension_cat1= (@post.cat1h) > (@post.cat1w)?(@post.cat1h):(@post.cat1w)
@@ -90,10 +99,27 @@ class PostsController < ApplicationController
     images[2]=images[2].resize_to_fit(dimension_cat2,dimension_cat2)
     images[2].page=Rectangle.new(@post.cat2h, @post.cat2w, @post.cat2x, (@post.cat2y)-80)
    
+   #Repeating for cat3
    dimension_cat3= (@post.cat3h) > (@post.cat3w)?(@post.cat3h):(@post.cat3w)
       images[3]=images[3].resize_to_fit(dimension_cat3,dimension_cat3)
       images[3].page=Rectangle.new(@post.cat3h, @post.cat3w, @post.cat3x, (@post.cat3y)-80)
    
+   
+  # Dimension is the square dimensaion of each image . Hat1 first
+       dimension_hat1= (@post.hat1h) > (@post.hat1w)?(@post.hat1h):(@post.hat1w)
+       images[1]=images[1].resize_to_fit(dimension_hat1,dimension_hat1)
+       images[1].page=Rectangle.new(@post.hat1h, @post.hat1w, @post.hat1x, (@post.hat1y)-80)
+  # 80 is subtracted to get the y co-ordinate wrt back image. Cat1y is wrt top left of page
+
+       # Repeating for hat2
+       dimension_hat2= (@post.hat2h) > (@post.hat2w)?(@post.hat2h):(@post.hat2w)
+        images[2]=images[2].resize_to_fit(dimension_hat2,dimension_hat2)
+        images[2].page=Rectangle.new(@post.hat2h, @post.hat2w, @post.hat2x, (@post.hat2y)-80)
+
+       #Repeating for hat3
+       dimension_hat3= (@post.hat3h) > (@post.hat3w)?(@post.hat3h):(@post.hat3w)
+          images[3]=images[3].resize_to_fit(dimension_hat3,dimension_hat3)
+          images[3].page=Rectangle.new(@post.hat3h, @post.hat3w, @post.hat3x, (@post.hat3y)-80)
    
    com_img=images.flatten_images
    com_img.write(tmpfile.path)
