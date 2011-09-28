@@ -105,21 +105,22 @@ class PostsController < ApplicationController
       images[3].page=Rectangle.new(@post.cat3h, @post.cat3w, @post.cat3x, (@post.cat3y)-80)
    
    
+   # When adding more cats or hats, change the image number index
   # Dimension is the square dimensaion of each image . Hat1 first
        dimension_hat1= (@post.hat1h) > (@post.hat1w)?(@post.hat1h):(@post.hat1w)
-       images[1]=images[1].resize_to_fit(dimension_hat1,dimension_hat1)
-       images[1].page=Rectangle.new(@post.hat1h, @post.hat1w, @post.hat1x, (@post.hat1y)-80)
+       images[4]=images[4].resize_to_fit(dimension_hat1,dimension_hat1)
+       images[4].page=Rectangle.new(@post.hat1h, @post.hat1w, @post.hat1x, (@post.hat1y)-80)
   # 80 is subtracted to get the y co-ordinate wrt back image. Cat1y is wrt top left of page
 
        # Repeating for hat2
        dimension_hat2= (@post.hat2h) > (@post.hat2w)?(@post.hat2h):(@post.hat2w)
-        images[2]=images[2].resize_to_fit(dimension_hat2,dimension_hat2)
-        images[2].page=Rectangle.new(@post.hat2h, @post.hat2w, @post.hat2x, (@post.hat2y)-80)
+        images[5]=images[2].resize_to_fit(dimension_hat2,dimension_hat2)
+        images[5].page=Rectangle.new(@post.hat2h, @post.hat2w, @post.hat2x, (@post.hat2y)-80)
 
        #Repeating for hat3
        dimension_hat3= (@post.hat3h) > (@post.hat3w)?(@post.hat3h):(@post.hat3w)
-          images[3]=images[3].resize_to_fit(dimension_hat3,dimension_hat3)
-          images[3].page=Rectangle.new(@post.hat3h, @post.hat3w, @post.hat3x, (@post.hat3y)-80)
+          images[6]=images[3].resize_to_fit(dimension_hat3,dimension_hat3)
+          images[6].page=Rectangle.new(@post.hat3h, @post.hat3w, @post.hat3x, (@post.hat3y)-80)
    
    com_img=images.flatten_images
    com_img.write(tmpfile.path)
