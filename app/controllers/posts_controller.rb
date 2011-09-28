@@ -74,9 +74,9 @@ class PostsController < ApplicationController
   
   #images. All images must be different files 
    back= "#{RAILS_ROOT}/public/images/back.jpg"
-   cat1= "#{RAILS_ROOT}/public/images/gloria1.jpg"
-   cat2= "#{RAILS_ROOT}/public/images/gloria2.jpg"
-   cat3= "#{RAILS_ROOT}/public/images/gloria3.jpg"
+   cat1= "#{RAILS_ROOT}/public/images/cat1.gif"
+   cat2= "#{RAILS_ROOT}/public/images/cat2.gif"
+   cat3= "#{RAILS_ROOT}/public/images/cat3.gif"
    images=ImageList.new(back, cat1, cat2, cat3)
   
   # Dimension is the square dimensaion of each image 
