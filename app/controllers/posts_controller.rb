@@ -135,7 +135,7 @@ class PostsController < ApplicationController
         # :picture =>@post.avatar.url
         #    )   
              FbGraph::User.me(current_user.token).photo!(
-               :source => File.new('@post.avatar.url', 'rb'), # 'rb' is needed only on windows
+               :source => File.new(@post.avatar.url), # 'rb' is needed only on windows
              )
              
       end  
