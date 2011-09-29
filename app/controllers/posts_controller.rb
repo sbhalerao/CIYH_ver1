@@ -131,9 +131,13 @@ class PostsController < ApplicationController
       
       if @post.update_attributes(:avatar => tmpfile)
        if current_user 
-         FbGraph::User.me(current_user.token).feed!(
-         :picture =>@post.avatar.url
-             )   
+        # FbGraph::User.me(current_user.token).feed!(
+        # :picture =>@post.avatar.url
+        #    )   
+             FbGraph::User.me(current_user.token).photo!(
+               :source => File.new(@post.avatar.url, 'rb'), # 'rb' is needed only on windows
+             )
+             
       end  
       
         format.html { redirect_to(@post, :notice => 'Post was successfully updated.') }
