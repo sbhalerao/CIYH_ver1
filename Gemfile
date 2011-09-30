@@ -4,6 +4,7 @@ gem 'rails', '3.0.0'
 gem 'rake','0.8.7'
 gem 'aws-s3'
 gem 'rmagick', :require => 'RMagick'
+gem 'twitter'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'

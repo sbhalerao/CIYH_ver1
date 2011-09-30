@@ -141,6 +141,7 @@ class PostsController < ApplicationController
              
       end  
       
+      
         format.html { redirect_to(@post, :notice => 'Post was successfully updated.') }
         format.xml  { head :ok }
       else

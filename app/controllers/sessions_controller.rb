@@ -8,7 +8,7 @@ class SessionsController < ApplicationController
       
       def failure
         flash[:error] = 'There was an error at the remote authentication service. You have not been signed in.'
-        redirect_to "http://www.google.com", :notice => "Failed to sign in!" 
+        redirect_to "http://high-robot-603.heroku.com", :notice => "Failed to sign in!" 
       end
       
       def destroy
