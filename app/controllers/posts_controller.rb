@@ -157,7 +157,8 @@ class PostsController < ApplicationController
   
   def sayhello
  
-   @post=Post.last
+  # @post=Post.last
+  @post=current_user.posts.last
    
    # Set co-ordinates for cats
   if params[:pid]=="cat1"
