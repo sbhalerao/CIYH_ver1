@@ -69,7 +69,10 @@ class PostsController < ApplicationController
   # PUT /posts/1.xml
   def update
    # @post = Post.find(params[:id])
-     @post=Post.last
+   
+   #  @post=Post.last
+   @post=current_user.posts.last
+   
    tmpfile=Tempfile.new('my_pic')
   
   #images. All images must be different files 

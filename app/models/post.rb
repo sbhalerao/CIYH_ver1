@@ -1,5 +1,5 @@
 class Post < ActiveRecord::Base
- 
+  belongs_to :user
   has_attached_file :avatar, 
    :path =>"/avatars/:id/:style/:basename.:extension", :default_url => "/images/cat3.gif",
    :storage => :s3,
