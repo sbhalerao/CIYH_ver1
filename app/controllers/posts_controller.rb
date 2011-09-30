@@ -28,7 +28,8 @@ class PostsController < ApplicationController
   # GET /posts/new.xml
   def new
      # @post=Post.new
-     @post=Post.create()
+     # @post=Post.create()
+       @post=current_user.posts.create()
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @post }

@@ -1,13 +1,14 @@
 
-  class User < ActiveRecord::Base
+class User < ActiveRecord::Base
     has_many :posts  
-    def self.create_with_omniauth(auth)  
+
+  def self.create_with_omniauth(auth)  
       create! do |user|  
         user.provider = auth["provider"]  
         user.uid = auth["uid"]  
         user.name = auth["user_info"]["name"] 
         user.token = auth["credentials"]["token"]
-      end
-    end  
-    end  
+       end
+  end  
+end  
 
