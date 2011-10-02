@@ -4,6 +4,8 @@ class PostsController < ApplicationController
   
   # GET /posts
   # GET /posts.xml
+  before_filter :authenticate, :except => :index
+  
   def index
     @posts = Post.all
 
@@ -214,6 +216,10 @@ class PostsController < ApplicationController
   
    end
   end
+  
+  def authenticate
+    deny_access unless current_user?
+  end 
 
 
   # DELETE /posts/1

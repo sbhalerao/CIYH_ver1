@@ -1,6 +1,11 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
-  helper_method :current_user
+  helper_method :current_user, :deny_access
+  
+  def deny_access
+     redrect_to root_path, :notice => "Please sign in"
+  end
+
 
     private  
     def current_user  

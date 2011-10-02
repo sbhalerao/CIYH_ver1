@@ -1,5 +1,4 @@
 <h1>Listing posts</h1>
-<h2><a href="#" onclick="alert('Hello world!'); return false;">Click Here for a Javascript test</a></h2>
 
 <table>
   <tr>
@@ -22,14 +21,11 @@
     <td><%= link_to 'Show', post %></td>
     <td><%= link_to 'Edit', edit_post_path(post) %></td>
     <td><%= button_to 'Destroy', post, :confirm => 'Are you sure?', :method => :delete %></td>
-   <td> <%= link_to 'Message', jmsg_path(:msg => "hello world" , :id => post.id), :remote => true, :pid => post.id, :id => "messageid", :class => "article"%> 
-	<div id ='trialid'> Trial </div>
-	<div id = 'show_message'></div> </td>
-
+   
   </tr>
 <% end %>
 </table>
-<%= Post.last.id %>
+
 <br />
 
 <%= link_to 'New Post', new_post_path %>
