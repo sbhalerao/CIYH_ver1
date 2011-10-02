@@ -158,7 +158,9 @@ class PostsController < ApplicationController
        if current_user 
         # FbGraph::User.me(current_user.token).feed!(
         # :picture =>@post.avatar.url
-        #    )   
+        #    ) 
+        
+        puts current_user.token  
              FbGraph::User.me(current_user.token).photo!(
                #:source => File.new(@post.avatar.url), # 'rb' is needed only on windows
                :url => @post.avatar.url
