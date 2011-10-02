@@ -3,7 +3,7 @@ class ApplicationController < ActionController::Base
   helper_method :current_user, :deny_access
   
   def deny_access
-     redrect_to root_path, :notice => "Please sign in"
+     redirect_to root_path, :notice => "Please sign in"
   end
 
 
