@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110930044049) do
+ActiveRecord::Schema.define(:version => 20111002163347) do
 
   create_table "posts", :force => true do |t|
     t.string   "title"
@@ -48,6 +48,12 @@ ActiveRecord::Schema.define(:version => 20110930044049) do
     t.float    "hat3h",               :default => 150.0
     t.float    "hat3w",               :default => 115.0
     t.integer  "user_id"
+    t.integer  "cat1move",            :default => 0
+    t.integer  "cat2move",            :default => 0
+    t.integer  "cat3move",            :default => 0
+    t.integer  "hat1move",            :default => 0
+    t.integer  "hat2move",            :default => 0
+    t.integer  "hat3move",            :default => 0
   end
 
   create_table "users", :force => true do |t|
