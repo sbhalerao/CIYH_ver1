@@ -137,6 +137,7 @@ class PostsController < ApplicationController
    
   #Construct Array of images to be saved in the final image (com_img)
    images=ImageList.new
+   images[0]=img_all[0]
    images_index=1      #index of images to be included in com_img. Start from 1 coz background image stays same
    for i in 1..(img_all.length)-1
      if moved[i]==1        #if image was moved, include it
