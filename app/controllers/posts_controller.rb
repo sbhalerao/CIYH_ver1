@@ -218,7 +218,7 @@ class PostsController < ApplicationController
   end
   
   def authenticate
-    deny_access unless current_user?
+    deny_access unless current_user
   end 
 
 
