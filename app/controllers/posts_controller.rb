@@ -100,6 +100,7 @@ class PostsController < ApplicationController
    #Array giving index of img_all which were moved
    moved=[@post.cat1move, @post.cat2move, @post.cat3move, @post.hat1move, @post.hat2move, @post.hat3move]
   
+
   # Dimension is the square dimension of each image 
    dimension_cat1= (@post.cat1h) > (@post.cat1w)?(@post.cat1h):(@post.cat1w)
    img_all[1]=img_all[1].resize_to_fit(dimension_cat1,dimension_cat1)
@@ -136,8 +137,8 @@ class PostsController < ApplicationController
    
   #Construct Array of images to be saved in the final image (com_img)
    images=ImageList.new
-   images_index=0      #index of images to be included in com_img
-   for i in 0..(img_all.length)-1
+   images_index=1      #index of images to be included in com_img. Start from 1 coz background image stays same
+   for i in 1..(img_all.length)-1
      if moved[i]==1        #if image was moved, include it
        images[images_index]=img_all[i]
        images_index= images_index+1
