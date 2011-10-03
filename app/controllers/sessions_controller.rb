@@ -3,7 +3,9 @@ class SessionsController < ApplicationController
     auth = request.env["omniauth.auth"]  
      user = User.find_by_provider_and_uid(auth["provider"], auth["uid"]) || User.create_with_omniauth(auth)  
      # user = User.create_with_omniauth(auth)
-     user.token = auth["credentials"]["token"]        #in case token changes after account is created
+    # user.token = auth["credentials"]["token"]        #in case token changes after account is created
+     user.update_attributes(:token => auth["credentials"]["token"])
+     
      session[:user_id] = user.id  
      redirect_to root_url, :notice => "Signed in!"  
       end
