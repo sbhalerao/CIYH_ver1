@@ -11,7 +11,8 @@ gem 'twitter'
 
 gem 'sqlite3-ruby', :require => 'sqlite3'
 gem 'thumbs_up'
-gem 'omniauth'
+gem 'omniauth', :git => 'git://github.com/soopa/omniauth.git'
+
 gem 'fb_graph'
 
 # Use unicorn as the web server

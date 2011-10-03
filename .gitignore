@@ -1,4 +1,43 @@
+<<<<<<< HEAD
 .bundle
 db/*.sqlite3
 log/*.log
 tmp/**/*
+=======
+## MAC OS
+.DS_Store
+
+/live
+.rvmrc
+
+dist/*
+
+## TEXTMATE
+*.tmproj
+tmtags
+
+## EMACS
+*~
+\#*
+.\#*
+
+## VIM
+*.swp
+
+## PROJECT::GENERAL
+coverage
+rdoc
+pkg
+tmp
+oa-live
+
+## PROJECT::SPECIFIC
+*.gem
+.bundle
+.project
+.loadpath
+.yardoc
+doc
+
+Gemfile.lock
+>>>>>>> 67bdea962e3b601b8ee70e21aedf5e6ce1c2b780
