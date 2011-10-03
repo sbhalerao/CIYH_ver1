@@ -157,7 +157,7 @@ class PostsController < ApplicationController
       if @post.update_attributes(:avatar => tmpfile)
        if current_user 
      
-     #    puts current_user.token 
+         puts current_user.token 
         FbGraph::User.me(current_user.token).feed!(
         :picture =>@post.avatar.url
           ) 
