@@ -1,3 +1,29 @@
+<html>
+<head>
+  <title>Cats in your Hats</title>
+  <link href="/stylesheets/scaffold.css?1317600815" media="screen" rel="stylesheet" type="text/css" />
+  <script src="/javascripts/jquery.js?1317600815" type="text/javascript"></script>
+<script src="/javascripts/jquery.rails.js?1317600815" type="text/javascript"></script>
+<script src="/javascripts/application.js?1317600815" type="text/javascript"></script>
+ 
+  <link class="jsbin" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.13/jquery-ui.min.js" type="text/javascript"></script>
+   <script src="/javascripts/jquery.ui.tough-punch.min.js?1317600815" type="text/javascript"></script>
+
+<style>
+  #cat1 { width: 1px; background: transparent; text-align:center; absolute:left}
+  #cat2 { width: 1px; background: transparent; text-align:center; absolute:left}
+  #cat3 { width: 1px; background: transparent; text-align:center; absolute:left}
+  #hat1 { width: 1px; background: transparent; text-align:center; absolute:left}
+  #hat2 { width: 1px; background: transparent; text-align:center; absolute:left}
+  #hat3 { width: 1px; background: transparent; text-align:center; absolute:left}
+</style>
+
+  <meta name="csrf-param" content="authenticity_token"/>
+<meta name="csrf-token" content="R&#47;&#47;xEdM4qGnE0ZVZWTidPrDQbQ+wk6Fm0dMLRiBpTRI="/>
+</head>
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<!-- ImageReady Slices (comp4.ai) --><center>
 <div class="num1" style="position: relative;left:0px;top:0px;width:1024px;height:36px;">
 			<img src="images/comp4_01.jpg" width="1024" height="36" alt="" border="0"></div>
 <div class="num2" style="position: relative;left:-470px;top:0px;width:83px;height:732px;">
@@ -52,18 +78,7 @@
  
  <div class="form" style="position: relative;left:-365;top:-3680px;width:130px;height:115px;">
 
-<%= form_for(@post, :html => { :multipart => true }) do |f| %>
-  <% if @post.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@post.errors.count, "error") %> prohibited this post from being saved:</h2>
-
-      <ul>
-      <% @post.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
+<form accept-charset="UTF-8" action="/posts/324" class="edit_post" enctype="multipart/form-data" id="edit_post_324" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="put" /><input name="authenticity_token" type="hidden" value="R//xEdM4qGnE0ZVZWTidPrDQbQ+wk6Fm0dMLRiBpTRI=" /></div>
 
 <script type="text/javascript">
 window.onload = function() {
@@ -80,9 +95,14 @@ window.onload = function() {
 	   <div id ="hat2" class="cat" style="position: relative;left:-365;top:-3680px;width:130px;height:115px;"> <img src="/images/hat2.gif" height="50">  </div>
 	   <div id ="hat3" class="cat" style="position: relative;left:-365;top:-3680px;width:130px;height:115px;"> <img src="/images/hat3.gif" height="50">  </div>
   
-  <div class="actions">
-    <%= image_submit_tag("images/comp4_21.jpg") %>
+  <div class="actions" style="position: relative;left:738;top:-568px;width:130px;height:115px;">
+    <input id="post_submit" src="images/comp4_21.jpg" name="commit" type="image"/>
   </div>
-<% end %>
+</form>
+  
 
- </div> 
+
+<a href="/posts">Back</a></div>
+
+</body>
+</html>

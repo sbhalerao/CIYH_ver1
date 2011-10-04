@@ -1,0 +1,25 @@
+
+
+ #<User id: 3, provider: "facebook", uid: "893375236", created_at: "2011-09-30 03:38:56", updated_at: "2011-09-30 03:38:56", name: "Melissa Kelly", token: "AAADja1w6ipABAFulTlgheN8Rrz4ScC7x8YyFeoilxXjxMlvRmE...">, 
+ 
+
+#<User id: 7, provider: "facebook", uid: "893375236", created_at: "2011-10-03 02:12:04", updated_at: "2011-10-03 02:12:04", name: "Melissa Kelly", token: "AAADja1w6ipABAPChmXcCSSuCejHlXZBwZCdMpGW9Jtrp66DHJL...">,
+
+
+ #<User id: 8, provider: "facebook", uid: "893375236", created_at: "2011-10-03 02:13:23", updated_at: "2011-10-03 02:13:23", name: "Melissa Kelly", token: "AAADja1w6ipABAPChmXcCSSuCejHlXZBwZCdMpGW9Jtrp66DHJL...">]
+
+
+
+=====================
+old
+
+#<User id: 1, provider: "facebook", uid: "688227686", created_at: "2011-08-07 23:08:08", updated_at: "2011-08-07 23:08:08", name: "Shantanu Bhalerao", token: "250050248346256|a071024117f14d0f545dd35f.1-68822768...">, #<User id: 3, provider: "facebook", uid: "893375236", created_at: "2011-09-30 03:38:56", updated_at: "2011-09-30 03:38:56", name: "Melissa Kelly", token: "AAADja1w6ipABAFulTlgheN8Rrz4ScC7x8YyFeoilxXjxMlvRmE...">, #<User id: 4, provider: nil, uid: nil, created_at: "2011-10-02 19:27:42", updated_at: "2011-10-02 19:27:42", name: nil, token: nil>, #<User id: 5, provider: "facebook", uid: "26207529", created_at: "2011-10-02 19:32:39", updated_at: "2011-10-02 19:32:39", name: "Camille Kelly", token: "AAADja1w6ipABACyxgWhZA2WENB4oDgSPZAlaw9koZCEIytzsct...">, #<User id: 6, provider: "facebook", uid: "100003019841868", created_at: "2011-10-02 20:28:44", updated_at: "2011-10-02 20:28:44", name: "Harry Granger", token: "AAADja1w6ipABAAYwz2GMzpZCFHr5Fc5J20livNCZCF4PGeHngx...">, #<User id: 7, provider: "facebook", uid: "893375236", created_at: "2011-10-03 02:12:04", updated_at: "2011-10-03 02:12:04", name: "Melissa Kelly", token: "AAADja1w6ipABAPChmXcCSSuCejHlXZBwZCdMpGW9Jtrp66DHJL...">, #<User id: 8, provider: "facebook", uid: "893375236", created_at: "2011-10-03 02:13:23", updated_at: "2011-10-03 02:13:23", name: "Melissa Kelly", token: "AAADja1w6ipABAPChmXcCSSuCejHlXZBwZCdMpGW9Jtrp66DHJL...">
+
+
+
+
+======================
+new
+
+[#<User id: 4, provider: nil, uid: nil, created_at: "2011-10-02 19:27:42", updated_at: "2011-10-02 19:27:42", name: nil, token: nil>, #<User id: 5, provider: "facebook", uid: "26207529", created_at: "2011-10-02 19:32:39", updated_at: "2011-10-02 19:32:39", name: "Camille Kelly", token: "AAADja1w6ipABACyxgWhZA2WENB4oDgSPZAlaw9koZCEIytzsct...">, #<User id: 6, provider: "facebook", uid: "100003019841868", created_at: "2011-10-02 20:28:44", updated_at: "2011-10-02 20:28:44", name: "Harry Granger", token: "AAADja1w6ipABAAYwz2GMzpZCFHr5Fc5J20livNCZCF4PGeHngx...">, #<User id: 7, provider: "facebook", uid: "893375236", created_at: "2011-10-03 02:12:04", updated_at: "2011-10-03 02:12:04", name: "Melissa Kelly", token: "AAADja1w6ipABAPChmXcCSSuCejHlXZBwZCdMpGW9Jtrp66DHJL...">, #<User id: 8, provider: "facebook", uid: "893375236", created_at: "2011-10-03 02:13:23", updated_at: "2011-10-03 02:13:23", name: "Melissa Kelly", token: "AAADja1w6ipABAPChmXcCSSuCejHlXZBwZCdMpGW9Jtrp66DHJL...">, #<User id: 9, provider: "facebook", uid: "893375236", created_at: "2011-10-03 02:33:38", updated_at: "2011-10-03 02:33:38", name: "Melissa Kelly", token: "AAADja1w6ipABAPChmXcCSSuCejHlXZBwZCdMpGW9Jtrp66DHJL...">, #<User id: 3, provider: "facebook", uid: "893375236", created_at: "2011-09-30 03:38:56", updated_at: "2011-10-03 02:53:57", name: "Melissa Kelly", token: "AAADja1w6ipABAPChmXcCSSuCejHlXZBwZCdMpGW9Jtrp66DHJL...">, #<User id: 1, provider: "facebook", uid: "688227686", created_at: "2011-08-07 23:08:08", updated_at: "2011-10-03 02:54:01", name: "Shantanu Bhalerao", token: "AAADja1w6ipABAHougIwbiJqMx6ra6nLeYA2GOdYs2c0Ne81juK...">]
+
