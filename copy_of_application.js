@@ -16,7 +16,7 @@ The XMLHttpRequest object is used to exchange data with a server behind the scen
 
 
     $.ajaxSetup({
-	  'beforeSend': function(xhr) { xhr.setRequestHeader("Accept", "text/javascript"); }
+	  'beforeSend': function(xhr) { xhr.setRequestHeader("Accept", "text/javascript") }
 	});
 
 //sending height, width of resizable image. ID is sent as rid 	
