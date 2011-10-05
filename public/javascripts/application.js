@@ -37,8 +37,6 @@ error: function(data, status, xhr){ //alert('Failure')
 }
 });
 
-
-
   
 // Making all cats draggable
    
