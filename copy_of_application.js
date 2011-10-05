@@ -20,10 +20,24 @@ The XMLHttpRequest object is used to exchange data with a server behind the scen
 	});
 
 //sending height, width of resizable image. ID is sent as rid 	
-$("#.cat img").load(function () {
-    $("#.cat img").resizable({ handles:'n,e,s,w,ne,se,nw,sw' , maxHeight: 300, aspectRatio: true });
-  });
-
+$("#.cat img").load(function () { 
+ $("#.cat img").resizable({ handles:'n,e,s,w,ne,se,nw,sw' , maxHeight: 300, aspectRatio: true,
+ 							stop: function(event, ui) { 
+	                            $.ajax({
+						        type: 'POST',
+						        url: 'http://high-robot-603.heroku.com/jmsg',
+								dataType: 'json',
+						        data:{ width: ui.size["width"], height: ui.size["height"], rid:$(this).parent().attr('id')},
+								success: function(json, status, xhr)
+								{ // alert ('Success')
+							 	},
+							    error: function(data, status, xhr){ //alert('Failure')
+							    } 
+						       });
+							}
+							});
+							
+});
  
 // Making all cats draggable
    	
@@ -37,13 +51,23 @@ $("#.cat img").load(function () {
     $("#hat3").draggable({containment: "#droppable", snap:false, cursor: "move"}); 
 	
   
-  	$( "#droppable" ).droppable({
-	      drop: function( event, ui ) {
-	        $( this )
-	          .find( "p" ).hide();
-	      }
-	  });
-
+  
+  $( "#droppable" ).droppable({
+      drop: function( event, ui ) {
+        $( this ).find( "p" ).hide();
+		$.ajax({
+	        type: 'POST',
+	        url: 'http://high-robot-603.heroku.com/jmsg',
+			dataType: 'json',
+	        data:{ top: ui.offset["top"], left: ui.offset["left"], pid: (ui.draggable).attr("id") },
+			success: function(json, status, xhr)
+			{  // alert ('Success')
+		   //$("#show_message").html("hello world");
+		 	},
+		    error: function(data, status, xhr){alert('Failure');} 
+	       });
+      }
+    });
 
 
 
