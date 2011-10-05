@@ -19,7 +19,9 @@ $(document).ready(function(){
 	  'beforeSend': function(xhr) { xhr.setRequestHeader("Accept", "text/javascript") }
 	});
 
+});
 //sending height, width of resizable image. ID is sent as rid 	
+  $("#.cat img").load(function () {
   $("#.cat img").resizable({ handles:'n,e,s,w,ne,se,nw,sw' , maxHeight: 300, aspectRatio: true,
  							stop: function(event, ui) { 
 	                            
@@ -38,7 +40,7 @@ $(document).ready(function(){
 						       });
 							}
 							});
-							
+ });					
   
 // Making all cats draggable
    	
@@ -69,7 +71,7 @@ $(document).ready(function(){
 	       });
       }
     });
-});
+
 
 
 
