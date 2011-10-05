@@ -18,7 +18,7 @@ $("#.cat img").load(function () {
     $("#.cat img").resizable({ handles:'n,e,s,w,ne,se,nw,sw' , maxHeight: 300, aspectRatio: true });
   });
 
- 
+ /*
 // Making all cats draggable
    	
     $("#cat1").draggable({containment: "#droppable", snap:false, cursor: "move"}); 
@@ -38,7 +38,7 @@ $("#.cat img").load(function () {
 	      }
 	  });
 
-
+*/
 
 
 
