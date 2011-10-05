@@ -21,12 +21,12 @@ $(document).ready(function(){
 
 });
 //sending height, width of resizable image. ID is sent as rid 	
-  $("#.cat img").load(function () {
+
+
+$("#.cat img").load(function () {
   $("#.cat img").resizable({ handles:'n,e,s,w,ne,se,nw,sw' , maxHeight: 300, aspectRatio: true,
  							stop: function(event, ui) { 
-	                            
-								
-								$.ajax({
+	                            $.ajax({
 						        type: 'POST',
 						        url: 'http://high-robot-603.heroku.com/jmsg',
 								dataType: 'json',
@@ -40,7 +40,7 @@ $(document).ready(function(){
 						       });
 							}
 							});
- });					
+});							
   
 // Making all cats draggable
    	
