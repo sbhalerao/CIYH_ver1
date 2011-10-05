@@ -13,20 +13,18 @@ The XMLHttpRequest object is used to exchange data with a server behind the scen
 */
 
 
-/*
+
 $(document).ready(function(){
 	$.ajaxSetup({
 	  'beforeSend': function(xhr) { xhr.setRequestHeader("Accept", "text/javascript") }
 	});
 
-});
 //sending height, width of resizable image. ID is sent as rid 	
-*/
-
-$("#.cat img").load(function () {
   $("#.cat img").resizable({ handles:'n,e,s,w,ne,se,nw,sw' , maxHeight: 300, aspectRatio: true,
  							stop: function(event, ui) { 
-	                            $.ajax({
+	                            
+								
+								$.ajax({
 						        type: 'POST',
 						        url: 'http://high-robot-603.heroku.com/jmsg',
 								dataType: 'json',
@@ -40,7 +38,7 @@ $("#.cat img").load(function () {
 						       });
 							}
 							});
-});							
+							
   
 // Making all cats draggable
    	
@@ -71,7 +69,7 @@ $("#.cat img").load(function () {
 	       });
       }
     });
-
+});
 
 
 
