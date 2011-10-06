@@ -1,5 +1,6 @@
 class PostsController < ApplicationController
   layout "main", :except => [:new, :update, :edit]
+  layout "application", :only => [:new, :update, :edit]
   require 'RMagick'
   include Magick
   
