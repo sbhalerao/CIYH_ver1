@@ -1,7 +1,8 @@
 class PostsController < ApplicationController
   
 layout "photos", :only => :new
-  
+layout "main"  
+
   require 'RMagick'
   include Magick
   
