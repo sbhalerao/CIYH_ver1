@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
   
-  layout "photos", :only => [:new, :update, :edit]
+
   
   require 'RMagick'
   include Magick
