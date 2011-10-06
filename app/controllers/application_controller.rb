@@ -1,6 +1,7 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
   helper_method :current_user, :deny_access
+  layout "application"
   
   def deny_access
      redirect_to root_path, :notice => "Please sign in"
