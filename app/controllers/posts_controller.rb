@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-  layout "main", :only => :index
+  
   layout "photos", :only => [:new, :update, :edit]
   
   require 'RMagick'
