@@ -35,6 +35,7 @@ class PostsController < ApplicationController
      # @post=Post.new
      # @post=Post.create()
        @post=current_user.posts.create()
+   render :layout => "photos"
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @post }
