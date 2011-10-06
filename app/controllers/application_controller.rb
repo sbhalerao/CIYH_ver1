@@ -1,6 +1,6 @@
 class ApplicationController < ActionController::Base
   
-  layout "application"
+  layout "main"
   
   protect_from_forgery
   helper_method :current_user, :deny_access
