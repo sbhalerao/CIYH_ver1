@@ -5,7 +5,7 @@ class CatwalksController < ApplicationController
       format.html # new.html.erb
       format.xml  { render :xml => @catwalk }
     end
-  end
+  
 
   def create
     @catwalk=Catwalk.new(params[:catwalk])
