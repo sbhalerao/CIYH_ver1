@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Add your own tasks in files placed in lib/tasks ending in .rake,
 # for example lib/tasks/capistrano.rake, and they will automatically be available to Rake.
 
@@ -7,7 +7,7 @@ require File.expand_path('../config/application', __FILE__)
 require 'rake'
 #include Rake::DSL
 Blog::Application.load_tasks
-=======
+
 require 'rubygems'
 require 'rake'
 
@@ -193,4 +193,4 @@ begin
 rescue LoadError
   puts "You need to install YARD."
 end
->>>>>>> 67bdea962e3b601b8ee70e21aedf5e6ce1c2b780
+

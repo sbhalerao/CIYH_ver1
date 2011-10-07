@@ -11,7 +11,7 @@ class CatwalksController < ApplicationController
     @catwalk=Catwalk.new(params[:catwalk])
     respond_to do |format|
       if @catwalk.save
-      format.html {redirect_to (@catwalk, :notice => "picture uploaded successfully")}# new.html.erb
+      format.html {redirect_to (@catwalk, :notice => 'picture uploaded successfully')}# new.html.erb
       format.xml  { render :xml => @catwalk }
     else
       format.html {render :action => "new"}# new.html.erb
