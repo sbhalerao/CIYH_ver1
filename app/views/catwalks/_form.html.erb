@@ -1,10 +1,10 @@
-<%= form_for(@post, :html => { :multipart => true }) do |f| %>
-  <% if @post.errors.any? %>
+<%= form_for(@catwalk, :html => { :multipart => true }) do |f| %>
+  <% if @catwalk.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@post.errors.count, "error") %> prohibited this post from being saved:</h2>
+      <h2><%= pluralize(@catwalk.errors.count, "error") %> prohibited this post from being saved:</h2>
 
       <ul>
-      <% @post.errors.full_messages.each do |msg| %>
+      <% @catwalk.errors.full_messages.each do |msg| %>
         <li><%= msg %></li>
       <% end %>
       </ul>
