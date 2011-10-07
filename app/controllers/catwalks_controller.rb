@@ -5,6 +5,7 @@ class CatwalksController < ApplicationController
       format.html # new.html.erb
       format.xml  { render :xml => @catwalk }
     end
+  end
   
 
   def create
@@ -13,11 +14,12 @@ class CatwalksController < ApplicationController
       if @catwalk.save
       format.html {redirect_to (@catwalk)}# new.html.erb
       format.xml  { render :xml => @catwalk }
-    else
+       else
       format.html {render :action => "new"}# new.html.erb
       format.xml  { render :xml => @catwalk.errors, :status => :unprocessable_entity }
-      
+      end
     end
+  
   end
 
   def show
