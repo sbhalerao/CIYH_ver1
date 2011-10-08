@@ -10,7 +10,17 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111002163347) do
+ActiveRecord::Schema.define(:version => 20111008002032) do
+
+  create_table "catwalks", :force => true do |t|
+    t.string   "catname"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "catpic_file_name"
+    t.string   "catpic_content_type"
+    t.integer  "catpic_file_size"
+    t.datetime "catpic_updated_at"
+  end
 
   create_table "posts", :force => true do |t|
     t.string   "title"
