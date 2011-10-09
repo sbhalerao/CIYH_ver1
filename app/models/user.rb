@@ -1,8 +1,9 @@
 
 class User < ActiveRecord::Base
   #need to have one relationship per line
-   has_many :posts 
+   
    has_many :catwalks 
+   has_many :posts 
    acts_as_voter
 
   def self.create_with_omniauth(auth)  
