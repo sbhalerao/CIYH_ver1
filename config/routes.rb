@@ -1,13 +1,13 @@
 Blog::Application.routes.draw do
 
 
-  get "catwalks/new"
+ # get "catwalks/new"
 
-  get "catwalks/create"
+ # get "catwalks/create"
 
-  get "catwalks/show"
+ # get "catwalks/show"
 
-  get "catwalks/destroy"
+ # get "catwalks/destroy"
 
   get "fbposts/show"
 
@@ -16,7 +16,7 @@ Blog::Application.routes.draw do
   resources :posts 
     
   
-  resources :catwalks, :only=>[:new, :create, :show, :destroy] do
+  resources :catwalks, :only=>[:new, :create, :show, :destroy, :index] do
     member do
       post :vote_up
     end
