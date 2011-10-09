@@ -33,4 +33,12 @@ class CatwalksController < ApplicationController
   def destroy
   end
 
+ def vote_up
+   
+ end
+ 
+ def index
+ @catwalks=Catwalk.all 
+ end
+
 end

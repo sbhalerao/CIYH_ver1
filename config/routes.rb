@@ -13,8 +13,15 @@ Blog::Application.routes.draw do
 
   get "fbposts/create"
 
-  resources :posts
-  resources :catwalks, :only=>[:new, :create, :show, :destroy]
+  resources :posts 
+    
+  
+  resources :catwalks, :only=>[:new, :create, :show, :destroy] do
+    member do
+      post :vote_up
+    end
+  end
+  
   resource :fbpost, :only => [:show, :create]
   
    match "/auth/twitter/callback" => "sessions#create"

@@ -1,5 +1,5 @@
 class Catwalk < ActiveRecord::Base
-  
+  acts_as_voteable
   has_attached_file :catpic, 
    :path =>"/catpics/:id/:style/:basename.:extension",
    :storage => :s3,

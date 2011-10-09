@@ -1,0 +1,10 @@
+<% @catwalks.each do|catwalk| %>
+
+<%image_tag catwalk.catpic.url%>
+
+<br>
+
+<p> Posted by <%=User.find(catwalk.user_id) %>
+
+<% end %>
+
