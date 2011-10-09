@@ -1,5 +1,5 @@
 class Catwalk < ActiveRecord::Base
-  belongs_to :user
+  belongs_to :user, :foreign_key => "user_id"
   acts_as_voteable
   has_attached_file :catpic, 
    :path =>"/catpics/:id/:style/:basename.:extension",
