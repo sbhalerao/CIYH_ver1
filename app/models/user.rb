@@ -1,7 +1,7 @@
 
 class User < ActiveRecord::Base
-    has_many :posts  
-    has_many :catwalks
+    has_many :posts, :catwalks 
+  #  has_many :catwalks
     acts_as_voter
 
   def self.create_with_omniauth(auth)  
