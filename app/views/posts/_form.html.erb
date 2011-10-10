@@ -28,7 +28,8 @@
                        </div>
                <div class="sharelink">
            
-    <%= f.submit "Share" %>
+    <%= # f.submit "Share" %>
+    <%= link_to 'Share', "#", :onclick=>"$('.search_form').submit()" %>
   </div>
 <% end %>
 	
