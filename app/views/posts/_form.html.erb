@@ -29,7 +29,7 @@
                <div class="sharelink">
            
     
-    <%= link_to 'Share', "#", :onclick=>"$('.search_form').submit()" %>
+    <%= link_to 'Share', :url=>{:controller => "posts", :action => "create"} %>
   </div>
 <% end %>
 	
