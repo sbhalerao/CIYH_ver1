@@ -1,12 +1,12 @@
 body {
-       background-image:url(catsaretheshit/back3.png);
+       background-image:url(/images/back3.png);
 
        background-repeat:repeat;
        font-family: sans-serif;
 }
 body .header {
        margin-top: 20px;
-       background-image:url(catsaretheshit/headercopyrepeat.png);
+       background-image:url(/images/headercopyrepeat.png);
        background-repeat:repeat-x;
 }
 body .background {
@@ -55,7 +55,6 @@ body .sharelink a {
 
 body .signin a {
        margin-left: 652px;
-
        position: relative;
        background-color: #ff5300;
        padding-right: 30px;
