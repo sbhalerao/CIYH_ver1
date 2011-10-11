@@ -46,6 +46,6 @@ class CatwalksController < ApplicationController
  
  def authenticate
     deny_access unless current_user
-  end
+ end
 
 end
