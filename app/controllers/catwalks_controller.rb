@@ -43,5 +43,9 @@ class CatwalksController < ApplicationController
  def index
  @catwalks=Catwalk.all 
  end
+ 
+ def authenticate
+    deny_access unless current_user
+  end
 
 end
