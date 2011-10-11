@@ -7,7 +7,7 @@ class PostsController < ApplicationController
   
   # GET /posts
   # GET /posts.xml
-  before_filter :authenticate, :except => :index
+  before_filter :authenticate, :except => [:index, :front_page]
   
   def index
     @posts = Post.all

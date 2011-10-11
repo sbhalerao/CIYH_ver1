@@ -1,4 +1,7 @@
 class CatwalksController < ApplicationController
+ 
+ before_filter :authenticate 
+  
   def new
     @catwalk=Catwalk.new
     respond_to do |format|
