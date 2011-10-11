@@ -3,7 +3,7 @@ class CatwalksController < ApplicationController
  before_filter :authenticate 
   
   def new
-    @catwalk=Catwalk.new
+    @catwalk=current_user.catwalks.new
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @catwalk }
@@ -12,7 +12,7 @@ class CatwalksController < ApplicationController
   
 
   def create
-    @catwalk=Catwalk.new(params[:catwalk])
+    @catwalk=current_user.catwalks.new(params[:catwalk])
     respond_to do |format|
       if @catwalk.save
       format.html {redirect_to (@catwalk)}# new.html.erb
