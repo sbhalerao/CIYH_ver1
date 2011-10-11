@@ -1,10 +1,10 @@
 <% @catwalks.each do|catwalk| %>
 
-<%image_tag catwalk.catpic.url%>
+<%= image_tag catwalk.catpic.url%>
 
 <br>
 
-<p> Posted by <%=catwalk.user %> </p>
+<p> Posted by <%=catwalk.user.name %> </p>
 
 <% end %>
 
