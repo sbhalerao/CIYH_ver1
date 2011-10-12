@@ -73,15 +73,36 @@
 }
 
 #fancybox-content {
-	width: 0;
-	height: 0;
-	padding: 0;
-	outline: none;
-	position: relative;
-	overflow: hidden;
-	z-index: 1102;
-	border: 0px solid #fff;
-	background-image:url(/images/backsignin.png);
+width: 0;
+height: 0;
+padding: 0;
+outline: none;
+position: relative;
+overflow: hidden;
+z-index: 1102;
+border: 0px solid #fff;
+background-image:url(/images/backsignin.png);
+}
+
+#fancybox-content a {
+margin-right: 3.5px;
+position: relative;
+background-color: #ff5300;
+padding-right: 30px;
+padding-left: 30px;
+padding-top: 7px;
+padding-bottom: 7px;
+text-decoration: none;
+text-align: center;
+color: #fff;
+font-size: 12px;
+margin-bottom: 20px;
+}
+
+
+#fancybox-content a:hover, .sharelink a:hover, .signin a:hover {
+background: #ff864b;
+color: #fff;
 }
 
 #fancybox-hide-sel-frame {
