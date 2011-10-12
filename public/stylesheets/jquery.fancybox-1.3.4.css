@@ -81,6 +81,7 @@
 	overflow: hidden;
 	z-index: 1102;
 	border: 0px solid #fff;
+	background-image:url(/images/backsignin.png);
 }
 
 #fancybox-hide-sel-frame {
