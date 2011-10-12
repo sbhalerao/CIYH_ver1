@@ -91,7 +91,7 @@ error: function(data, status, xhr){alert('Failure')}
       }
     });
 
-	$("#various1").fancybox({
+	$("#signin").fancybox({
 					'titlePosition'		: 'inside',
 					'transitionIn'		: 'none',
 					'transitionOut'		: 'none'
