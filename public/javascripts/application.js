@@ -96,7 +96,7 @@ error: function(data, status, xhr){alert('Failure')}
 					'transitionIn'		: 'none',
 					'transitionOut'		: 'none'
 				});
-$("a#single_image").fancybox();
+
 
 });
 
