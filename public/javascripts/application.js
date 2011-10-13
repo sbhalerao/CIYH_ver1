@@ -98,7 +98,7 @@ error: function(data, status, xhr){alert('Failure')}
 					'transitionOut'		: 'none'
 		   });
 
-	       $("#variou2").fancybox({
+	       $("#various2").fancybox({
 					'titlePosition'		: 'inside',
 					'transitionIn'		: 'none',
 					'transitionOut'		: 'none'
