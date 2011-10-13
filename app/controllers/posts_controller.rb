@@ -8,7 +8,7 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.xml
   before_filter :authenticate, :except => [:index, :front_page]
-  
+  layout "photos", :only => :new
   def index
     @posts = Post.all
 
@@ -277,7 +277,7 @@ end
 
 def share_link
   if current_user
-     redirect_to(new_post_path)
+     redirect_to(new_post_path) 
     
   else
     respond_to do |format|
