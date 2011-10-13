@@ -8,7 +8,7 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.xml
   before_filter :authenticate, :except => [:index, :front_page]
-  layout "photos", :only => :new
+  
   def index
     @posts = Post.all
 
@@ -35,9 +35,9 @@ class PostsController < ApplicationController
      # @post=Post.new
      # @post=Post.create()
        @post=current_user.posts.create()
-   
+   render :layout => "photos"
     respond_to do |format|
-      format.html {render :layout => "photos"} # new.html.erb
+      format.html  # new.html.erb
       format.xml  { render :xml => @post }
     end
   end
