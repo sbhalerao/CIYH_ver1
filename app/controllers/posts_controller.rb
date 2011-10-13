@@ -38,7 +38,7 @@ class PostsController < ApplicationController
    render :layout => "photos"
     respond_to do |format|
       format.html  # new.html.erb
-      format.xml  { render :xml => @post }
+      format.xml  
     end
   end
 
