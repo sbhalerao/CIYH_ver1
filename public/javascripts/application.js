@@ -37,28 +37,7 @@ error: function(data, status, xhr){ //alert('Failure')
 }
 });
 
-//sending height, width of resizable image. ID is sent as rid
-$("#.cat img").load( function(){ 
-$("#.cat img").resizable({ handles:'n,e,s,w,ne,se,nw,sw' , maxHeight: 300, aspectRatio: true,
-  stop: function(event, ui) {
 
-
-$.ajax({
-type: 'POST',
-url: 'http://high-robot-603.heroku.com/jmsg',
-dataType: 'json',
-data:{ width: ui.size["width"], height: ui.size["height"], rid:$(this).parent().attr('id')},
-success: function(json, status, xhr)
-{ // alert ('Success')
-//$("#show_message").html("hello world");
-},
-error: function(data, status, xhr){ //alert('Failure')
-}
-});
-}
-});
-
-});
 
   
 // Making all cats draggable
