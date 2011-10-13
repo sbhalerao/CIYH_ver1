@@ -269,9 +269,18 @@ end
 
 # code for the front_page of the website
 def front_page
-
-
   respond_to do |format|
     format.html # front_page.html.erb
   end
+end
+
+
+def share_link
+  if current_user?
+    redirect_to new_posts_path
+  else
+    respond_to do |format|
+      format.js 
+    end
+    
 end
