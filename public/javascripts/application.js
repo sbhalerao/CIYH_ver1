@@ -91,7 +91,6 @@ error: function(data, status, xhr){alert('Failure')}
       }
     });
 
-	$(document).ready(function(){
 
 	       $("#various1").fancybox({
 					'titlePosition'		: 'inside',
@@ -99,7 +98,11 @@ error: function(data, status, xhr){alert('Failure')}
 					'transitionOut'		: 'none'
 		   });
 
-	});
+	       $("#variou2").fancybox({
+					'titlePosition'		: 'inside',
+					'transitionIn'		: 'none',
+					'transitionOut'		: 'none'
+		   });
 
 
 });

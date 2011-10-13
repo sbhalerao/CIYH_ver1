@@ -3,7 +3,19 @@
            <img src="/images/header.png" alt=""/>
            </div>
    <div class="links">
-           <%= link_to 'Cat Walk', new_catwalk_path %>
+
+	<% if current_user %>
+	   <%= link_to 'Cat Walk', new_catwalk_path %>
+	  <% else %>
+	<a id="various2" href="#signin" title="">Cat Walk </a></li>
+	<div style="display: none;">
+			<div id="signin" style="width:200px;height:100px;overflow:auto;">
+	        Please sign into facebook.
+				<%= link_to "Sign in to Facebook", "/auth/facebook" %>
+				
+			</div>
+	</div>
+           
            <a href="#">Chuckles</a>
            <a href="#">Hats, Etc</a>
            <a href="#">About Us</a>
@@ -14,7 +26,7 @@
 
  <div class="sharelink">	
        	<% if current_user %>
-		   <%= link_to "Share", share_link_path %>
+		   <%= link_to "Share", new_post_path %>
 
 		
 		  <% else %>
