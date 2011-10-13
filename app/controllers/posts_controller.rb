@@ -8,7 +8,7 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.xml
   before_filter :authenticate, :except => [:index, :front_page]
- layout :determine_layout
+ layout "photos"
  
  def determine_layout
    %w(new).include?(action_name) ? "photos" : "main"
