@@ -277,7 +277,11 @@ end
 
 def share_link
   if current_user?
-    redirect_to new_posts_path
+    respond_to do |format|
+      format.html { redirect_to(new_posts_path) }
+      format.xml  { head :ok }
+    end
+    
   else
     respond_to do |format|
       format.js 
