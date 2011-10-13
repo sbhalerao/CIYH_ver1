@@ -31,6 +31,7 @@ Blog::Application.routes.draw do
    match "/fbpost" => "fbposts#create"
    match "/jmsg" => "posts#sayhello", :as => :jmsg
    match "/front_page" => "posts#front_page"
+   match "/share_link" => "posts#share_link"
    
 
   # The priority is based upon order of creation:
