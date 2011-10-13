@@ -91,7 +91,15 @@ error: function(data, status, xhr){alert('Failure')}
       }
     });
 
+	$(document).ready(function(){
 
+	       $("#various1").fancybox({
+					'titlePosition'		: 'inside',
+					'transitionIn'		: 'none',
+					'transitionOut'		: 'none'
+		   });
+
+	});
 
 
 });

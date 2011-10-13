@@ -13,9 +13,15 @@
            </div>
 
  <div class="sharelink">	
-       	
-      <%= link_to "Share", share_link_path %>
-			<div style="display: none;">
+       	<% if current_user %>
+		   <%= link_to "Share", share_link_path %>
+
+		
+		  <% else %>
+
+		
+		<a id="various1" href="#signin" title="">Share </a></li>
+     	<div style="display: none;">
 				<div id="signin" style="width:200px;height:100px;overflow:auto;">
 		        Please sign into facebook.
 					<%= link_to "Sign in to Facebook", "/auth/facebook" %>
@@ -25,5 +31,5 @@
 		</div>
 </div>
 
-	
+	<% end %>
 
