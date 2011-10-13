@@ -277,9 +277,7 @@ end
 
 def share_link
   if current_user
-     redirect_to(new_post_path) 
-  
-    end
+     redirect_to(new_post_path)
     
   else
     respond_to do |format|
