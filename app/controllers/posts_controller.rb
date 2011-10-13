@@ -278,7 +278,7 @@ end
 def share_link
   if current_user
     respond_to do |format|
-      format.html { redirect_to(new_posts_path) }
+      format.html { redirect_to(new_post_path) }
       format.xml  { head :ok }
     end
     
