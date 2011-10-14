@@ -37,15 +37,16 @@ class CatwalksController < ApplicationController
   end
 
  def vote_up
-         current_user.vote_for(@catwalk = Catwalk.find(params[:id]))
+   @catwalk= Catwalk.find(params[:id])
+         current_user.vote_for(@catwalk)
          respond_to do |format|
           
            format.js # new.html.erb
           
          end
          
-    rescue ActiveRecord::RecordInvalid
-         render :nothing => true, :status => 404
+    # rescue ActiveRecord::RecordInvalid
+    #    render :nothing => true, :status => 404
    
  end
  
