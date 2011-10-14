@@ -16,11 +16,8 @@ Blog::Application.routes.draw do
   resources :posts 
     
   
-  resources :catwalks, :only=>[:new, :create, :show, :destroy, :index] do
-    member do
-      get :vote_up
-    end
-  end
+  resources :catwalks, :only=>[:new, :create, :show, :destroy, :index] 
+  
   
   resource :fbpost, :only => [:show, :create]
   
@@ -30,6 +27,7 @@ Blog::Application.routes.draw do
    match "/signout" => "sessions#destroy", :as => :signout
    match "/fbpost" => "fbposts#create"
    match "/jmsg" => "posts#sayhello", :as => :jmsg
+   match "/voteup" => "catwalks#vote_up", :as => :voteup
    match "/front_page" => "posts#front_page"
    match "/share_link" => "posts#share_link"
    
