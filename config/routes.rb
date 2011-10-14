@@ -18,7 +18,7 @@ Blog::Application.routes.draw do
   
   resources :catwalks, :only=>[:new, :create, :show, :destroy, :index] do
     member do
-      post :vote_up
+      get :vote_up
     end
   end
   

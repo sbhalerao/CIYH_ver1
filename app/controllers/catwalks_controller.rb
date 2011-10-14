@@ -37,8 +37,6 @@ class CatwalksController < ApplicationController
   end
 
  def vote_up
-  
-         
          current_user.vote_for(@catwalk = Catwalk.find(params[:id]))
          respond_to do |format|
           
