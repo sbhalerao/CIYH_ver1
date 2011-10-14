@@ -6,7 +6,7 @@
 <br>
 
 <p> Posted by <%= (catwalk.user).name %> </p>
-<%= link_to('vote for this post!', vote_up_catwalk_path(@catwalk), :remote => true) %>
+<%= link_to('vote for this post!', vote_up_catwalk_path(@catwalk), :method => :post, :remote => true) %>
 <div id="votecount">   </div>
 <% end %>
 <% end %>
