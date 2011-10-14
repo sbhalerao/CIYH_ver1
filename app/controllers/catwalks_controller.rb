@@ -37,7 +37,8 @@ class CatwalksController < ApplicationController
   end
 
  def vote_up
-   begin
+  
+         
          current_user.vote_for(@catwalk = Catwalk.find(params[:id]))
          respond_to do |format|
           
@@ -47,7 +48,7 @@ class CatwalksController < ApplicationController
          
     rescue ActiveRecord::RecordInvalid
          render :nothing => true, :status => 404
-    end
+   
  end
  
  def index
