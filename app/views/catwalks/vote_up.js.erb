@@ -1,2 +1,2 @@
 
-$("#votecount").html('<%= positiveVoteCount = @catwalk.votes_for %>');
+$("#votecount<%=@catwalk.id%>").html('<%= positiveVoteCount = @catwalk.votes_for %>');

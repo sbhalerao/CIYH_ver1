@@ -7,7 +7,7 @@
 
 <p> Posted by <%= (catwalk.user).name %> </p>
 <%= link_to 'vote for this post!', voteup_path(:id => catwalk.id), :remote => true  %>
-<div id="votecount">   </div>
+<div id="votecount<%=catwalk.id %>">   </div>
 <% end %>
 <% end %>
 
