@@ -319,6 +319,15 @@ class PostsController < ApplicationController
     elsif params[:rid]=="hat3"
          @post.update_attributes(:hat3h => params[:height])
          @post.update_attributes(:hat3w => params[:width])
+        elsif params[:rid]=="hat4"
+              @post.update_attributes(:hat4h => params[:height])
+              @post.update_attributes(:hat4w => params[:width])
+             elsif params[:rid]=="hat5"
+                   @post.update_attributes(:hat5h => params[:height])
+                   @post.update_attributes(:hat5w => params[:width])
+                  elsif params[:rid]=="hat6"
+                        @post.update_attributes(:hat6h => params[:height])
+                        @post.update_attributes(:hat6w => params[:width])
     end     
      
    respond_to do |format|
