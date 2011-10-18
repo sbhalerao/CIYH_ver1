@@ -96,19 +96,25 @@ class PostsController < ApplicationController
    cat1= "#{RAILS_ROOT}/public/images/cat1.gif"
    cat2= "#{RAILS_ROOT}/public/images/cat2.gif"
    cat3= "#{RAILS_ROOT}/public/images/cat3.gif"
+   cat4= "#{RAILS_ROOT}/public/images/cat4.gif"
+   cat5= "#{RAILS_ROOT}/public/images/cat5.gif"
+   cat6= "#{RAILS_ROOT}/public/images/cat6.gif"
    
    #hat images
    hat1= "#{RAILS_ROOT}/public/images/hat1.gif"
    hat2= "#{RAILS_ROOT}/public/images/hat2.gif"
    hat3= "#{RAILS_ROOT}/public/images/hat3.gif"
+   hat4= "#{RAILS_ROOT}/public/images/hat4.gif"
+   hat5= "#{RAILS_ROOT}/public/images/hat5.gif"
+   hat6= "#{RAILS_ROOT}/public/images/hat6.gif"
     
     
     #Array of all images
-   img_all=ImageList.new(back, cat1, cat2, cat3, hat1, hat2, hat3)
+   img_all=ImageList.new(back, cat1, cat2, cat3, cat4, cat5, cat6, hat1, hat2, hat3, hat4, hat5, hat6)
    
    
    #Array giving index of img_all which were moved
-   moved=[@post.cat1move, @post.cat2move, @post.cat3move, @post.hat1move, @post.hat2move, @post.hat3move]
+   moved=[@post.cat1move, @post.cat2move, @post.cat3move, @post.cat4move, @post.cat5move, @post.cat6move, @post.hat1move, @post.hat2move, @post.hat3move, @post.hat4move, @post.hat5move, @post.hat6move]
   
 
   # Dimension is the square dimension of each image 
@@ -126,24 +132,57 @@ class PostsController < ApplicationController
    dimension_cat3= (@post.cat3h) > (@post.cat3w)?(@post.cat3h):(@post.cat3w)
       img_all[3]=img_all[3].resize_to_fit(dimension_cat3,dimension_cat3)
       img_all[3].page=Rectangle.new(@post.cat3h, @post.cat3w, @post.cat3x, (@post.cat3y)-80)
+      
+     #Repeating for cat4 
+      dimension_cat4= (@post.cat4h) > (@post.cat4w)?(@post.cat4h):(@post.cat4w)
+      img_all[4]=img_all[4].resize_to_fit(dimension_cat4,dimension_cat4)
+      img_all[4].page=Rectangle.new(@post.cat4h, @post.cat4w, @post.cat4x, (@post.cat4y)-80)
+      # 80 is subtracted to get the y co-ordinate wrt back image. Cat1y is wrt top left of page
+
+      # Repeating for cat5
+      dimension_cat5= (@post.cat5h) > (@post.cat5w)?(@post.cat5h):(@post.cat5w)
+       img_all[5]=img_all[5].resize_to_fit(dimension_cat5,dimension_cat5)
+       img_all[5].page=Rectangle.new(@post.cat5h, @post.cat5w, @post.cat5x, (@post.cat5y)-80)
+
+      #Repeating for cat3
+      dimension_cat6= (@post.cat6h) > (@post.cat6w)?(@post.cat6h):(@post.cat6w)
+         img_all[6]=img_all[6].resize_to_fit(dimension_cat6,dimension_cat6)
+         img_all[6].page=Rectangle.new(@post.cat6h, @post.cat6w, @post.cat6x, (@post.cat6y)-80)
    
    
    # When adding more cats or hats, change the image number index
   # Dimension is the square dimensaion of each image . Hat1 first
        dimension_hat1= (@post.hat1h) > (@post.hat1w)?(@post.hat1h):(@post.hat1w)
-       img_all[4]=img_all[4].resize_to_fit(dimension_hat1,dimension_hat1)
-       img_all[4].page=Rectangle.new(@post.hat1h, @post.hat1w, @post.hat1x, (@post.hat1y)-80)
+       img_all[7]=img_all[7].resize_to_fit(dimension_hat1,dimension_hat1)
+       img_all[7].page=Rectangle.new(@post.hat1h, @post.hat1w, @post.hat1x, (@post.hat1y)-80)
   # 80 is subtracted to get the y co-ordinate wrt back image. Cat1y is wrt top left of page
 
        # Repeating for hat2
        dimension_hat2= (@post.hat2h) > (@post.hat2w)?(@post.hat2h):(@post.hat2w)
-        img_all[5]=img_all[5].resize_to_fit(dimension_hat2,dimension_hat2)
-        img_all[5].page=Rectangle.new(@post.hat2h, @post.hat2w, @post.hat2x, (@post.hat2y)-80)
+        img_all[8]=img_all[8].resize_to_fit(dimension_hat2,dimension_hat2)
+        img_all[8].page=Rectangle.new(@post.hat2h, @post.hat2w, @post.hat2x, (@post.hat2y)-80)
 
        #Repeating for hat3
        dimension_hat3= (@post.hat3h) > (@post.hat3w)?(@post.hat3h):(@post.hat3w)
-          img_all[6]=img_all[6].resize_to_fit(dimension_hat3,dimension_hat3)
-          img_all[6].page=Rectangle.new(@post.hat3h, @post.hat3w, @post.hat3x, (@post.hat3y)-80)
+          img_all[9]=img_all[9].resize_to_fit(dimension_hat3,dimension_hat3)
+          img_all[9].page=Rectangle.new(@post.hat3h, @post.hat3w, @post.hat3x, (@post.hat3y)-80)
+          
+      #Repeating for hat4
+           dimension_hat4= (@post.hat4h) > (@post.hat4w)?(@post.hat4h):(@post.hat4w)
+              img_all[10]=img_all[10].resize_to_fit(dimension_hat4,dimension_hat4)
+              img_all[10].page=Rectangle.new(@post.hat4h, @post.hat4w, @post.hat4x, (@post.hat4y)-80)
+          
+               #Repeating for hat5
+               dimension_hat5= (@post.hat5h) > (@post.hat5w)?(@post.hat5h):(@post.hat5w)
+                  img_all[11]=img_all[11].resize_to_fit(dimension_hat5,dimension_hat5)
+                  img_all[11].page=Rectangle.new(@post.hat5h, @post.hat5w, @post.hat5x, (@post.hat5y)-80)
+                  
+                   #Repeating for hat6
+                   dimension_hat6= (@post.hat6h) > (@post.hat6w)?(@post.hat6h):(@post.hat6w)
+                      img_all[12]=img_all[12].resize_to_fit(dimension_hat6,dimension_hat6)
+                      img_all[12].page=Rectangle.new(@post.hat6h, @post.hat6w, @post.hat6x, (@post.hat6y)-80)
+      
+          
    
   #Construct Array of images to be saved in the final image (com_img)
    images=ImageList.new
@@ -207,6 +246,18 @@ class PostsController < ApplicationController
             @post.update_attributes(:cat3x => params[:left])
             @post.update_attributes(:cat3y => params[:top])
             @post.update_attributes(:cat3move => 1)
+   elsif params[:pid]=="cat4"
+              @post.update_attributes(:cat4x => params[:left])
+                    @post.update_attributes(:cat4y => params[:top])
+                    @post.update_attributes(:cat4move => 1)
+                   elsif params[:pid]=="cat5"
+                            @post.update_attributes(:cat5x => params[:left])
+                            @post.update_attributes(:cat5y => params[:top])
+                            @post.update_attributes(:cat5move => 1)
+                           elsif params[:pid]=="cat6"
+                                    @post.update_attributes(:cat6x => params[:left])
+                                    @post.update_attributes(:cat6y => params[:top])
+                                    @post.update_attributes(:cat6move => 1)
    end
    
    #Set size for cats
@@ -219,6 +270,15 @@ class PostsController < ApplicationController
    elsif params[:rid]=="cat3"
             @post.update_attributes(:cat3h => params[:height])
             @post.update_attributes(:cat3w => params[:width])
+   elsif params[:rid]=="cat4"
+                   @post.update_attributes(:cat4h => params[:height])
+                   @post.update_attributes(:cat4w => params[:width])
+                 elsif params[:rid]=="cat5"
+                          @post.update_attributes(:cat5h => params[:height])
+                          @post.update_attributes(:cat5w => params[:width])
+                        elsif params[:rid]=="cat6"
+                                 @post.update_attributes(:cat6h => params[:height])
+                                 @post.update_attributes(:cat6w => params[:width])
    end
      
 
@@ -235,6 +295,18 @@ class PostsController < ApplicationController
              @post.update_attributes(:hat3x => params[:left])
              @post.update_attributes(:hat3y => params[:top])
              @post.update_attributes(:hat3move => 1)
+          elsif params[:pid]=="hat4"
+                    @post.update_attributes(:hat4x => params[:left])
+                    @post.update_attributes(:hat4y => params[:top])
+                    @post.update_attributes(:hat4move => 1)
+                    elsif params[:pid]=="hat5"
+                             @post.update_attributes(:hat5x => params[:left])
+                             @post.update_attributes(:hat5y => params[:top])
+                             @post.update_attributes(:hat5move => 1)
+                             elsif params[:pid]=="hat6"
+                                      @post.update_attributes(:hat6x => params[:left])
+                                      @post.update_attributes(:hat6y => params[:top])
+                                      @post.update_attributes(:hat6move => 1)
     end
 
     #Set size for hats
