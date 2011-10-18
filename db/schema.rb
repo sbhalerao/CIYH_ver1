@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111018175934) do
+ActiveRecord::Schema.define(:version => 20111018184750) do
 
   create_table "catwalks", :force => true do |t|
     t.string   "catname"
@@ -89,6 +89,12 @@ ActiveRecord::Schema.define(:version => 20111018175934) do
     t.float    "hat6y",               :default => 100.0
     t.float    "hat6h",               :default => 53.0
     t.float    "hat6w",               :default => 70.0
+    t.integer  "cat4move",            :default => 0
+    t.integer  "cat5move",            :default => 0
+    t.integer  "cat6move",            :default => 0
+    t.integer  "hat4move",            :default => 0
+    t.integer  "hat5move",            :default => 0
+    t.integer  "hat6move",            :default => 0
   end
 
   create_table "users", :force => true do |t|
