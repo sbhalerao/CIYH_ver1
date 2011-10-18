@@ -66,11 +66,17 @@ error: function(data, status, xhr){ //alert('Failure')
     $("#cat1").draggable({containment: "#droppable", snap:false, cursor: "move"});
 $("#cat2").draggable({containment: "#droppable", snap:false, cursor: "move"});
     $("#cat3").draggable({containment: "#droppable", snap:false, cursor: "move"});
+	    $("#cat4").draggable({containment: "#droppable", snap:false, cursor: "move"});
+	$("#cat5").draggable({containment: "#droppable", snap:false, cursor: "move"});
+	    $("#cat6").draggable({containment: "#droppable", snap:false, cursor: "move"});
  
 // Making all hats draggable
     $("#hat1").draggable({containment: "#droppable", snap:false, cursor: "move"});
 $("#hat2").draggable({containment: "#droppable", snap:false, cursor: "move"});
     $("#hat3").draggable({containment: "#droppable", snap:false, cursor: "move"});
+	  $("#hat4").draggable({containment: "#droppable", snap:false, cursor: "move"});
+	$("#hat5").draggable({containment: "#droppable", snap:false, cursor: "move"});
+	    $("#hat6").draggable({containment: "#droppable", snap:false, cursor: "move"});
 
   
   
