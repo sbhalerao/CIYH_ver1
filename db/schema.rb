@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111009215151) do
+ActiveRecord::Schema.define(:version => 20111018175934) do
 
   create_table "catwalks", :force => true do |t|
     t.string   "catname"
@@ -36,28 +36,28 @@ ActiveRecord::Schema.define(:version => 20111009215151) do
     t.string   "message"
     t.float    "cat1x",               :default => 100.0
     t.float    "cat1y",               :default => 100.0
-    t.float    "cat1h",               :default => 150.0
-    t.float    "cat1w",               :default => 115.0
+    t.float    "cat1h",               :default => 100.0
+    t.float    "cat1w",               :default => 60.0
     t.float    "cat2x",               :default => 100.0
     t.float    "cat2y",               :default => 100.0
-    t.float    "cat2h",               :default => 150.0
-    t.float    "cat2w",               :default => 115.0
+    t.float    "cat2h",               :default => 115.0
+    t.float    "cat2w",               :default => 84.0
     t.float    "cat3x",               :default => 100.0
     t.float    "cat3y",               :default => 100.0
-    t.float    "cat3h",               :default => 150.0
-    t.float    "cat3w",               :default => 115.0
+    t.float    "cat3h",               :default => 100.0
+    t.float    "cat3w",               :default => 77.0
     t.float    "hat1x",               :default => 100.0
     t.float    "hat1y",               :default => 100.0
-    t.float    "hat1h",               :default => 150.0
-    t.float    "hat1w",               :default => 115.0
+    t.float    "hat1h",               :default => 42.0
+    t.float    "hat1w",               :default => 60.0
     t.float    "hat2x",               :default => 100.0
     t.float    "hat2y",               :default => 100.0
-    t.float    "hat2h",               :default => 150.0
-    t.float    "hat2w",               :default => 115.0
+    t.float    "hat2h",               :default => 58.0
+    t.float    "hat2w",               :default => 75.0
     t.float    "hat3x",               :default => 100.0
     t.float    "hat3y",               :default => 100.0
-    t.float    "hat3h",               :default => 150.0
-    t.float    "hat3w",               :default => 115.0
+    t.float    "hat3h",               :default => 87.0
+    t.float    "hat3w",               :default => 75.0
     t.integer  "user_id"
     t.integer  "cat1move",            :default => 0
     t.integer  "cat2move",            :default => 0
@@ -65,6 +65,30 @@ ActiveRecord::Schema.define(:version => 20111009215151) do
     t.integer  "hat1move",            :default => 0
     t.integer  "hat2move",            :default => 0
     t.integer  "hat3move",            :default => 0
+    t.float    "cat4x",               :default => 100.0
+    t.float    "cat4y",               :default => 100.0
+    t.float    "cat4h",               :default => 90.0
+    t.float    "cat4w",               :default => 106.0
+    t.float    "cat5x",               :default => 100.0
+    t.float    "cat5y",               :default => 100.0
+    t.float    "cat5h",               :default => 120.0
+    t.float    "cat5w",               :default => 106.0
+    t.float    "cat6x",               :default => 100.0
+    t.float    "cat6y",               :default => 100.0
+    t.float    "cat6h",               :default => 104.0
+    t.float    "cat6w",               :default => 120.0
+    t.float    "hat4x",               :default => 100.0
+    t.float    "hat4y",               :default => 100.0
+    t.float    "hat4h",               :default => 76.0
+    t.float    "hat4w",               :default => 70.0
+    t.float    "hat5x",               :default => 100.0
+    t.float    "hat5y",               :default => 100.0
+    t.float    "hat5h",               :default => 42.0
+    t.float    "hat5w",               :default => 75.0
+    t.float    "hat6x",               :default => 100.0
+    t.float    "hat6y",               :default => 100.0
+    t.float    "hat6h",               :default => 53.0
+    t.float    "hat6w",               :default => 70.0
   end
 
   create_table "users", :force => true do |t|
