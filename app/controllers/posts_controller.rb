@@ -120,67 +120,67 @@ class PostsController < ApplicationController
   # Dimension is the square dimension of each image 
    dimension_cat1= (@post.cat1h) > (@post.cat1w)?(@post.cat1h):(@post.cat1w)
    img_all[1]=img_all[1].resize_to_fit(dimension_cat1,dimension_cat1)
-   img_all[1].page=Rectangle.new(@post.cat1h, @post.cat1w, @post.cat1x, (@post.cat1y)-300)
+   img_all[1].page=Rectangle.new(@post.cat1h, @post.cat1w, @post.cat1x, (@post.cat1y)-200)
    # 80 is subtracted to get the y co-ordinate wrt back image. Cat1y is wrt top left of page
    
    # Repeating for cat2
    dimension_cat2= (@post.cat2h) > (@post.cat2w)?(@post.cat2h):(@post.cat2w)
     img_all[2]=img_all[2].resize_to_fit(dimension_cat2,dimension_cat2)
-    img_all[2].page=Rectangle.new(@post.cat2h, @post.cat2w, @post.cat2x, (@post.cat2y)-300)
+    img_all[2].page=Rectangle.new(@post.cat2h, @post.cat2w, @post.cat2x, (@post.cat2y)-200)
    
    #Repeating for cat3
    dimension_cat3= (@post.cat3h) > (@post.cat3w)?(@post.cat3h):(@post.cat3w)
       img_all[3]=img_all[3].resize_to_fit(dimension_cat3,dimension_cat3)
-      img_all[3].page=Rectangle.new(@post.cat3h, @post.cat3w, @post.cat3x, (@post.cat3y)-300)
+      img_all[3].page=Rectangle.new(@post.cat3h, @post.cat3w, @post.cat3x, (@post.cat3y)-200)
       
      #Repeating for cat4 
       dimension_cat4= (@post.cat4h) > (@post.cat4w)?(@post.cat4h):(@post.cat4w)
       img_all[4]=img_all[4].resize_to_fit(dimension_cat4,dimension_cat4)
-      img_all[4].page=Rectangle.new(@post.cat4h, @post.cat4w, @post.cat4x, (@post.cat4y)-300)
+      img_all[4].page=Rectangle.new(@post.cat4h, @post.cat4w, @post.cat4x, (@post.cat4y)-200)
       # 80 is subtracted to get the y co-ordinate wrt back image. Cat1y is wrt top left of page
 
       # Repeating for cat5
       dimension_cat5= (@post.cat5h) > (@post.cat5w)?(@post.cat5h):(@post.cat5w)
        img_all[5]=img_all[5].resize_to_fit(dimension_cat5,dimension_cat5)
-       img_all[5].page=Rectangle.new(@post.cat5h, @post.cat5w, @post.cat5x, (@post.cat5y)-300)
+       img_all[5].page=Rectangle.new(@post.cat5h, @post.cat5w, @post.cat5x, (@post.cat5y)-200)
 
       #Repeating for cat3
       dimension_cat6= (@post.cat6h) > (@post.cat6w)?(@post.cat6h):(@post.cat6w)
          img_all[6]=img_all[6].resize_to_fit(dimension_cat6,dimension_cat6)
-         img_all[6].page=Rectangle.new(@post.cat6h, @post.cat6w, @post.cat6x, (@post.cat6y)-300)
+         img_all[6].page=Rectangle.new(@post.cat6h, @post.cat6w, @post.cat6x, (@post.cat6y)-200)
    
    
    # When adding more cats or hats, change the image number index
   # Dimension is the square dimensaion of each image . Hat1 first
        dimension_hat1= (@post.hat1h) > (@post.hat1w)?(@post.hat1h):(@post.hat1w)
        img_all[7]=img_all[7].resize_to_fit(dimension_hat1,dimension_hat1)
-       img_all[7].page=Rectangle.new(@post.hat1h, @post.hat1w, @post.hat1x, (@post.hat1y)-300)
+       img_all[7].page=Rectangle.new(@post.hat1h, @post.hat1w, @post.hat1x, (@post.hat1y)-200)
   # 80 is subtracted to get the y co-ordinate wrt back image. Cat1y is wrt top left of page
 
        # Repeating for hat2
        dimension_hat2= (@post.hat2h) > (@post.hat2w)?(@post.hat2h):(@post.hat2w)
         img_all[8]=img_all[8].resize_to_fit(dimension_hat2,dimension_hat2)
-        img_all[8].page=Rectangle.new(@post.hat2h, @post.hat2w, @post.hat2x, (@post.hat2y)-300)
+        img_all[8].page=Rectangle.new(@post.hat2h, @post.hat2w, @post.hat2x, (@post.hat2y)-200)
 
        #Repeating for hat3
        dimension_hat3= (@post.hat3h) > (@post.hat3w)?(@post.hat3h):(@post.hat3w)
           img_all[9]=img_all[9].resize_to_fit(dimension_hat3,dimension_hat3)
-          img_all[9].page=Rectangle.new(@post.hat3h, @post.hat3w, @post.hat3x, (@post.hat3y)-300)
+          img_all[9].page=Rectangle.new(@post.hat3h, @post.hat3w, @post.hat3x, (@post.hat3y)-200)
           
       #Repeating for hat4
            dimension_hat4= (@post.hat4h) > (@post.hat4w)?(@post.hat4h):(@post.hat4w)
               img_all[10]=img_all[10].resize_to_fit(dimension_hat4,dimension_hat4)
-              img_all[10].page=Rectangle.new(@post.hat4h, @post.hat4w, @post.hat4x, (@post.hat4y)-300)
+              img_all[10].page=Rectangle.new(@post.hat4h, @post.hat4w, @post.hat4x, (@post.hat4y)-200)
           
                #Repeating for hat5
                dimension_hat5= (@post.hat5h) > (@post.hat5w)?(@post.hat5h):(@post.hat5w)
                   img_all[11]=img_all[11].resize_to_fit(dimension_hat5,dimension_hat5)
-                  img_all[11].page=Rectangle.new(@post.hat5h, @post.hat5w, @post.hat5x, (@post.hat5y)-300)
+                  img_all[11].page=Rectangle.new(@post.hat5h, @post.hat5w, @post.hat5x, (@post.hat5y)-200)
                   
                    #Repeating for hat6
                    dimension_hat6= (@post.hat6h) > (@post.hat6w)?(@post.hat6h):(@post.hat6w)
                       img_all[12]=img_all[12].resize_to_fit(dimension_hat6,dimension_hat6)
-                      img_all[12].page=Rectangle.new(@post.hat6h, @post.hat6w, @post.hat6x, (@post.hat6y)-300)
+                      img_all[12].page=Rectangle.new(@post.hat6h, @post.hat6w, @post.hat6x, (@post.hat6y)-200)
       
           
    
