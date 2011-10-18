@@ -90,7 +90,7 @@ class PostsController < ApplicationController
   
   #images. All images must be different files 
    #background image
-   back= "#{RAILS_ROOT}/public/images/catsback.jpg"
+   back= "#{RAILS_ROOT}/public/images/catsback.png"
    
    #cat images
    cat1= "#{RAILS_ROOT}/public/images/cat1.gif"
