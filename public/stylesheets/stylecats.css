@@ -98,3 +98,13 @@ body .links a:hover, .sharelink a:hover, .signin a:hover {
        -webkit-column-gap: 20px;
 }
 
+.onesec-hor {
+	float:left;
+	position:relative;
+	top: 0;
+	left:0;
+	height: 354px;
+	background-color: #CCFF99;
+	margin-top: 20px;
+}
+
