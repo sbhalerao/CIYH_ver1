@@ -1,9 +1,10 @@
 
 <div class="three-col">
-<div class="onesec-hor">
+
 
 <% @catwalks.each do|catwalk| %>
-<br>
+
+<div class="onesec-hor">
 <% if catwalk.id >= 17 %>
 <%= image_tag catwalk.catpic.url, :height => '300'%>
 
@@ -12,8 +13,11 @@
 <p> Posted by <%= (catwalk.user).name %> </p>
 <%= link_to 'vote for this post!', voteup_path(:id => catwalk.id), :remote => true  %>
 <div id="votecount<%=catwalk.id %>"> <%=catwalk.votes_for %>  </div>
+
+
 <% end %>
+</div>
 <% end %>
 
-</div>
+
 </div>
