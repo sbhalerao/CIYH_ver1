@@ -110,8 +110,7 @@ body .links a:hover, .sharelink a:hover, .signin a:hover {
    position:relative;
    top: 17px;
    left:14px;
-   width: 172px;
-   height: 128px;
+   height: 250px;
    width:100%
    height:auto;
 }
