@@ -1,26 +1,11 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <b>Title:</b>
-  <%= @post.title %>
-</p>
 
-<p>
-  <b>Name:</b>
-  <%= @post.name %>
-</p>
-
-<p>
-  <b>Content:</b>
-  <%= @post.content %>
-  <%= @post.cat1x %>
-  <%= @post.cat1y %>
-</p>
 
 
 <%= image_tag @post.avatar.url %>
 
 
 
-<%= link_to 'Edit', edit_post_path(@post) %> |
-<%= link_to 'Back', posts_path %>
+<%= link_to 'Make another creation', new_post_path %> |
+<%= link_to 'Home', root_path %>
