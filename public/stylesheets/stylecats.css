@@ -117,14 +117,14 @@ body .links a:hover, .sharelink a:hover, .signin a:hover {
 
 .onesec-hor h1 {
    padding-left: 14px;
-   padding-top: 14px;
+   padding-top: 15px;
    font-size: 12px;
 }
 
 .onesec-hor h2 {
    padding-left: 14px;
    padding-top: -5px;
-   padding-bottom: 9px;
+   padding-bottom: 1px;
    font-size: 10px;
 }
 
