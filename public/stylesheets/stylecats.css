@@ -134,7 +134,7 @@ body .links a:hover, .sharelink a:hover, .signin a:hover {
 	padding-right: 15px;
 }
 
-.onesec-hor a {
+.liked {
    font-size: 12px;
    padding-right: 10px;
    padding-left: 10px;
@@ -148,7 +148,7 @@ body .links a:hover, .sharelink a:hover, .signin a:hover {
    margin-left: 14px;
 }
 
-.onesec-hor a:visited {
+.like {
    font-size: 12px;
    padding-right: 10px;
    padding-left: 10px;
