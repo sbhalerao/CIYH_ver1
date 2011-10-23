@@ -129,10 +129,9 @@ body .links a:hover, .sharelink a:hover, .signin a:hover {
 }
 
 .onesec-hor h3 {
-   text-align: right;
-   font-size: 8px;
-   padding-top: 5px;
-   padding-right: 15px;
+ 	text-align: right;
+	font-size: 10px;
+	padding-right: 15px;
 }
 
 .onesec-hor a {
