@@ -102,7 +102,15 @@ body .links a:hover, .sharelink a:hover, .signin a:hover {
 	top: 0;
 	left:0;
 	height: 365px;
-	background-color: #CCFF99;
+	background-color: #DCDCDC;
+	margin-top: 10px;
+}
+
+.onesec-hor:hover {
+	top: 0;
+	left:0;
+	height: 365px;
+	background-color: #FFFFFF;
 	margin-top: 10px;
 }
 
