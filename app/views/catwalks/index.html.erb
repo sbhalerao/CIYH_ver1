@@ -11,7 +11,7 @@
 <h1>Name of Cat </h1>
 <h2>Posted by <%= (catwalk.user).name %> </h2>
 <%= link_to 'Like!', voteup_path(:id => catwalk.id), :remote => true  %>
-<div id="votecount<%=catwalk.id %>"> <%=catwalk.votes_for %>  </div> 
+<h3><div id="votecount<%=catwalk.id %>"> <%=catwalk.votes_for %>  </div> </h3>
 
 </div>
 <% end %>
