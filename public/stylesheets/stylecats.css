@@ -38,7 +38,7 @@ body .links {
 }
 
 body. userinfo {
- float:left;
+float: right;
  position: relative;
    margin-left: 553px;
    margin-top: -25px;
