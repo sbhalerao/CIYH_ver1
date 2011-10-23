@@ -23,9 +23,13 @@ body .header {
        background-image:url(/images/headercopyrepeat.png);
        background-repeat:repeat-x;
 }
+
+/*
 body .background {
        margin-top: 30px;
 }
+
+*/
 
 body .background img{
        margin-right: 20px;
