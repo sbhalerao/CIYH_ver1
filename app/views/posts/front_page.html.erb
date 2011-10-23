@@ -1,25 +1,5 @@
 
-  <div class="header">
-           <img src="/images/header.png" alt=""/>
-           </div>
-   <div class="links">
-
-	<% if current_user %>
-	   <%= link_to 'Cat Walk', new_catwalk_path %>
-	  <% else %>
-	<a id="various2" href="#signin2" title="">Cat Walk </a></li>
-	<div style="display: none;">
-			<div id="signin2" style="width:200px;height:100px;overflow:auto;">
-	        Please sign into facebook.
-				<%= link_to "Sign in to Facebook", "/auth/facebook" %>
-				
-			</div>
-	</div>
-       <% end %>    
-           <a href="#">Chuckles</a>
-           <a href="#">Hats, Etc</a>
-           <a href="#">About Us</a>
-           </div>
+  
    <div class="background">
            <img src="/images/slider1.png" alt=""/>
            </div>
