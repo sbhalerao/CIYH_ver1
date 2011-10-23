@@ -188,3 +188,27 @@ body .links a:hover, .sharelink a:hover, .signin a:hover {
    margin-left: 14px;
 }
 
+/* Nivo slider */
+.theme-default #slider {
+    margin:100px auto 0 auto;
+    width:865px; /* Make sure your images are the same size */
+    height:379px; /* Make sure your images are the same size */
+}
+
+caption, th, td {
+	text-align:left;
+	font-weight:normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content:"";
+}
+blockquote, q {
+	quotes:"" "";
+}
+/* HTML5 tags */
+header, section, footer,
+aside, nav, article, figure {
+	display: block;
+}
+
