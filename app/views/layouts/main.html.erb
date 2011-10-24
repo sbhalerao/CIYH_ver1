@@ -32,10 +32,10 @@
 				<div id="signin" style="width:200px;height:100px;overflow:auto;">
 		        Please sign into facebook.
 					<%= link_to "Sign in to Facebook", "/auth/facebook" %>
-			<% end %>			
+						
 				</div>
-
-		</div> 
+            </div> 
+		 <% end %>
 		
 	<% if current_user %>
 	   <%= link_to 'Cat Walk', new_catwalk_path %>
