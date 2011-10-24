@@ -11,7 +11,14 @@ $(window).load(function() {
             	<% if current_user %>
 				   <%= link_to image_tag("/images/catwalk.png"), catwalks_path %> 
 		           <% else %>    
-                   <a id="various1" href="#signin1" title=""> <img src="/images/catwalk.png"></a>
+                   <a id="various3" href="#signin3" title=""> <img src="/images/catwalk.png"></a>
+                  <div style="display: none;">
+						<div id="signin3" style="width:200px;height:100px;overflow:auto;">
+				        Please sign into facebook.
+							<%= link_to "Sign in to Facebook", "/auth/facebook" %>
+
+						</div>
+				</div>
                  <% end %>
             </div>
          	
