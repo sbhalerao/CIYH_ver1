@@ -48,7 +48,7 @@
 .nivo-caption {
 	position:absolute;
 	left:200px;
-	bottom:400px;
+	bottom:0px;
 	background:#000;
 	color:#fff;
 	opacity:0.8; /* Overridden by captionOpacity setting */
