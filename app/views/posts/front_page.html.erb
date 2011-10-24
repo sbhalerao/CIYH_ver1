@@ -8,7 +8,7 @@ $(window).load(function() {
          <div class="ribbon"> </div>
             <div id="slider" class="nivoSlider">
                 <img src="/images/slider1.png" alt=""/></a>
-                <a id="various1" href="#signin"> <img src="/images/catwalk.png" alt="" />
+                <a href="#sharelink"> <img src="/images/catwalk.png" alt="" />
             </div>
          	
  
@@ -21,12 +21,8 @@ $(window).load(function() {
  <div id="sharelink" class="sharelink">	
        	<% if current_user %>
 		   <%= link_to "Share", new_post_path %>
-
-		
-		  <% else %>
-
-		
-		<a id="various1" href="#signin" title="">Share </a></li>
+           <% else %>
+    	<a id="various1" href="#signin" title="">Share </a></li>
      	<div style="display: none;">
 				<div id="signin" style="width:200px;height:100px;overflow:auto;">
 		        Please sign into facebook.
