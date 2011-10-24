@@ -9,7 +9,7 @@ $(window).load(function() {
             <div id="slider" class="nivoSlider">
                 <img src="/images/slider1.png" alt=""/>
             	<% if current_user %>
-				   <%= link_to img_tag("/images/catwalk.png"), catwalks_path %> 
+				   <%= link_to image_tag("/images/catwalk.png"), catwalks_path %> 
 		           <% else %>    
                    <a id="various1" href="#signin" title=""> <img src="/images/catwalk.png"></a>
                  <% end %>
