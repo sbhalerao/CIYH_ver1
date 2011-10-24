@@ -11,31 +11,17 @@ $(window).load(function() {
             	<% if current_user %>
 				   <%= link_to image_tag("/images/catwalk.png"), catwalks_path %> 
 		           <% else %>    
-                   <a id="various1" href="#signin" title=""> <img src="/images/catwalk.png"></a>
+                   <a id="various1" href="#signin2" title=""> <img src="/images/catwalk.png"></a>
                  <% end %>
             </div>
          	
  
           </div>
         
-   			<div id="htmlcaption" class="nivo-html-caption">
-              <%= link_to "VOTE NOW", catwalks_path %>
-          </div>     
+   	
+	
 
- <div class="sharelink">	
-       	<% if current_user %>
-		   <%= link_to "Share", new_post_path %>
-           <% else %>
-    	<a id="various1" href="#signin" title="">Share </a></li>
-     	<div style="display: none;">
-				<div id="signin" style="width:200px;height:100px;overflow:auto;">
-		        Please sign into facebook.
-					<%= link_to "Sign in to Facebook", "/auth/facebook" %>
-					
-				</div>
 
-		</div>
-</div>
 
 	<% end %>
 

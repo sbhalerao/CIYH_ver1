@@ -43,7 +43,7 @@ body .links {
 
 body .userinfo {
 
-   margin-left: 650px;
+   margin-left: 750px;
    margin-top: -25px;
 }
 
@@ -194,7 +194,7 @@ body .links a:hover, .sharelink a:hover, .signin a:hover {
 
 /* Nivo slider */
 .theme-default #slider {
-    margin:100px auto 0 auto;
+    margin:50px auto 0 100px;
     width:865px; /* Make sure your images are the same size */
     height:379px; /* Make sure your images are the same size */
 }
