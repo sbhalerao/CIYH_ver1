@@ -8,7 +8,7 @@ $(window).load(function() {
          <div class="ribbon"> </div>
             <div id="slider" class="nivoSlider">
                  <img src="/images/slider1.png" alt=""/>
-                 <img src="/images/catwalk.png" alt="" title=".sharelink" />
+                 <img src="/images/catwalk.png" alt="" title="#sharelink" />
             </div>
          	
  
@@ -18,7 +18,7 @@ $(window).load(function() {
               <%= link_to "VOTE NOW", catwalks_path %>
           </div>     
 
- <div class="sharelink">	
+ <div id="sharelink" class="sharelink">	
        	<% if current_user %>
 		   <%= link_to "Share", new_post_path %>
 
