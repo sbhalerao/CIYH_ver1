@@ -7,8 +7,11 @@ $(window).load(function() {
          <div class="slider-wrapper theme-default">
          <div class="ribbon"> </div>
             <div id="slider" class="nivoSlider">
-                <img src="/images/slider1.png" alt=""/></a>
-                <a href="#sharelink"> <img src="/images/catwalk.png" alt="" />
+                <img src="/images/slider1.png" alt=""/>
+            	<% if current_user %>
+				   <%= link_to img_tag("/images/catwalk.png"), catwalks_path %> 
+		           <% else %>    
+                   <a id="various1" href="#signin" title=""> <img src="/images/catwalk.png"></a>
             </div>
          	
  
@@ -18,7 +21,7 @@ $(window).load(function() {
               <%= link_to "VOTE NOW", catwalks_path %>
           </div>     
 
- <div id="sharelink" class="sharelink">	
+ <div class="sharelink">	
        	<% if current_user %>
 		   <%= link_to "Share", new_post_path %>
            <% else %>
