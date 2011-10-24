@@ -25,14 +25,14 @@
    <div class="links">
     
      	<% if current_user %>
-		   <%= link_to "Put hats on cats", new_post_path %>
+		   <%= link_to "Put hats on cat", new_post_path %>
         <% else %>
  	<a id="various1" href="#signin" title="">Share </a></li>
   	<div style="display: none;">
 				<div id="signin" style="width:200px;height:100px;overflow:auto;">
 		        Please sign into facebook.
 					<%= link_to "Sign in to Facebook", "/auth/facebook" %>
-					
+			<% end %>			
 				</div>
 
 		</div> 
