@@ -106,12 +106,14 @@ body .links a:hover, .sharelink a:hover, .signin a:hover {
        -moz-column-gap: 20px;
        -webkit-column-count: 3;
        -webkit-column-gap: 20px;
+width: 900px;
+height: 1500px;
 }
 
 .onesec-hor {
 	top: 0;
 	left:0;
-	height: 365px;
+	height: 254px;
 	background-color: #DCDCDC;
 	margin-top: 10px;
 }
@@ -119,7 +121,7 @@ body .links a:hover, .sharelink a:hover, .signin a:hover {
 .onesec-hor:hover {
 	top: 0;
 	left:0;
-	height: 365px;
+	height: 254px;
 	background-color: #AAAAAA;
 	margin-top: 10px;
 }
@@ -128,9 +130,9 @@ body .links a:hover, .sharelink a:hover, .signin a:hover {
    position:relative;
    top: 17px;
    left:14px;
-   height: 250px;
+   height: 200px;
    width:100%
-   height:auto;
+  
 }
 
 .onesec-hor h1 {
