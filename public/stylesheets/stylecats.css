@@ -128,16 +128,16 @@ height: 1500px;
 
 .onesec-hor img{
    position:relative;
-   top: 17px;
+   top: 5px;
    left:14px;
    height: 175px;
-   width:auto;
+   width:100%;
   
 }
 
 .onesec-hor h1 {
    padding-left: 14px;
-   padding-top: 15px;
+   padding-top: 10px;
    font-size: 12px;
 }
 
