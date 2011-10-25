@@ -115,7 +115,7 @@ height: 1500px;
 	left:0;
 	height: 254px;
 	background-color: #DCDCDC;
-	margin-top: 10px;
+	margin-top: 20px;
 }
 
 .onesec-hor:hover {
@@ -123,15 +123,17 @@ height: 1500px;
 	left:0;
 	height: 254px;
 	background-color: #AAAAAA;
-	margin-top: 10px;
+	margin-top: 20px;
 }
 
 .onesec-hor img{
-   position:relative;
-   top: 5px;
-   left:14px;
-   height: 175px;
-   width:100%;
+ 	position:relative;
+	   top: 17px;
+	   left:14px;
+	   width: 172px;
+	   height: 128px;
+	   width:100%
+	   height:auto;
   
 }
 
@@ -150,8 +152,9 @@ height: 1500px;
 
 .onesec-hor h3 {
  	text-align: right;
-	font-size: 12px;
-	padding-right: 15px;
+	   font-size: 8px;
+	   padding-top: 5px;
+	   padding-right: 15px;
 }
 
 .like a {
