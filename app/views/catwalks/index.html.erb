@@ -5,7 +5,7 @@
 <% @catwalks.each do|catwalk| %>
 
 
-
+<% if catwalk.id >= 17 %>
 <div class="onesec-hor">
 <%= image_tag catwalk.catpic.url%>
 <h1>Name of Cat </h1>
@@ -25,7 +25,7 @@
 </div>
 <% end %>
 
-
+<% end %>
 
 
 </div>
