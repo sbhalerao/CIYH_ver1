@@ -14,6 +14,8 @@ gem 'thumbs_up'
 gem 'omniauth', :git => 'git://github.com/soopa/omniauth.git'
 
 gem 'fb_graph'
+gem 'will_paginate', '~> 3.0.2'
+
 
 # Use unicorn as the web server
 # gem 'unicorn'
