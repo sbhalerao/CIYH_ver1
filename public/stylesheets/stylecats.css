@@ -105,9 +105,9 @@ body .links a:hover, .sharelink a:hover, .signin a:hover {
 }
 
 .three-col {
-       -moz-column-count: 3;
+       -moz-column-count: 4;
        -moz-column-gap: 20px;
-       -webkit-column-count: 3;
+       -webkit-column-count: 4;
        -webkit-column-gap: 20px;
 width: 900px;
 height: 1500px;
