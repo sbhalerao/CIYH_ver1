@@ -51,7 +51,7 @@ class CatwalksController < ApplicationController
  end
  
  def index
- @catwalks=Catwalk.paginate(:page => params[:page], :per_page => 10)
+ @catwalks=Catwalk.find(:all, :order => "id desc", :limit => 17).reverse.paginate(:page => params[:page], :per_page => 10)
  
  end
  
