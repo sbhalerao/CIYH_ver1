@@ -51,7 +51,8 @@ class CatwalksController < ApplicationController
  end
  
  def index
- @catwalks=Catwalk.all 
+ @catwalks=Catwalk.paginate(:page => params[:page], :per_page => 10)
+ 
  end
  
  def authenticate
