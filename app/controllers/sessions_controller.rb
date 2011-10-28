@@ -7,7 +7,9 @@ class SessionsController < ApplicationController
      user.update_attributes(:token => auth["credentials"]["token"])
      
      session[:user_id] = user.id  
-     redirect_to root_url, :notice => "Signed in!"  
+    # redirect_to root_url, :notice => "Signed in!"  
+    redirect_to session[:redirect_to] || root_path
+    session[:redirect_to] = nil
       end
       
       def failure
