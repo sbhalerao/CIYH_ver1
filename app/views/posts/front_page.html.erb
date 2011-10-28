@@ -29,13 +29,7 @@ $(window).load(function() {
 				   <%= link_to image_tag("/images/catwalk.png"), catwalks_path %> 
 		           <% else %>    
                    <a id="various3" href="#signin3" title=""> <img src="/images/catwalk.png"></a>
-                  <div style="display: none;">
-						<div id="signin3" style="width:200px;height:100px;overflow:auto;">
-				        Please sign into facebook.
-							<%= link_to "Sign in to Facebook", "/auth/facebook?redirect_to=/catwalks" %>
-
-						</div>
-				</div>
+               
                  <% end %>
             </div>
          	
@@ -43,7 +37,13 @@ $(window).load(function() {
           </div>
         
    	
-	
+			   <div style="display: none;">
+						<div id="signin3" style="width:200px;height:100px;overflow:auto;">
+				        Please sign into facebook.
+							<%= link_to "Sign in to Facebook", "/auth/facebook?redirect_to=/catwalks" %>
+
+						</div>
+				</div>
 
 
 
