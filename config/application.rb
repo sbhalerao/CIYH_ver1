@@ -35,6 +35,10 @@ module Blog
 
     # Configure the default encoding used in templates for Ruby 1.9.
     config.encoding = "utf-8"
+   
+   # Autoloading directory 
+    config.autoload_paths += %W(#{config.root}/lib)
+    config.autoload_paths += Dir["#{config.root}/lib/**/"]
     
     
     config.middleware.use 'StoreRedirectTo'
