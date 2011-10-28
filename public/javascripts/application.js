@@ -116,6 +116,11 @@ error: function(data, status, xhr){alert('Failure')}
 					'transitionOut'		: 'none'
 		   });
 
+          $("#various4").fancybox({
+					'titlePosition'		: 'inside',
+					'transitionIn'		: 'none',
+					'transitionOut'		: 'none'
+		   });
 
 });
 

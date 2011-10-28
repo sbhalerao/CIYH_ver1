@@ -6,9 +6,26 @@ $(window).load(function() {
   
          <div class="slider-wrapper theme-default">
          <div class="ribbon"> </div>
+
+<%# Start of the slider %>
             <div id="slider" class="nivoSlider">
-                <img src="/images/slider1.png" alt=""/>
-            	<% if current_user %>
+
+      <%# Comment1: First image linked to Cats in Hats game %>
+		<% if current_user %>
+		   <%= link_to image_tag("/images/slider1.png"), new_post_path %> 
+         <% else %>    
+         <a id="various4" href="#signin4" title=""> <img src="/images/slider1.png"></a>
+        <div style="display: none;">
+				<div id="signin4" style="width:200px;height:100px;overflow:auto;">
+		        Please sign into facebook.
+					<%= link_to "Sign in to Facebook", "/auth/facebook?redirect_to=/posts/new" %>
+
+				</div>
+		</div>
+       <% end %>
+                
+         <%# Comment1: Second image linked to Catwalks voting %>    	
+                  <% if current_user %>
 				   <%= link_to image_tag("/images/catwalk.png"), catwalks_path %> 
 		           <% else %>    
                    <a id="various3" href="#signin3" title=""> <img src="/images/catwalk.png"></a>
