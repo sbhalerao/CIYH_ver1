@@ -53,6 +53,8 @@
            <a href="#">Hats, Etc</a>
            <a href="#">About Us</a>
            </div>
+
+<div class="userinfo_upper">
 <div class= "userinfo">
 <% if current_user %>
     Welcome, <%= current_user.name %>!
@@ -65,7 +67,7 @@
 <% end %>
 
 </div>
-
+</div>
 <%= yield %>
 
 </body>

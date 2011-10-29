@@ -44,6 +44,12 @@ body .links {
        margin-top: -25px;
 }
 
+body .userinfo_upper {
+	width:973px;
+	position:absolute;
+	right:0px;
+}
+
 body .userinfo {
 
 	margin-top: 0px;
