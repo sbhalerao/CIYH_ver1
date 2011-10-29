@@ -63,7 +63,7 @@ body .userinfo {
 body .userinfo a {
 
 	position:relative;
-	to:-159px;
+	top:-159px;
 	background-color: #FF5300;
 	padding-right: 7px;
 	padding-left: 7px;
@@ -73,6 +73,7 @@ body .userinfo a {
 	color: white;
 	text-align: right;
 	left:754px;
+	display:inline-block;
 }
 
 body .links a {
