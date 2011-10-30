@@ -1,12 +1,56 @@
+
+
+<%# Upload the cats using Fancbox form      %>
+ <a id="uploadcat" href="#upload_cat" title="Upload Cat"> </a>
+
+<%# Logic for Fancybox form  %>	
+	<div style="display: none;">
+			<div id="upload_cat" style="width:200px;height:100px;overflow:auto;">
+	        <%= form_for(@catwalk, :html => { :multipart => true }) do |f| %>
+			  <% if @catwalk.errors.any? %>
+			    <div id="error_explanation">
+			      <h2><%= pluralize(@catwalk.errors.count, "error") %> prohibited this post from being saved:</h2>
+
+			      <ul>
+			      <% @catwalk.errors.full_messages.each do |msg| %>
+			        <li><%= msg %></li>
+			      <% end %>
+			      </ul>
+			    </div>
+			  <% end %>
+
+
+
+			  <div class="field">
+
+			    <%= f.file_field :catpic %>
+			  </div> 
+
+			  <div class="field">
+			    <%= f.label :catname %><br />
+			    <%= f.text_field :catname %>
+			  </div>
+
+			  <div class="actions">
+			    <%= f.submit %>
+			  </div>
+			<% end %>
+			
+
+			</div>
+	</div>
+	
+	
+	<% # Logic for displaying cats for voting in 4 column format %>
+	
 <div class="apple_pagination">
-<%= will_paginate @catwalks, :container => false %>
-</div>
+	<%= will_paginate @catwalks, :container => false %>
+	</div>
 
-<div class="three-col">
+	<div class="three-col">
 
 
-<% @catwalks.each do|catwalk| %>
-
+	<% @catwalks.each do|catwalk| %>
 
 <% if catwalk.id >= 17 %>
 <div class="onesec-hor">

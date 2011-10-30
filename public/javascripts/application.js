@@ -121,6 +121,11 @@ error: function(data, status, xhr){alert('Failure')}
 					'transitionIn'		: 'none',
 					'transitionOut'		: 'none'
 		   });
+		$("#uploadcat").fancybox({
+					'titlePosition'		: 'inside',
+					'transitionIn'		: 'none',
+					'transitionOut'		: 'none'
+		   });
 
 });
 
