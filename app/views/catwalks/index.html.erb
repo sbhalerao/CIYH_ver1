@@ -37,11 +37,10 @@
 <%= link_to 'Like!', voteup_path(:id => catwalk.id), :remote => true  %>
 </div>
 <% else %>
-<div class="like">
-<div id="like<%=catwalk.id%>">
-<%= link_to 'Like!', voteup_path(:id => catwalk.id), :remote => true  %>
+<div id="like<%=catwalk.id%>" class="like">
+ <%= link_to 'Like!', voteup_path(:id => catwalk.id), :remote => true  %>
 </div>
-</div>
+
 <% end %>
 <h3><div id="votecount<%=catwalk.id %>"> <%=catwalk.votes_for %>  </div> </h3>
 
