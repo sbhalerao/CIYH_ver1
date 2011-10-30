@@ -6,7 +6,7 @@ class CatwalksController < ApplicationController
   layout :determine_layout
 
    def determine_layout
-     %w(new show).include?(action_name) ? "main" : "application"
+     %w(new show).include?(action_name) ? "application" : "main"
    end
    
   def new
