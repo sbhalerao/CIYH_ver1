@@ -2,6 +2,13 @@ class CatwalksController < ApplicationController
  
  before_filter :authenticate 
   
+  #to determine layout. Since new and show are in popbox, they need no header
+  layout :determine_layout
+
+   def determine_layout
+     %w(new show).include?(action_name) ? "main" : "application"
+   end
+   
   def new
     @catwalk=current_user.catwalks.new
     respond_to do |format|
