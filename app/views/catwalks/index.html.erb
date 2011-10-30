@@ -6,6 +6,7 @@
 <%# Logic for Fancybox form  %>	
 	<div style="display: none;">
 			<div id="upload_cat" style="width:200px;height:100px;overflow:auto;">
+			@catwalk=Catwalk.new
 	        <%= form_for(@catwalk, :html => { :multipart => true }) do |f| %>
 			  <% if @catwalk.errors.any? %>
 			    <div id="error_explanation">
