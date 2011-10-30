@@ -124,7 +124,8 @@ error: function(data, status, xhr){alert('Failure')}
 		$("#uploadcat").fancybox({
 					'titlePosition'		: 'inside',
 					'transitionIn'		: 'none',
-					'transitionOut'		: 'none'
+					'transitionOut'		: 'none',
+					'type' : 'iframe'
 		   });
 
 });
