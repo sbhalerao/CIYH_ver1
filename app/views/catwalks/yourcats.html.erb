@@ -10,7 +10,7 @@
 	<% @catwalks.each do|catwalk| %>
 
 
-<% if catwalk.id >= 17 %>
+<% if (catwalk.user_id == current_user.id) && (catwalk.id >= 17) %>
 <div class="onesec-hor">
 <%= image_tag catwalk.catpic.url%>
 <h1>Name of Cat: <%= catwalk.catname %></h1>
