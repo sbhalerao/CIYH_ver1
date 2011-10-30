@@ -83,6 +83,7 @@ GEM
       httpclient (>= 2.2.0.2)
       rack-oauth2 (>= 0.9.4)
     hashie (1.0.0)
+    high_voltage (1.0.1)
     httpclient (2.2.2)
     i18n (0.4.2)
     json (1.6.1)
@@ -166,6 +167,7 @@ PLATFORMS
 DEPENDENCIES
   aws-s3
   fb_graph
+  high_voltage
   omniauth!
   rails (= 3.0.0)
   rake (= 0.8.7)

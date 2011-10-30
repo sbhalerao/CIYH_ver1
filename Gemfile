@@ -15,6 +15,7 @@ gem 'omniauth', :git => 'git://github.com/soopa/omniauth.git'
 
 gem 'fb_graph'
 gem 'will_paginate', '~> 3.0.2'
+gem "high_voltage"
 
 
 # Use unicorn as the web server
