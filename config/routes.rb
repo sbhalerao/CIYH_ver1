@@ -30,6 +30,8 @@ Blog::Application.routes.draw do
    match "/voteup" => "catwalks#vote_up", :as => :voteup
    match "/front_page" => "posts#front_page"
    match "/share_link" => "posts#share_link"
+   match "/your_cats" => "catwalks#yourcats", :as => :yourcats
+   match "/favcatwalks" => "catwalks#favorites", :as => :favorites
    
 
   # The priority is based upon order of creation:

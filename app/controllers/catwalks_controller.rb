@@ -67,4 +67,20 @@ class CatwalksController < ApplicationController
     deny_access unless current_user
  end
 
+ def yourcats
+  @catwalks=current_user.catwalks.all 
+  respond_to do |format|
+    
+     format.html # new.html.erb
+    
+   end
+ end
+ 
+ def favorites
+   @catwalks=Catwalk.order('catwalks.id DESC').limit(Catwalk.last.id-17).paginate(:page => params[:page], :per_page => 16)
+   
+   
+ end
+
 end
+
