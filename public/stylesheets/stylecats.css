@@ -44,6 +44,11 @@ body .links {
        margin-top: -25px;
 }
 
+body .catwalklinks {
+       margin-left: 153px;
+       margin-top: 20px;
+}
+
 body .userinfo_upper {
 	width:973px;
 	position:absolute;
@@ -96,6 +101,21 @@ body .links a {
        margin-bottom: 20px;
 }
 
+body .catwalklinks a {
+       margin-right: -5px;
+       position: relative;
+       background-color: #ff5300;
+       padding-right: 30px;
+       padding-left: 30px;
+       padding-top: 7px;
+       padding-bottom: 7px;
+       text-decoration: none;
+       text-align: center;
+       color: #fff;
+       font-size: 12px;
+       margin-bottom: 20px;
+}
+
 body .sharelink a {
        margin-left: 745px;
        position: relative;
@@ -131,6 +151,11 @@ body .signin a {
 }
 
 body .links a:hover, .sharelink a:hover, .signin a:hover {
+       background: #ff864b;
+       color: #fff;
+}
+
+body .catwalklinks a:hover, .sharelink a:hover, .signin a:hover {
        background: #ff864b;
        color: #fff;
 }
@@ -256,10 +281,11 @@ aside, nav, article, figure {
 }
 
 .apple_pagination {
-  background: #f1f1f1;
+  background: transparent;
   border: 1px solid #e5e5e5;
   text-align: center;
-  padding: 1em;
+  padding-top: 5px;
+  padding-left:300px;
   cursor: default; }
   .apple_pagination a, .apple_pagination span {
     padding: 0.2em 0.3em; }
