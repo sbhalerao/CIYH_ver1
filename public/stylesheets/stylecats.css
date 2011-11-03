@@ -161,10 +161,7 @@ body .catwalklinks a:hover, .sharelink a:hover, .signin a:hover {
 }
 
 .three-col {
-       -moz-column-count: 4;
-       -moz-column-gap: 20px;
-       -webkit-column-count: 4;
-       -webkit-column-gap: 20px;
+    
 width: 900px;
 height: 1500px;
 }
@@ -175,6 +172,7 @@ height: 1500px;
 	height: 254px;
 	background-color: #DCDCDC;
 	margin-top: 20px;
+	margin-left: 5px;
 }
 
 .onesec-hor:hover {
