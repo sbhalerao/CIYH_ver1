@@ -209,8 +209,9 @@ height: 1500px;
 }
 
 .onesec-hor-upper h1 {
+   float:none;
    padding-left: 14px;
-   padding-top: 10px;
+   padding-top: 40px;
    font-size: 12px;
 }
 
@@ -222,10 +223,10 @@ height: 1500px;
 }
 
 .onesec-hor-upper h3 {
- 	
+ 	   float:left;
 	   font-size: 8px;
-	   padding-top: 5px;
-	   padding-right: 15px;
+	   padding-top: -50px;
+	   padding-right: 5px;
 }
 
 .like a {
@@ -265,7 +266,7 @@ height: 1500px;
    border-style:solid;
    border-color:#E8E8E8;
    color: #E8E8E8;
-   margin-left: 14px;
+  float:left;
   
 }
 
