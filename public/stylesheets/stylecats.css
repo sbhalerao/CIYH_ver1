@@ -227,6 +227,7 @@ height: 1500px;
 	   font-size: 8px;
 	   padding-top: -50px;
 	   padding-right: 5px;
+	   margin-left: 35px;
 }
 
 .like a {
@@ -267,6 +268,7 @@ height: 1500px;
    border-color:#E8E8E8;
    color: #E8E8E8;
   float:left;
+  margin-left: 14px;
   
 }
 
