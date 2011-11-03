@@ -169,6 +169,7 @@ height: 1500px;
 .onesec-hor {
 	top: 0;
 	left:0;
+	float:left;
 	height: 254px;
 	background-color: #DCDCDC;
 	margin-top: 20px;
@@ -178,6 +179,7 @@ height: 1500px;
 .onesec-hor:hover {
 	top: 0;
 	left:0;
+	float:left;
 	height: 254px;
 	background-color: #AAAAAA;
 	margin-top: 20px;
