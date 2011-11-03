@@ -31,8 +31,6 @@
 <div class="onesec-hor-upper">
 <div class="onesec-hor">
 <%= image_tag catwalk.catpic.url%>
-<h1>Name of Cat: <%= catwalk.catname %></h1>
-<h2>Posted by <%= (catwalk.user).name %> </h2>
 
 <% if current_user.voted_on?(catwalk) %>
 <div class="liked">
@@ -45,6 +43,11 @@
 
 <% end %>
 <h3><div id="votecount<%=catwalk.id %>"> <%=catwalk.votes_for %>  </div> </h3>
+
+<h1>Name of Cat: <%= catwalk.catname %></h1>
+<h2>Posted by <%= (catwalk.user).name %> </h2>
+
+
 
 </div>
 </div>
