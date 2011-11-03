@@ -28,6 +28,7 @@
 	<% @catwalks.each do|catwalk| %>
 
 <% if catwalk.id >= 17 %>
+<div class="onesec-hor-upper">
 <div class="onesec-hor">
 <%= image_tag catwalk.catpic.url%>
 <h1>Name of Cat: <%= catwalk.catname %></h1>
@@ -45,6 +46,7 @@
 <% end %>
 <h3><div id="votecount<%=catwalk.id %>"> <%=catwalk.votes_for %>  </div> </h3>
 
+</div>
 </div>
 <% end %>
 
