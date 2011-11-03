@@ -172,7 +172,7 @@ height: 1500px;
 	float:left;
 	height: 254px;
 	width:200px;
-	background-color: #DCDCDC;
+	background:transparent;
 	margin-top: 20px;
 	margin-left: 5px;
 }
@@ -184,8 +184,7 @@ height: 1500px;
 	height: 185px;
 	width:200px;
 	background-color: #DCDCDC;
-	margin-top: 20px;
-	margin-left: 5px;
+
 }
 
 .onesec-hor:hover {
@@ -195,7 +194,7 @@ height: 1500px;
 	height: 185px;
 	width: 200px;
 	background-color: #AAAAAA;
-	margin-top: 20px;
+
 }
 
 .onesec-hor img{
