@@ -32,6 +32,7 @@
 <div class="onesec-hor">
 <%= image_tag catwalk.catpic.url%>
 
+<h3> </h3>
 <% if current_user.voted_on?(catwalk) %>
 <div class="liked">
 <%= link_to 'Like!', voteup_path(:id => catwalk.id), :remote => true  %>

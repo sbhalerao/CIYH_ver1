@@ -222,7 +222,7 @@ height: 1500px;
 }
 
 .onesec-hor-upper h3 {
- 	text-align: right;
+ 	
 	   font-size: 8px;
 	   padding-top: 5px;
 	   padding-right: 15px;
@@ -266,6 +266,7 @@ height: 1500px;
    border-color:#E8E8E8;
    color: #E8E8E8;
    margin-left: 14px;
+  
 }
 
 /* Nivo  */
