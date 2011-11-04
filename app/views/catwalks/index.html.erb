@@ -35,7 +35,7 @@
 <h2> </h2>
 <% if current_user.voted_on?(catwalk) %>
 <div class="liked">
-<%= link_to 'Like!', voteup_path(:id => catwalk.id), :remote => true  %>
+<%= link_to voteup_path(:id => catwalk.id), :remote => true  %>
 </div>
 <% else %>
 <div id="like<%=catwalk.id%>" class="like">
