@@ -227,7 +227,7 @@ height: 1200px;
 	   font-size: 8px;
 	   padding-top: -50px;
 	   padding-right: 5px;
-	   margin-left: 35px;
+	   margin-left: 10px;
 }
 
 .like a {
@@ -241,7 +241,7 @@ height: 1200px;
    border-color:black;
    color: #000000;
    font-weight: bold;
-   margin-left: 14px;
+   margin-left: 110px;
 }
 
 .like a:visited {
@@ -254,7 +254,7 @@ height: 1200px;
    border-style:solid;
    border-color:#E8E8E8;
    color: #E8E8E8;
-   margin-left: 14px;
+   margin-left: 110px;
 }
 
 .liked a {
@@ -264,11 +264,10 @@ height: 1200px;
    padding-top: 2px;
    padding-bottom: 2px;
    text-decoration: none;
-   border-style:solid;
-   border-color:#E8E8E8;
+   background-image:url(/images/Teal32.png);
    color: #E8E8E8;
   float:left;
-  margin-left: 14px;
+  margin-left: 110px;
   
 }
 
