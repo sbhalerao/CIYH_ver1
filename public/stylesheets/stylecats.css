@@ -161,9 +161,9 @@ body .catwalklinks a:hover, .sharelink a:hover, .signin a:hover {
 }
 
 .three-col {
-    
+margin-left:150px;    
 width: 900px;
-height: 1500px;
+height: 1200px;
 }
 
 .onesec-hor-upper {
@@ -174,7 +174,7 @@ height: 1500px;
 	width:200px;
 	background:transparent;
 	margin-top: 20px;
-	margin-left: 5px;
+	margin-left: 10px;
 }
 
 .onesec-hor {
