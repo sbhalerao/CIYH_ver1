@@ -257,7 +257,7 @@ height: 1200px;
 	display: block;
 		width: 32px;
 		height: 32px;
-		background: url('/images/RedPink48.png');
+		background: url('/images/RedPink48.png') no-repeat;
 		text-indent: -99999px;
   float: left;
   margin-left: 50px;
@@ -269,7 +269,7 @@ height: 1200px;
 	display: block;
 		width: 32px;
 		height: 32px;
-		background: url('/images/RedPink48_visited.png');
+		background: url('/images/RedPink48_visited.png') no-repeat;
 		text-indent: -99999px;
   float: left;
   margin-left: 50px;
@@ -277,7 +277,7 @@ height: 1200px;
 }
 
 .like a:hover {
-	background: url('/images/RedPink48_mouseover.png');
+	background: url('/images/RedPink48_mouseover.png') no-repeat;
 }
 
 
