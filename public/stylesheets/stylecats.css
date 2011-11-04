@@ -282,9 +282,9 @@ height: 1200px;
 
 .liked a {
 	display: block;
-		width: 100px;
-		height: 100px;
-		background: url('/images/buttonleafhover.png') bottom;
+		width: 32px;
+		height: 32px;
+		background: url('/images/Teal32.png');
 		text-indent: -99999px;
 
   margin-left: 50px;
@@ -292,7 +292,7 @@ height: 1200px;
 }
 
 .liked a:hover {
-	background-position: 0 0;
+	background: url('/images/Pink32.png');
 }
 
 
