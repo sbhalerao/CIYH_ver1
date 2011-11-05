@@ -204,7 +204,7 @@ height: 1200px;
 	top: 0;
 	left:0;
 	float:left;
-	height: 185px;
+	height: 175px;
 	width:200px;
 	background-color: #DCDCDC;
 
@@ -214,7 +214,7 @@ height: 1200px;
 	top: 0;
 	left:0;
 	float:left;
-	height: 185px;
+	height: 175px;
 	width: 200px;
 	background-color: #AAAAAA;
 
@@ -246,11 +246,9 @@ height: 1200px;
 }
 
 .onesec-hor-upper h3 {
- 	   float:left;
-	   font-size: 12px;
-	   padding-top: -50px;
-	   padding-right: 5px;
-	   margin-left: 5px;
+       font-size: 12px;
+	   padding-: 5px;
+	   margin-left: 180px;
 }
 
 .like a {
@@ -260,7 +258,7 @@ height: 1200px;
 		background: url('/images/RedPink48.png') no-repeat;
 		text-indent: -99999px;
   float: left;
-  margin-left: 135px;
+  margin-left: 155px;
 }
 
 
@@ -272,7 +270,7 @@ height: 1200px;
 		background: url('/images/RedPink48_visited.png') no-repeat;
 		text-indent: -99999px;
   float: left;
-  margin-left: 135px;
+  margin-left: 155px;
   
 }
 
