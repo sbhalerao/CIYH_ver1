@@ -255,8 +255,8 @@ height: 1200px;
 
 .like a {
 	display: block;
-		width: 32px;
-		height: 32px;
+		width: 20px;
+		height: 20px;
 		background: url('/images/RedPink48.png') no-repeat;
 		text-indent: -99999px;
   float: left;
@@ -267,8 +267,8 @@ height: 1200px;
 
 .liked a {
 	display: block;
-		width: 32px;
-		height: 32px;
+		width: 20px;
+		height: 20px;
 		background: url('/images/RedPink48_visited.png') no-repeat;
 		text-indent: -99999px;
   float: left;
