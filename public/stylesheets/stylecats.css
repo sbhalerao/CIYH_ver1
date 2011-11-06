@@ -186,14 +186,14 @@ body .catwalklinks a:hover, .sharelink a:hover, .signin a:hover {
 .three-col {
 margin-left:150px;    
 width: 900px;
-height: 1200px;
+height: 1000px;
 }
 
 .onesec-hor-upper {
 	top: 0;
 	left:0;
 	float:left;
-	height: 254px;
+	height: 220px;
 	width:200px;
 	background:transparent;
 	margin-top: 20px;
@@ -204,9 +204,9 @@ height: 1200px;
 	top: 0;
 	left:0;
 	float:left;
-	height: 175px;
+	height: 170px;
 	width:200px;
-	background-color: #DCDCDC;
+	background-color: #FAFAFA;
 
 }
 
@@ -234,8 +234,8 @@ height: 1200px;
 .onesec-hor-upper h1 {
    float:none;
    padding-left: 14px;
-   padding-top: 40px;
    font-size: 12px;
+  
 }
 
 .onesec-hor-upper h2 {
