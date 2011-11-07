@@ -138,11 +138,7 @@ error: function(data, status, xhr){alert('Failure')}
 
 $(window).resize (function() {
  clearTimeout (resizeTimer);
- resizeTimer=setTimeout(doSomething,100);
-
-});
-
-function doSomething(){
+ resizeTimer=setTimeout(function (){
 var offset1 = $("#droppable").offset();
 $.ajax({
 type: 'POST',
@@ -155,5 +151,9 @@ success: function(json, status, xhr)
 },
 error: function(data, status, xhr){alert('Failure')}
 });
-}
+},100);
+
+});
+
+
 
