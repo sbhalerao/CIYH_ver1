@@ -98,6 +98,26 @@ error: function(data, status, xhr){alert('Failure')}
       }
     });
 
+	$(window).resize (function() {
+	 clearTimeout (resizeTimer);
+	 resizeTimer=setTimeout(doSomething,100);
+
+	});
+
+	function doSomething(){
+	var offset1 = $("#droppable").offset();
+	$.ajax({
+	type: 'POST',
+	url: 'http://high-robot-603.heroku.com/jmsg',
+	dataType: 'json',
+	data:{ backx: offset1.left, backy: offset1.top  },
+	success: function(json, status, xhr)
+	{ // alert ('Success')
+	//$("#show_message").html("hello world");
+	},
+	error: function(data, status, xhr){alert('Failure')}
+	});
+	}
    
 
 
