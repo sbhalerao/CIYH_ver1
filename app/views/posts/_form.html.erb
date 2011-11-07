@@ -24,9 +24,11 @@
                <div class="sharelink">
      
 <script>
-   <%f.backy = $("#droppable").offset["top"] %>
+   var backy=$("#droppable").offset["top"]
+
    
 </script>
+         <%f.backy = backy %>
       
     
     <%= f.submit "Share" %>
