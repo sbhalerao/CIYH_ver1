@@ -98,7 +98,7 @@ error: function(data, status, xhr){alert('Failure')}
       }
     });
 
-
+   var resizeTimer;
 	$(window).resize (function() {
 		clearTimeout(resizeTimer, 100);
 		resizeTimer=setTimeout(doSomething,100);
@@ -106,7 +106,17 @@ error: function(data, status, xhr){alert('Failure')}
 	 
 	function doSomething(){
 	var offset1 = $("#droppable").offset();
-	alert ('resize');
+	$.ajax({
+	type: 'POST',
+	url: 'http://high-robot-603.heroku.com/jmsg',
+	dataType: 'json',
+	data:{ backx: offset1.left, backy: offset1.top  },
+	success: function(json, status, xhr)
+	{ // alert ('Success')
+	//$("#show_message").html("hello world");
+	},
+	error: function(data, status, xhr){alert('Failure')}
+	});
 	}
 
 
