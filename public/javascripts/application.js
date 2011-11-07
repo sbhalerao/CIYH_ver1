@@ -87,7 +87,7 @@ $.ajax({
 type: 'POST',
 url: 'http://high-robot-603.heroku.com/jmsg',
 dataType: 'json',
-data:{ top: ui.offset["top"], left: ui.offset["left"], pid: (ui.draggable).attr("id"), backx:$("#droppable img").offset["left"], backy:$("#droppable img").offset["left"]  },
+data:{ top: ui.offset["top"], left: ui.offset["left"], pid: (ui.draggable).attr("id"), backx:$("#droppable").offset["left"], backy:$("#droppable").offset["left"]  },
 success: function(json, status, xhr)
 { // alert ('Success')
 //$("#show_message").html("hello world");
@@ -98,19 +98,7 @@ error: function(data, status, xhr){alert('Failure')}
     });
 
    
-	$(window).resize(function() {
-	 	$.ajax({
-		type: 'POST',
-		url: 'http://high-robot-603.heroku.com/jmsg',
-		dataType: 'json',
-		data:{  backx:$("#droppable img").offset["left"], backy:$("#droppable img").offset["left"]  },
-		success: function(json, status, xhr)
-		{  alert ('Success');
-		//$("#show_message").html("hello world");
-		},
-		error: function(data, status, xhr){alert('Failure')}
-		});
-	});
+
 
 
 
