@@ -99,7 +99,14 @@ error: function(data, status, xhr){alert('Failure')}
     });
 
 
+	$(window).resize (function() {
+	 clearTimeout (resizeTimer);
+	 resizeTimer=setTimeout(function (){
+	var offset1 = $("#droppable").offset();
 
+	$.ajax();},100);
+
+	});
 
 
 
@@ -138,14 +145,7 @@ error: function(data, status, xhr){alert('Failure')}
 
 
 
-$(window).resize (function() {
- clearTimeout (resizeTimer);
- resizeTimer=setTimeout(function (){
-var offset1 = $("#droppable").offset();
 
-$.ajax();},100);
-
-});
 
 
 
