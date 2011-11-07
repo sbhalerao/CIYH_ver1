@@ -83,11 +83,12 @@ $("#hat2").draggable({containment: "#droppable", snap:false, cursor: "move"});
   $( "#droppable" ).droppable({
       drop: function( event, ui ) {
         $( this ).find( "p" ).hide();
+        var offset1=$("#droppable").offset();
 $.ajax({
 type: 'POST',
 url: 'http://high-robot-603.heroku.com/jmsg',
 dataType: 'json',
-data:{ top: ui.offset["top"], left: ui.offset["left"], pid: (ui.draggable).attr("id"), backx: "0", backy: $("#droppable").offset["top"]  },
+data:{ top: ui.offset["top"], left: ui.offset["left"], pid: (ui.draggable).attr("id"), backx: offset1.left, backy: $("#droppable").offset["top"]  },
 success: function(json, status, xhr)
 { // alert ('Success')
 //$("#show_message").html("hello world");
