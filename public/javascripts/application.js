@@ -107,7 +107,6 @@ error: function(data, status, xhr){alert('Failure')}
 	function doSomething(){
 	var offset1 = $("#droppable").offset();
 	alert ('resize');
-	$.ajax();
 	}
 
 
