@@ -100,13 +100,17 @@ error: function(data, status, xhr){alert('Failure')}
 
 
 	$(window).resize (function() {
-	 clearTimeout (resizeTimer);
-	 resizeTimer=setTimeout(function (){
+		clearTimeout(resizeTimer, 100);
+		resizeTimer=setTimeout(doSomething,100);
+			});
+	 
+	function doSomething(){
 	var offset1 = $("#droppable").offset();
+	alert ('resize');
+	$.ajax();
+	}
 
-	$.ajax();},100);
 
-	});
 
 
 
