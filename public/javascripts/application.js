@@ -140,6 +140,9 @@ $(window).resize (function() {
  clearTimeout (resizeTimer);
  resizeTimer=setTimeout(function (){
 var offset1 = $("#droppable").offset();
+$.ajaxSetup({
+'beforeSend': function(xhr) { xhr.setRequestHeader("Accept", "text/javascript") }
+});
 $.ajax({
 type: 'POST',
 url: 'http://high-robot-603.heroku.com/jmsg',
