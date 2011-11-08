@@ -331,7 +331,7 @@ class PostsController < ApplicationController
                                       @post.update_attributes(:hat6move => 1)
                                       @post.update_attributes(:backx => params[:backx])
                                       @post.update_attributes(:backy => params[:backy])
-                                    else
+                                    elsif (params[:rid]== nil && params[:pid]== nil)
                                       @post.update_attributes(:backx => params[:backx])
                                       @post.update_attributes(:backy => params[:backy])
     end
