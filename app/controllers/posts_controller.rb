@@ -238,26 +238,38 @@ class PostsController < ApplicationController
      @post.update_attributes(:cat1x => params[:left])
      @post.update_attributes(:cat1y => params[:top])
      @post.update_attributes(:cat1move => 1)
+     @post.update_attributes(:backx => params[:backx])
+     @post.update_attributes(:backy => params[:backy])
    elsif params[:pid]=="cat2"
         @post.update_attributes(:cat2x => params[:left])
         @post.update_attributes(:cat2y => params[:top])
         @post.update_attributes(:cat2move => 1)
+        @post.update_attributes(:backx => params[:backx])
+        @post.update_attributes(:backy => params[:backy])
    elsif params[:pid]=="cat3"
             @post.update_attributes(:cat3x => params[:left])
             @post.update_attributes(:cat3y => params[:top])
             @post.update_attributes(:cat3move => 1)
+            @post.update_attributes(:backx => params[:backx])
+            @post.update_attributes(:backy => params[:backy])
    elsif params[:pid]=="cat4"
               @post.update_attributes(:cat4x => params[:left])
                     @post.update_attributes(:cat4y => params[:top])
                     @post.update_attributes(:cat4move => 1)
+                    @post.update_attributes(:backx => params[:backx])
+                    @post.update_attributes(:backy => params[:backy])
                    elsif params[:pid]=="cat5"
                             @post.update_attributes(:cat5x => params[:left])
                             @post.update_attributes(:cat5y => params[:top])
                             @post.update_attributes(:cat5move => 1)
+                            @post.update_attributes(:backx => params[:backx])
+                            @post.update_attributes(:backy => params[:backy])
                            elsif params[:pid]=="cat6"
                                     @post.update_attributes(:cat6x => params[:left])
                                     @post.update_attributes(:cat6y => params[:top])
                                     @post.update_attributes(:cat6move => 1)
+                                    @post.update_attributes(:backx => params[:backx])
+                                    @post.update_attributes(:backy => params[:backy])
    end
    
    #Set size for cats
@@ -287,26 +299,41 @@ class PostsController < ApplicationController
       @post.update_attributes(:hat1x => params[:left])
       @post.update_attributes(:hat1y => params[:top])
       @post.update_attributes(:hat1move => 1)
+      @post.update_attributes(:backx => params[:backx])
+      @post.update_attributes(:backy => params[:backy])
     elsif params[:pid]=="hat2"
          @post.update_attributes(:hat2x => params[:left])
          @post.update_attributes(:hat2y => params[:top])
          @post.update_attributes(:hat2move => 1)
+         @post.update_attributes(:backx => params[:backx])
+         @post.update_attributes(:backy => params[:backy])
     elsif params[:pid]=="hat3"
              @post.update_attributes(:hat3x => params[:left])
              @post.update_attributes(:hat3y => params[:top])
              @post.update_attributes(:hat3move => 1)
+             @post.update_attributes(:backx => params[:backx])
+             @post.update_attributes(:backy => params[:backy])
           elsif params[:pid]=="hat4"
                     @post.update_attributes(:hat4x => params[:left])
                     @post.update_attributes(:hat4y => params[:top])
                     @post.update_attributes(:hat4move => 1)
+                    @post.update_attributes(:backx => params[:backx])
+                    @post.update_attributes(:backy => params[:backy])
                     elsif params[:pid]=="hat5"
                              @post.update_attributes(:hat5x => params[:left])
                              @post.update_attributes(:hat5y => params[:top])
                              @post.update_attributes(:hat5move => 1)
+                             @post.update_attributes(:backx => params[:backx])
+                             @post.update_attributes(:backy => params[:backy])
                              elsif params[:pid]=="hat6"
                                       @post.update_attributes(:hat6x => params[:left])
                                       @post.update_attributes(:hat6y => params[:top])
                                       @post.update_attributes(:hat6move => 1)
+                                      @post.update_attributes(:backx => params[:backx])
+                                      @post.update_attributes(:backy => params[:backy])
+                                    else
+                                      @post.update_attributes(:backx => params[:backx])
+                                      @post.update_attributes(:backy => params[:backy])
     end
 
     #Set size for hats
