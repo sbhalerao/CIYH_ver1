@@ -30,7 +30,7 @@
 <% if catwalk.id >= 17 %>
 <div class="onesec-hor-upper">
 <div class="onesec-hor">
-<%= link_to image_tag catwalk.catpic.url%>
+<%= link_to image_tag (catwalk.catpic.url,catwalk.catpic.url)%>
 
 <h2> </h2>
 <% if current_user.voted_on?(catwalk) %>
