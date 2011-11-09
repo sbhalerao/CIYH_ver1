@@ -153,7 +153,11 @@ error: function(data, status, xhr){alert('Failure')}
 					'type' : 'iframe'
 		   });
        
-        $(".onesec-hor a:has(img)").fancybox();
+        $(".onesechor").fancybox({
+			'showCloseButton'	: false,
+			'titlePosition' 		: 'inside',
+			'titleFormat'		: formatTitle
+		});;
 
 
 });
