@@ -152,6 +152,9 @@ error: function(data, status, xhr){alert('Failure')}
 					'transitionOut'		: 'none',
 					'type' : 'iframe'
 		   });
+       
+        $(".onesec-hor a:has(img)").fancybox();
+
 
 });
 
