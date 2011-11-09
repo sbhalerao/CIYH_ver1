@@ -153,7 +153,7 @@ error: function(data, status, xhr){alert('Failure')}
 					'type' : 'iframe'
 		   });
        
-        $("a.onesec-hor").fancybox({
+        $("a .onesec-hor").fancybox({
 			'showCloseButton'	: false,
 			'titlePosition' 		: 'inside',
 			'titleFormat'		: formatTitle
