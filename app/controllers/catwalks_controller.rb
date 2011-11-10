@@ -6,13 +6,16 @@ class CatwalksController < ApplicationController
   layout :determine_layout
 
    def determine_layout
-     %w(new show).include?(action_name) ? "application" : "main"
+     %w(new show create).include?(action_name) ? "application" : "main"
    end
    
   def new
     @catwalk=current_user.catwalks.new
-    render :layout => "application"
-    
+
+    respond_to do |format|
+      format.html { render :layout => "application"}  # new.html.erb
+      format.xml  { render :xml => @catwalk }
+    end
   end
   
 
