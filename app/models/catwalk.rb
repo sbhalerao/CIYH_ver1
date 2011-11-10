@@ -10,6 +10,6 @@ class Catwalk < ActiveRecord::Base
          :secret_access_key => ENV['S3_SECRET']
        }
     validates_attachment_presence :catpic
-    validates_attachment_content_type :image, :content_type => /^image\/(jpg|jpeg|pjpeg|png|x-png|gif)$/, :message => 'file type is not allowed (only jpeg/png/gif images)'
+    validates_attachment_content_type :catpic, :content_type => /^image\/(jpg|jpeg|pjpeg|png|x-png|gif)$/, :message => 'file type is not allowed (only jpeg/png/gif images)'
     
 end
