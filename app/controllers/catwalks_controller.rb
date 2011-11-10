@@ -11,8 +11,9 @@ class CatwalksController < ApplicationController
    
   def new
     @catwalk=current_user.catwalks.new
+    render :layout => "application"
     respond_to do |format|
-      format.html {"application"} # new.html.erb
+      format.html  # new.html.erb
       format.xml  { render :xml => @catwalk }
     end
   end
