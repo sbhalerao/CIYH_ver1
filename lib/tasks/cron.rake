@@ -8,5 +8,5 @@ task :cron => :environment do
   require 'net/http'
    uri = URI.parse('http://high-robot-603.heroku.com/')
   Net::HTTP.get(uri)
-
+  puts "cron executed"
 end
