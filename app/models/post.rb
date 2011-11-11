@@ -11,6 +11,7 @@ class Post < ActiveRecord::Base
   
   def updatePost(post)
    
+    @post=post
     tmpfile=Tempfile.new('my_pic')
 
     #images. All images must be different files 
