@@ -85,7 +85,7 @@ class PostsController < ApplicationController
    
    #  @post=Post.last
    @post=current_user.posts.last
-   Post.updatePost(@post)
+   Post.updatepost(@post)
    
    
     respond_to do |format|

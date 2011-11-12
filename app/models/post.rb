@@ -9,7 +9,7 @@ class Post < ActiveRecord::Base
          :secret_access_key => ENV['S3_SECRET']
        }
   
-  def updatePost(post)
+  def updatepost(post)
    
     @post=post
     tmpfile=Tempfile.new('my_pic')
