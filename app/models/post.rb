@@ -131,7 +131,7 @@ class Post < ActiveRecord::Base
   end
  
  
- def self.setCoordinates(post)
+ def self.setCoordinates(post, params)
    @post=post
    
    # Set co-ordinates for cats
