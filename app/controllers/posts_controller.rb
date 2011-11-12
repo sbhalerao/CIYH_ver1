@@ -121,7 +121,7 @@ class PostsController < ApplicationController
  
   # @post=Post.last
   @post=current_user.posts.last
-   
+  Post.setCoordinates(@post)
    # Set co-ordinates for cats
   if params[:pid]=="cat1"
      @post.update_attributes(:cat1x => params[:left])
