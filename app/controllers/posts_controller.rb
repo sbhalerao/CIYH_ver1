@@ -85,8 +85,9 @@ class PostsController < ApplicationController
    
    #  @post=Post.last
    @post=current_user.posts.last
-   Post.updatepost(@post)
-   
+   com_img=Post.updatepost(@post)
+   tmpfile=Tempfile.new('my_pic')
+   com_img.write(tmpfile.path)
    
     respond_to do |format|
       #if @post.update_attributes(params[:post])require File.dirname(__FILE__) + '/posts_controller'
