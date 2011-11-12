@@ -10,6 +10,9 @@ class Post < ActiveRecord::Base
        }
   
   def self.updatepost(post)
+    require 'RMagick'
+    include Magick
+   
    
     @post=post
     tmpfile=Tempfile.new('my_pic')
