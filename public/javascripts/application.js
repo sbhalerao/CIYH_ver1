@@ -155,22 +155,15 @@ error: function(data, status, xhr){alert('Failure')}
        
         $(".onesec-hor a:has(img)").fancybox();
 
-        $(".background_choices img").click(function(){
-	        alert('Handler for .click() called.');
-	        var backimg=$(this).parent().find("img").attr("src");
-	        $.ajax({
-			type: 'POST',
-			url: 'http://high-robot-603.heroku.com/jmsg',
-			dataType: 'json',
-			data:{ backimg: backimg  },
-			success: function(json, status, xhr)
-			{ // alert ('Success')
-			//$("#show_message").html("hello world");
-			},
-			error: function(data, status, xhr){alert('Failure')}
-			});
+    	$(".background_choices img").click(function() {
+		  alert('Handler for .click() called.');
+
+
+		         var filename=$(this).parent().find("img").attr("src");
+		        $( "#droppable p" ).html(filename);
+
+		   });
 	
-             });
 
 
 });
