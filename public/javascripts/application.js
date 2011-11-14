@@ -115,7 +115,7 @@ error: function(data, status, xhr){alert('Failure')}
 	{ // alert ('Success')
 	//$("#show_message").html("hello world");
 	},
-	error: function(data, status, xhr){alert('Failure')}
+	error: function(data, status, xhr){alert('Failure2')}
 	});
 	}
 
@@ -174,7 +174,7 @@ $(".background_choices img").click(function() {
 	{ // alert ('Success')
 	//$("#show_message").html("hello world");
 	},
-	error: function(data, status, xhr){alert('Failure')}
+	error: function(data, status, xhr){alert('Failure1')}
 	});
 
    });
