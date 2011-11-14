@@ -161,6 +161,7 @@ error: function(data, status, xhr){alert('Failure')}
 });
 
 
+$(document).ready({
 $(".background_choices img").click(function() {
   alert('Handler for .click() called.');
   /* var filename=$(this).parent().find("img").attr("src"); */
@@ -168,7 +169,7 @@ $(".background_choices img").click(function() {
 
    });
 
-
+   });
 
 
 
