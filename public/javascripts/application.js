@@ -167,6 +167,7 @@ $(".background_choices img").click(function() {
   var backimg=$(this).parent().find("img").attr("src"); 
   $("#droppable").find("img").attr("src", backimg);
 	$.ajax({
+    var backimg=$(this).parent().find("img").attr("src");
 	type: 'POST',
 	url: 'http://high-robot-603.heroku.com/jmsg',
 	dataType: 'json',
