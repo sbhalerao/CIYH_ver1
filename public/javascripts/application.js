@@ -165,7 +165,8 @@ $(document).ready(function (){
 $(".background_choices img").click(function() {
   alert('Handler for .click() called.');
   var backimg=$(this).parent().find("img").attr("src"); 
-  	$.ajax({
+  $(this).parent().find("img").attr("src", "#{RAILS_ROOT}/public/images/Courtyard-sized.jpg");
+	$.ajax({
 	type: 'POST',
 	url: 'http://high-robot-603.heroku.com/jmsg',
 	dataType: 'json',
