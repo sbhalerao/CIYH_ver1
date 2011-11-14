@@ -164,8 +164,8 @@ error: function(data, status, xhr){alert('Failure')}
 $(document).ready(function (){
 $(".background_choices img").click(function() {
  // alert('Handler for .click() called.');
-  var backimg=$(this).parent().find("img").attr("src"); 
-  $("#droppable").find("img").attr("src", backimg);
+  var backimg1=$(this).parent().find("img").attr("src"); 
+  $("#droppable").find("img").attr("src", backimg1);
 	$.ajax({
     var backimg=$(this).parent().find("img").attr("src");
 	type: 'POST',
