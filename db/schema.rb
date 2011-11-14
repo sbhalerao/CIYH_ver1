@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111114160712) do
+ActiveRecord::Schema.define(:version => 20111106235624) do
 
   create_table "catwalks", :force => true do |t|
     t.string   "catname"
@@ -97,7 +97,6 @@ ActiveRecord::Schema.define(:version => 20111114160712) do
     t.integer  "hat6move",            :default => 0
     t.float    "backx"
     t.float    "backy"
-    t.string   "backimg",             :default => "/Users/sbhalerao/rails_projects/blog/public/images/catsback.png "
   end
 
   create_table "users", :force => true do |t|
