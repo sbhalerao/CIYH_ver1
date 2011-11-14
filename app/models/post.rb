@@ -258,6 +258,12 @@ class Post < ActiveRecord::Base
                          @post.update_attributes(:hat6w => params[:width])
      end
    
+    
+    #if background image choice is sent by user  
+     if params[:backimg]!= null
+        @post.update_attributes(:backimg => "#{RAILS_ROOT}/public" + params[:backimg])
+     end
+           
    
  end
  
