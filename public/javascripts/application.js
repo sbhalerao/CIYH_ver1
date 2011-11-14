@@ -155,22 +155,20 @@ error: function(data, status, xhr){alert('Failure')}
        
         $(".onesec-hor a:has(img)").fancybox();
 
+		$(".background_choices img").click(function() {
+		  alert('Handler for .click() called.');
+		  /* var filename=$(this).parent().find("img").attr("src"); */
 
+
+		   });
 
 
 });
 
 
 
-$(document).ready(function(){
-$(".background_choices img").click(function() {
-  alert('Handler for .click() called.');
-  /* var filename=$(this).parent().find("img").attr("src"); */
-  
 
-   });
 
-});
 
 
 
