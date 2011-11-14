@@ -173,14 +173,14 @@ $(".background_choices img").click(function() {
 	data:{ backimg: backimg},
 	success: function(json, status, xhr)
 	{ // alert ('Success')
-	//$("#show_message").html("hello world");
+	 $("#droppable").find("img").attr("src", backimg);
 	},
 	error: function(data, status, xhr){alert('Failure1')}
 	});
 
    });
 
-   $("#droppable").find("img").attr("src", backimg);
+  
 
    });
 
