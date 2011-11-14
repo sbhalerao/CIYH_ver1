@@ -155,9 +155,8 @@ error: function(data, status, xhr){alert('Failure')}
        
         $(".onesec-hor a:has(img)").fancybox();
 
-        $(".background_choices img").click({ function()
-	        {
-	        var backimg=$(this).parent.find("img").attr("src");
+        $(".background_choices img").click(function(){
+	        var backimg=$(this).parent().find("img").attr("src");
 	        $.ajax({
 			type: 'POST',
 			url: 'http://high-robot-603.heroku.com/jmsg',
@@ -170,9 +169,7 @@ error: function(data, status, xhr){alert('Failure')}
 			error: function(data, status, xhr){alert('Failure')}
 			});
 	
-            }
-	
-        });
+             });
 
 
 });
