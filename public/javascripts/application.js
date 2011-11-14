@@ -157,10 +157,8 @@ error: function(data, status, xhr){alert('Failure')}
 
     	$(".background_choices img").click(function() {
 		  alert('Handler for .click() called.');
-
-
-		         var filename=$(this).parent().find("img").attr("src");
-		        $( "#droppable p" ).html(filename);
+          var filename=$(this).parent().find("img").attr("src");
+		  
 
 		   });
 	
