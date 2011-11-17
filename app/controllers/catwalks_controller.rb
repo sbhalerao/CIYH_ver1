@@ -61,7 +61,7 @@ class CatwalksController < ApplicationController
  #paginate in descending order and do not include first 17 entries
  def index
 # @catwalks=Catwalk.order('catwalks.id DESC').limit(Catwalk.last.id-17).paginate(:page => params[:page], :per_page => 16)
- @catwalks=Catwalk.all;
+ @catwalks=Catwalk.all.paginate(:page => params[:page], :per_page => 16);
  end
  
  def authenticate
