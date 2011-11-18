@@ -69,7 +69,7 @@ class CatwalksController < ApplicationController
  end
 
  def yourcats
-  @catwalks=Catwalk.order('catwalks.id DESC').limit(Catwalk.last.id-17).paginate(:page => params[:page], :per_page => 16) 
+  @catwalks=Catwalk.order('catwalks.id DESC').paginate(:page => params[:page], :per_page => 16) 
   respond_to do |format|
     
      format.html # new.html.erb
@@ -78,7 +78,7 @@ class CatwalksController < ApplicationController
  end
  
  def favorites
-   @catwalks=Catwalk.order('catwalks.id DESC').limit(Catwalk.last.id-17).paginate(:page => params[:page], :per_page => 16)
+   @catwalks=Catwalk.order('catwalks.id DESC').paginate(:page => params[:page], :per_page => 16)
    respond_to do |format|
 
       format.html # new.html.erb
