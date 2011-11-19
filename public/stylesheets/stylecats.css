@@ -55,6 +55,11 @@ body {
 	position:relative;
 	top:19px;
 	right:10px;
+	z-index:1;
+}
+
+.signin a{
+	text-decoration: none;
 }
 .header img{
 	position:relative;
@@ -70,6 +75,7 @@ body {
 	text-align:center;
 	top:-57px;
 }
+
 .nav {	
 	color:#fff;
 	top:-18px;
@@ -86,6 +92,8 @@ body {
 .header a{
 	color:white;
 	text-decoration:none;
+	margin-right:12px;
+	margin-left:12px;
 }
 .content{
 	position:relative;
