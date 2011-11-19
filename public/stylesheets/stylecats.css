@@ -17,10 +17,8 @@
 
 
 body {
-       background-image:url(/images/back3.png);
-
-       background-repeat:repeat;
-       font-family: sans-serif;
+	background-image: url(images/back.png);
+	font-family: Futura, sans-serif;
 }
 body .header {
        margin-top: 20px;
