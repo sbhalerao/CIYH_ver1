@@ -17,7 +17,7 @@
 
 
 body {
-	background-image: url(images/back.png);
+	background-image: url(/images/back.png);
 	font-family: Futura, sans-serif;
 }
 body .header {
