@@ -35,25 +35,71 @@
  
 </head>
 <body>
-<div class="header">
-                       <img src="/images/header.png" alt=""/>
-                       </div>
-               <div class="links">
-                       <a href="http://high-robot-603.heroku.com/catwalks">Cat Walk</a>
-                       <a href="#">Chuckles</a>
-                       <a href="#">Shop </a>
-                       <%= link_to "About", page_path("about")%>
-                       </div>
-
-<div class= "userinfo">
+<div class="top-color"> 
+<div class="solid"> 
+<div class="top-point"> 
+<div class="signin"> 
 <% if current_user %>
     Welcome, <%= current_user.name %>!
   
 <%= link_to "Sign out", signout_path %>
   <% else %>
  
+
 <%= link_to "Sign in with Facebook", "/auth/facebook" %>
 <% end %>
+</div>
+<div class="top-header">
+
+
+
+<div class="header">
+     
+ <img src="images/logo.png" alt=""/>
+   
+   <div class="nav">
+    
+     	<% if current_user %>
+		   <%= link_to "Put hats on cat", new_post_path %>
+        <% else %>
+ 	<a id="various1" href="#signin" title="">Put hats on cats </a></li>
+  	<div style="display: none;">
+				<div id="signin" style="width: 200px; height: 100px;overflow: auto; text-align: center;line-height: 2.5em;">
+		        Please sign into facebook.
+					<%= link_to "Sign in to Facebook", "/auth/facebook?redirect_to=/posts/new" %>
+						
+				</div>
+            </div> 
+		 <% end %>
+		
+	<% if current_user %>
+	   <%= link_to 'Cat Walk', catwalks_path %>
+	  <% else %>
+	<a id="various2" href="#signin2" title="">Cat Walk </a></li>
+	<div style="display: none;">
+			<div id="signin2" style="width: 200px; height: 100px;overflow: auto; text-align: center;line-height: 2.5em;">
+	        Please sign into facebook.
+				<%= link_to "Sign in to Facebook", "/auth/facebook?redirect_to=/catwalks" %>
+				
+			</div>
+	</div>
+       <% end %>    
+           <a href="#">Chuckles</a>
+           <a href="#">Shop</a>
+           <%= link_to "About", page_path("about")%>
+		  </div>
+</div>
+ </div></div>
+</div></div></div></div>
+
+<div class="footer">
+<p>© Happy Kids, LLC & Melissa Kelly Designs , San Francisco, CA</p>
+
+<p>Home | Hat Game | Cat Walk | Chuckles | Shop | About </p>
+<p><a href="#"><img src="images/facebook.png" alt=""/></a> <a href="#"><img src="images/twitter.png" alt=""/></a></p>
+<div class="solid-footer"> 
+<div class="top-point-footer"> 
+</div></div>
 </div>
 
 <%= yield %>
