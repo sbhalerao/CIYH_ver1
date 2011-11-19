@@ -97,7 +97,7 @@ body {
 }
 .content{
 	position:relative;
-	top:300px;
+	top:210px;
 	display:block;
 	margin-left:auto;
 	margin-right:auto;
@@ -108,16 +108,7 @@ body {
 	color: #FF0000;
 	left:-20px;
 }
-.content:before{
-	position:relative;
-	width:100%;
-	display:block;
-	content:"";
-	background:#FF0000;
-	height:4px;
-	top:40px;
-	left:0;
-}
+
 .slider img{
 	position:relative;
 	top:50px;
