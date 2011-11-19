@@ -188,7 +188,7 @@ body .sharelink a {
        margin-bottom: 20px;
 }
 
-body .signin {
+/* body .signin {
        background-image:url(/images/backsignin.png);
 }
 
@@ -207,6 +207,7 @@ body .signin a {
        margin-bottom: 20px;
 }
 
+*/
 body .links a:hover, .sharelink a:hover, .signin a:hover {
        background: #ff864b;
        color: #fff;
