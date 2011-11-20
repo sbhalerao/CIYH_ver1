@@ -14,20 +14,23 @@
 
 <div class="onesec-hor-upper">
 <div class="onesec-hor">
-<%= image_tag catwalk.catpic.url%>
-<h1>Name of Cat: <%= catwalk.catname %></h1>
-<h2>Posted by <%= (catwalk.user).name %> </h2>
+<%= link_to (image_tag (catwalk.catpic.url)), catwalk.catpic.url %>
 
+<h2> </h2>
 <% if current_user.voted_on?(catwalk) %>
 <div class="liked">
-<%= link_to 'Like!', voteup_path(:id => catwalk.id), :remote => true  %>
+<%= link_to "like",voteup_path(:id => catwalk.id), :remote => true  %>
 </div>
 <% else %>
-<div class="like">
-<%= link_to 'Like!', voteup_path(:id => catwalk.id), :remote => true  %>
+<div id="like<%=catwalk.id%>" class="like">
+ <%= link_to 'Like!', voteup_path(:id => catwalk.id), :remote => true  %>
 </div>
+
 <% end %>
 <h3><div id="votecount<%=catwalk.id %>"> <%=catwalk.votes_for %>  </div> </h3>
+
+<h1>Name of Cat: <%= catwalk.catname %></h1>
+<h2>Posted by <%= (catwalk.user).name %> </h2>
 
 </div>
 </div>
