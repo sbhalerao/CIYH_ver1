@@ -218,6 +218,10 @@ body .catwalklinks a:hover, .sharelink a:hover, .signin a:hover {
 }
 
 .three-col {
+margin-left:auto;
+margin-right:auto;
+position:relative;
+top:210px;
 margin-left:150px;    
 width: 900px;
 height: 1000px;
