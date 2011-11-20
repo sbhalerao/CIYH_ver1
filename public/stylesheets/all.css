@@ -227,6 +227,18 @@ width: 900px;
 height: 1000px;
 }
 
+.enclose:after
+{
+	visibility:hidden;
+	display:block;
+	font-size:0;
+	content:" ";
+	clear:both;
+	height:0;
+	
+}
+
+
 .onesec-hor-upper {
 	top: 0;
 	left:0;
