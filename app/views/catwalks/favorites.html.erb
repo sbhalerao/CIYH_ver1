@@ -1,3 +1,18 @@
+<%# Upload the cats using Fancbox form      %>
+<div class="catwalklinks">
+ <a id="uploadcat" href="http://high-robot-603.heroku.com/catwalks/new"> Upload Cat </a>
+ <%= link_to "Your cats", yourcats_path %>
+ <%= link_to "Favorites", favorites_path %>
+</div>
+
+
+<%# Logic for Fancybox form  %>	
+	<div style="display: none;">
+			<div id="upload_cat" style="width:200px;height:100px;overflow:auto;">
+			
+			</div>
+	</div>
+
 <% # Logic for displaying cats for voting in 4 column format %>
 
 <div class="apple_pagination">

@@ -149,7 +149,7 @@ body {
 
 
 body .background {
-       margin-top: 10px;
+       margin-top: 260px;
 }
 
 
@@ -158,7 +158,7 @@ body .background {
 
 body .catwalklinks {
        margin-left: 153px;
-       margin-top: 210px;
+       margin-top: 260px;
 }
 
 
@@ -228,7 +228,7 @@ body .catwalklinks a:hover, .sharelink a:hover, .signin a:hover {
 margin-left:auto;
 margin-right:auto;
 position:relative;
-top:210px;
+top:10px;
 margin-left:150px;    
 width: 900px;
 height: 1000px;
@@ -365,9 +365,9 @@ aside, nav, article, figure {
 
 .apple_pagination {
   background: transparent;
-  border: 1px solid #e5e5e5;
+  border: none;
   text-align: center;
-  padding-top: 5px;
+  padding-top: 15px;
   padding-left:300px;
   cursor: default; }
   .apple_pagination a, .apple_pagination span {
