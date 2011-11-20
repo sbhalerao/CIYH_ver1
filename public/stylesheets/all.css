@@ -130,6 +130,7 @@ body {
 	left:0;
 }
 .footer p{
+	top:initial;
 	font-size:14px;
 	color:#FFF;
 	text-align:center;
