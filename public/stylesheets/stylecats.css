@@ -129,6 +129,12 @@ body {
 	top:860px;
 	left:0;
 }
+
+.footer
+{
+	position:relative;
+}
+
 .footer p{
 	top:initial;
 	font-size:14px;
