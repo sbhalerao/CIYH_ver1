@@ -180,7 +180,16 @@ $(".background_choices img").click(function() {
 
    });
 
+
+//adding rcarousel
   
+    jQuery(function($) {
+					$("#carousel").rcarousel({
+						orientation: "vertical";
+						visible:2;
+					});
+				});
+
 
    });
 

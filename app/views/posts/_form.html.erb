@@ -28,10 +28,20 @@
     <%= f.submit "Share" %>
   </div>
 
-           <div class="background_choices">
-           <div id= "backgnd1" style="float:left"> <img src="/images/Courtyard-sized.jpg" height="200px" width="300px" alt=""/>  </div>
-           <div id= "backgnd2" style="float:left"> <img src="/images/Hall-sized.png" height="200px" width="300px" alt=""/>  </div>
-           </div>       
+            
+
+
+		<div id="carousel" class="rcarousel">
+					<div style="width: 200px; overflow: hidden; height: 600px;" class="wrapper">
+						<ul>
+	<li class="" style="width: 150px; height: 200px; margin-bottom: 0px; float: none;"><img src="/images/Courtyard-sized.jpg"></li>
+	<li class="" style="width: 150px; height: 200px; margin-bottom: 0px; float: none;"><img src="/images/Hall-sized.png"></li>
+	<li class="" style="width: 150px; height: 200px; margin-bottom: 0px; float: none;"><img src="/images/Courtyard-sized.jpg"></li>
+	</ul>
+					</div>
+					<a href="#" id="ui-rcarousel-next"><img src="/images/go-next-up.png"></a>
+					<a href="#" id="ui-rcarousel-prev"><img src="/images/go-previous-down.png"></a>
+				</div>
 
 
 <% end %>

@@ -393,3 +393,35 @@ aside, nav, article, figure {
       text-decoration: underline; }
 
 
+		#carousel {
+			width: 100px;
+			height: 344px;
+			position: relative;
+		}
+
+		#carousel > .wrapper {
+			position: absolute;
+			top: 22px;
+		}
+
+		#carousel img {
+			border: 0;
+		}
+
+		#ui-rcarousel-next, #ui-rcarousel-prev {
+			display: block;
+			position: absolute;
+			width: 22px;
+			height: 22px;
+		}
+
+		#ui-rcarousel-next {
+			top: 0;
+			left: 39px;
+		}
+
+		#ui-rcarousel-prev {
+			bottom: 0;
+			left: 39px;
+		}
+

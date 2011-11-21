@@ -393,6 +393,38 @@ aside, nav, article, figure {
       text-decoration: underline; }
 
 
+		#carousel {
+			width: 100px;
+			height: 344px;
+			position: relative;
+		}
+
+		#carousel > .wrapper {
+			position: absolute;
+			top: 22px;
+		}
+
+		#carousel img {
+			border: 0;
+		}
+
+		#ui-rcarousel-next, #ui-rcarousel-prev {
+			display: block;
+			position: absolute;
+			width: 22px;
+			height: 22px;
+		}
+
+		#ui-rcarousel-next {
+			top: 0;
+			left: 39px;
+		}
+
+		#ui-rcarousel-prev {
+			bottom: 0;
+			left: 39px;
+		}
+
 
 
 /*
@@ -941,4 +973,53 @@ Author URI: http://dev7studios.com
 }
 .nivo-controlNav a.active {
 	font-weight:bold;
+}
+
+.rcarousel {
+	margin: 0;
+	padding: 0;
+}
+
+.rcarousel .wrapper {
+	height: 121px;
+	margin: 0 auto;
+	overflow: auto;
+	padding: 0;
+	position: relative;
+	width: 300px
+}
+
+.rcarousel .wrapper ul li img {
+	border: 0;
+	clear: left;
+	display: block;
+	float: left;
+}
+
+.rcarousel .wrapper ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	width: 9999px;
+}
+
+.rcarousel .wrapper ul li {
+	display: block;
+	float: left;
+	height: 100px;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	position: relative;
+	width: 100px;
+}
+
+.ui-rcarousel-loader {
+    background: url(../img/loader.gif) no-repeat center;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
 }
