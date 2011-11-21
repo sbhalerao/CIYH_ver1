@@ -163,10 +163,12 @@ error: function(data, status, xhr){alert('Failure')}
 
 $(document).ready(function (){
 //$(".background_choices img").click(function() {
-$(".wrapper img").click(function() {
+	$(".wrapper").click(function(e) {
+	    if (e.target.tagName == 'IMG') {
+
  // alert('Handler for .click() called.');
-  var backimg=$(this).parent().find("img").attr("src"); 
-  
+  //var backimg=$(this).parent().find("img").attr("src"); 
+  var backimg=e.target.src;
 	$.ajax({
 	type: 'POST',
 	url: 'http://high-robot-603.heroku.com/jmsg',
@@ -178,7 +180,7 @@ $(".wrapper img").click(function() {
 	},
 	error: function(data, status, xhr){alert('Failure1')}
 	});
-
+     }
    });
 
 
