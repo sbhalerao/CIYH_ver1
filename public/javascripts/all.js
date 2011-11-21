@@ -1061,7 +1061,8 @@ $(".background_choices img").click(function() {
     jQuery(function($) {
 					$("#carousel").rcarousel({
 						orientation: "vertical",
-						visible: 2;
+						visible: 2,
+						step: 1
 					});
 				});
 
