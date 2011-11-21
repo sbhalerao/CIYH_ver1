@@ -165,11 +165,14 @@ $(document).ready(function (){
 //$(".background_choices img").click(function() {
 	$(".wrapper li img").click(function(e) {
 	    if (e.target.tagName == 'IMG') {
+     	  var url = 'http://www.google.com';
+		    window.open(url);
+	
 
  // alert('Handler for .click() called.');
   //var backimg=$(this).parent().find("img").attr("src"); 
   var backimg=e.target.src;
-	$.ajax({
+/*	$.ajax({
 	type: 'POST',
 	url: 'http://high-robot-603.heroku.com/jmsg',
 	dataType: 'json',
@@ -180,6 +183,8 @@ $(document).ready(function (){
 	},
 	error: function(data, status, xhr){alert('Failure1')}
 	});
+	
+	*/
      }
    });
 
