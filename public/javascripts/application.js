@@ -163,7 +163,7 @@ error: function(data, status, xhr){alert('Failure')}
 
 $(document).ready(function (){
 //$(".background_choices img").click(function() {
-	$(".wrapper li img").click(function(e) {
+	$("#carousel").click(function(e) {
 	    if (e.target.tagName == 'IMG') {
      	  var url = 'http://www.google.com';
 		    window.open(url);
