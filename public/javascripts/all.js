@@ -1038,7 +1038,7 @@ error: function(data, status, xhr){alert('Failure')}
 
 $(document).ready(function (){
 //$(".background_choices img").click(function() {
-$(".rcarousel img").click(function() {
+$(".wrapper img").click(function() {
  // alert('Handler for .click() called.');
   var backimg=$(this).parent().find("img").attr("src"); 
   
