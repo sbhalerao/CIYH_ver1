@@ -262,7 +262,10 @@ class Post < ActiveRecord::Base
     
     #if background image choice is sent by user  
      if params[:backimg]!= nil
-        @post.update_attributes(:backimg => params[:backimg])
+      
+      #since the carousel img click sends full http address we are removing parts of it
+       backimg_add= params[:backimg].split(".com")[1]
+        @post.update_attributes(:backimg => "#{RAILS_ROOT}/public" + backimg_add)
      end
            
    
