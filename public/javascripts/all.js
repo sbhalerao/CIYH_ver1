@@ -1062,7 +1062,9 @@ $(".background_choices img").click(function() {
 					$("#carousel").rcarousel({
 						orientation: "vertical",
 						visible: 2,
-						step: 1
+						step: 1,
+						width: 200,
+						height: 120
 					});
 				});
 
