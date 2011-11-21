@@ -262,7 +262,7 @@ class Post < ActiveRecord::Base
     
     #if background image choice is sent by user  
      if params[:backimg]!= nil
-        @post.update_attributes(:backimg => "#{RAILS_ROOT}/public" + params[:backimg])
+        @post.update_attributes(:backimg => params[:backimg])
      end
            
    
