@@ -1037,7 +1037,8 @@ error: function(data, status, xhr){alert('Failure')}
 
 
 $(document).ready(function (){
-$(".background_choices img").click(function() {
+//$(".background_choices img").click(function() {
+$(".rcarousel img").click(function() {
  // alert('Handler for .click() called.');
   var backimg=$(this).parent().find("img").attr("src"); 
   
@@ -1064,7 +1065,8 @@ $(".background_choices img").click(function() {
 						visible: 2,
 						step: 1,
 						width: 200,
-						height: 120
+						height: 120,
+						margin:10
 					});
 				});
 
