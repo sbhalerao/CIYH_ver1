@@ -163,7 +163,7 @@ error: function(data, status, xhr){alert('Failure')}
 
 $(document).ready(function (){
 //$(".background_choices img").click(function() {
-	$("#carousel").click(function(e) {
+	$("#wrapper").click(function(e) {
 	    if (e.target.tagName == 'IMG') {
      	 
 	
