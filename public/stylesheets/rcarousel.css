@@ -39,7 +39,7 @@
 }
 
 .ui-rcarousel-loader {
-    background: url(../img/loader.gif) no-repeat center;
+    background: url(/images/loader.gif) no-repeat center;
     height: 100%;
     left: 0;
     position: absolute;
