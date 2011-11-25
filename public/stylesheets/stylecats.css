@@ -25,7 +25,7 @@ body {
 	position:absolute;
 	top:0;
 	left:0;
-	background-image: url(/images/blueone.png);
+	background-color: #99FFFF;
 	height:248px;
 }
 .top-point {
@@ -39,13 +39,13 @@ body {
 	position:relative;
 	top:30px;
 	height:200px;
-	background-image: url(/images/bluetwo.png);
+	background-color: #33CCCC;
 }
 .top-header {
 	position:relative;
 	top:52px;
 	height:170px;
-	background-image: url(/images/bluethree.png);
+	background-image: #339999;
 }
 .signin{
 	color:#fff;
@@ -123,7 +123,7 @@ body {
 .solid-footer {
 	position:absolute;
 	height:200px;
-	background-image: url(/images/bluetwo.png);
+	background-color: #33CCCC;
 	width:100%;
 	top:860px;
 	left:0;
