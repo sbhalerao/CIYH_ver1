@@ -391,6 +391,11 @@ aside, nav, article, figure {
 			position: relative;
 		}
 
+		#carousel > .wrapper {
+			position: absolute;
+			top: 22px;
+		}
+
 		#carousel img {
 						border: 0;
 					}
