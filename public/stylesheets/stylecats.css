@@ -333,7 +333,7 @@ height: 1000px;
 
 /* Nivo  */
 .theme-default #slider {
-    margin:50px auto 0 auto;
+    margin:0 auto 0 auto;
     width:831px; /* Make sure your images are the same size */
     height:364px; /* Make sure your images are the same size */
 }
