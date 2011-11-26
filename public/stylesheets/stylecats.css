@@ -114,7 +114,7 @@ body {
 }
 .top-point-footer {
 	position:relative;
-	top:-12px;
+	top:-5px;
 	height:16px;
 	background-image: url(/images/pointy.png);
 	background-repeat:repeat-x;
@@ -122,25 +122,19 @@ body {
 }
 .solid-footer {
 	position:absolute;
-	height:200px;
+	height:133px;
 	background-color: #33CCCC;
 	width:100%;
-	top:860px;
+	margin-top:225px;
 	left:0;
 }
 
-.footer
-{
-	position:relative;
-}
-
 .footer p{
-	top:initial;
 	font-size:14px;
 	color:#FFF;
 	text-align:center;
 	position:relative;
-	top:474px;
+	top:333px;
 	z-index:1;
 }
 
