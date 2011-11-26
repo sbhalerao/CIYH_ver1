@@ -208,12 +208,12 @@ body .signin a {
 
 */
 body .links a:hover, .sharelink a:hover, .signin a:hover {
-       background: #ff864b;
+       text-decoration:underline;
        color: #fff;
 }
 
 body .catwalklinks a:hover, .sharelink a:hover, .signin a:hover {
-       background: #ff864b;
+       text-decoration:underline;
        color: #fff;
 }
 
