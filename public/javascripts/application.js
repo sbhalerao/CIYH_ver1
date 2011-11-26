@@ -192,7 +192,6 @@ $(document).ready(function (){
   
     jQuery(function($) {
 					$("#carousel").rcarousel({
-						orientation: "vertical",
 						visible: 2,
 						step: 1,
 						width: 200,
