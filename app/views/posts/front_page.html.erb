@@ -18,7 +18,7 @@ $(window).load(function() {
 		<% if current_user %>
 		   <%= link_to image_tag("/images/slider1.png"), new_post_path %> 
          <% else %>    
-         <a id="various4" href="#signin4" title=""> <img src="/images/slider1.png"></a>
+         <a id="various4" href="#signin4" title=""> <img src="/images/slider1.png" alt="" /></a>
         
        <% end %>
                 
@@ -26,7 +26,7 @@ $(window).load(function() {
                   <% if current_user %>
 				   <%= link_to image_tag("/images/catwalk.png"), catwalks_path %> 
 		           <% else %>    
-                   <a id="various3" href="#signin3" title=""> <img src="/images/catwalk.png"></a>
+                   <a id="various3" href="#signin3" title=""> <img src="/images/catwalk.png" alt="" /></a>
                
                  <% end %>
             </div>
