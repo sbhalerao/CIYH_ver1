@@ -26,25 +26,25 @@ body {
 	top:0;
 	left:0;
 	background-color: #99FFFF;
-	height:248px;
+	height:178px;
 	width:100%;
 }
 .top-point {
 	position:relative;
-	top:-12px;
+	top:-5px;
 	height:16px;
 	background-image: url(/images/pointy.png);
 	background-repeat:repeat-x;
 }
 .solid {
 	position:relative;
-	top:30px;
-	height:200px;
+	top:16px;
+	height:151px;
 	background-color: #33CCCC;
 }
 .top-header {
 	position:relative;
-	top:52px;
+	top:39px;
 	height:120px;
 	background-color: #339999;
 }
@@ -53,7 +53,7 @@ body {
 	text-align:right;
 	float:right;
 	position:relative;
-	top:19px;
+	top:10px;
 	right:10px;
 	z-index:1;
 }
@@ -64,8 +64,8 @@ body {
 .header img{
 	position:relative;
 	text-align:center;
-	top:24px;
-	left:-300px;
+	top:-7px;
+	left:-169px;
 }
 .header {
 	position:relative;
@@ -73,15 +73,14 @@ body {
 	background-repeat:no-repeat;
 	background-position:center;
 	text-align:center;
-	top:-57px;
+	top:-13px;
 }
 
 .nav {	
 	color:#fff;
-	top:-18px;
-	font-size:17px;
+	margin-top:-40px;
+	font-size:16px;
 	text-align:center;
-	position:relative;
 	left:12px;
 }
 .social{
