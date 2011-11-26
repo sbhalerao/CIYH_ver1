@@ -391,29 +391,22 @@ aside, nav, article, figure {
 			position: relative;
 		}
 
-		#carousel > .wrapper {
-			position: absolute;
-			top: 22px;
-		}
-
 		#carousel img {
-			border: 0;
-		}
+						border: 0;
+					}
 
-		#ui-rcarousel-next, #ui-rcarousel-prev {
-			display: block;
-			position: absolute;
-			width: 22px;
-			height: 22px;
-		}
+					#ui-rcarousel-next, #ui-rcarousel-prev {
+						display: block;
+						position: absolute;
+					}
 
-		#ui-rcarousel-next {
-			top: 0;
-			left: 39px;
-		}
+					#ui-rcarousel-next {
+						top: 39px;
+						right: 0;
+					}
 
-		#ui-rcarousel-prev {
-			bottom: 0;
-			left: 39px;
-		}
+					#ui-rcarousel-prev {
+						top: 39px;
+						left: 0;
+					}
 
