@@ -35,12 +35,13 @@
 
 <div class="header">
      
- <img src="/images/logo.png" alt=""/>
+ < a href="http://high-robot-603.heroku.com"><img src="/images/logo.png" alt=""/> </a>
    
    <div class="nav">
     
+
      	<% if current_user %>
-		   <%= link_to "Put hats on cat", new_post_path %>
+		   <%= link_to "Cat Game", new_post_path %>
         <% else %>
  	<a id="various1" href="#signin" title="">Put hats on cats </a>
   	<div style="display: none;">
@@ -64,7 +65,7 @@
 			</div>
 	</div>
        <% end %>    
-           <a href="#">Chuckles</a>
+           <a href="#">Chuckles' Blog</a>
            <a href="#">Shop</a>
            <%= link_to "About", page_path("about")%>
 		  </div>
