@@ -69,6 +69,11 @@ body {
 	z-index:1;
 }
 
+#signin a{
+	text-decoration:none;
+	color:#fff;
+}
+
 .signin a{
 	text-decoration: none;
 }
