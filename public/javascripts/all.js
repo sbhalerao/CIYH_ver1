@@ -1069,8 +1069,8 @@ $(document).ready(function (){
 					$("#carousel").rcarousel({
 						visible: 2,
 						step: 1,
-						width: 200,
-						height: 120,
+						width: 135,
+						height: 80,
 						margin:10
 					});
 				});
