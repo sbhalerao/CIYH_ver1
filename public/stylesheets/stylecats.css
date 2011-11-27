@@ -59,6 +59,7 @@ body {
 }
 
 #signin{
+	text-decoration:none;
 	color:#fff;
 	text-align:right;
 	float:right;
