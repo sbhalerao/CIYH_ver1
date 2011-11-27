@@ -1,11 +1,6 @@
 
 
-<%# Upload the cats using Fancbox form      %>
-<div class="catwalklinks">
- <a id="uploadcat" href="http://high-robot-603.heroku.com/catwalks/new"> Upload Cat </a>
- <%= link_to "Your cats", yourcats_path %>
- <%= link_to "Favorites", favorites_path %>
-</div>
+
 
 
 <%# Logic for Fancybox form  %>	
@@ -16,15 +11,20 @@
 	</div>
 	
 	
+
+
+	<div class="three-col">
 	<% # Logic for displaying cats for voting in 4 column format %>
 	
 <div class="apple_pagination">
 	<%= will_paginate @catwalks, :container => false %>
 	</div>
-
-	<div class="three-col">
-
-
+<%# Upload the cats using Fancbox form      %>
+<div class="catwalklinks">
+ <a id="uploadcat" href="http://high-robot-603.heroku.com/catwalks/new"> Upload Cat </a>
+ <%= link_to "Your cats", yourcats_path %>
+ <%= link_to "Favorites", favorites_path %>
+</div>
 	<% @catwalks.each do|catwalk| %>
 
 <% # if catwalk.id >= 17 %>
