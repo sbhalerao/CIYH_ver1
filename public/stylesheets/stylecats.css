@@ -353,11 +353,17 @@ height: 1000px;
 	margin-left: auto;
 	margin-right:auto;
 	text-align:left;
+	position:relative
+	top:0
+	left:-55px;
+	width:570px;
 }
 .about-wrapper {
 	position:relative;
-	top:0;
-	left:250px;
+	top:-441px;
+	left:381px;
+	margin-bottom:-340px;
+	width:359px;
 }
 
 /* Nivo  */
