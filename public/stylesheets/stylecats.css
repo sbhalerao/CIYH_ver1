@@ -149,8 +149,8 @@ body .background {
 
 
 body .catwalklinks {
-       margin-left: 153px;
-       margin-top: 260px;
+       margin-left: 10px;
+       margin-top: 210px;
 }
 
 
@@ -217,11 +217,11 @@ body .catwalklinks a:hover, .sharelink a:hover, .signin a:hover {
 }
 
 .three-col {
+display:block;
 margin-left:auto;
 margin-right:auto;
 position:relative;
-top:10px;
-margin-left:150px;    
+top:10px;    
 width: 900px;
 height: 1000px;
 }
@@ -358,15 +358,18 @@ aside, nav, article, figure {
 .apple_pagination {
   background: transparent;
   border: none;
-  text-align: center;
+  text-align: right;
   padding-top: 15px;
   padding-left:300px;
-  cursor: default; }
+  right:54px;
+  cursor: default;
+  position:relative; }
   .apple_pagination a, .apple_pagination span {
     padding: 0.2em 0.3em; }
   .apple_pagination .disabled {
     color: #aaaaaa; }
   .apple_pagination .current {
+    text-align:center;
     font-style: normal;
     font-weight: bold;
     background-color: #bebebe;
