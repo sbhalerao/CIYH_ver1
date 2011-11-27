@@ -195,8 +195,7 @@ $(document).ready(function (){
 						visible: 4,
 						step: 1,
 						width: 135,
-						height: 80,
-						margin:10
+						height: 80
 					});
 				});
 
