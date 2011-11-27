@@ -28,16 +28,19 @@
       </ul>
     </div>
   <% end %>
-
-
-<div class="rcarousel" id="carousel">
-					<div class="wrapper" style="width: 300px; overflow: hidden; height: 120px;" id="wrapper">
-						<li style="width: 134px; height: 80px; margin-bottom: 0px; float: none;"><img src="/images/Courtyard-sized.jpg" width="200px" height="120px"></li>
-						<li style="width: 134px; height: 80px; margin-bottom: 0px; float: none;"><img src="/images/Hall-sized.png"  width="200px" height="120px"></li>
-						<li style="width: 134px; height: 80px; margin-bottom: 0px; float: none;"><img src="/images/Courtyard-sized.jpg"  width="200px" height="120px"></li>
-					<a id="ui-rcarousel-next" href="#"><img src="/images/go-next.png"></a>
-					<a id="ui-rcarousel-prev" href="#"><img src="/images/go-previous.png"></a>
+  	<div id="carousel" class="rcarousel">
+					<div id="wrapper" style="width: 300px; overflow: hidden; height: 100px;" class="wrapper">
+	<ul>
+	<li style="width: 134px; height: 80px; margin-bottom: 0px; float: none;"><img src="/images/Courtyard-sized.jpg"  height="80px"></li>
+	<li style="width: 134px; height: 80px; margin-bottom: 0px; float: none;"><img src="/images/Hall-sized.png"   height="80px"></li>
+	<li style="width: 134px; height: 80px; margin-bottom: 0px; float: none;"><img src="/images/Courtyard-sized.jpg"  height="80px"></li>
+	</ul>
+					</div>
+					<a href="#" id="ui-rcarousel-next"><img src="/images/go-next.png"></a>
+					<a href="#" id="ui-rcarousel-prev"><img src="/images/go-previous.png"></a>
 				</div>
+
+
 
                <div class="background">
                       <div id="droppable" style="float:left"> <img src="/images/catsback.png" alt=""/> </div>
@@ -46,16 +49,13 @@
 
 				
 							
-               <div class="sharelink">
-     
-      
-    
-    <%= f.submit "Share" %>
-  </div>
+               
+             <%= f.submit "Share", :class =>"submitlink" %>
+              
 
             
 
-		
+	
 
 
 <% end %>
