@@ -348,7 +348,7 @@ height: 1000px;
 
 /* About  */
 .about{
-	margin-top:50px;
+	margin-top:200px;
 	display:block;
 	margin-left: auto;
 	margin-right:auto;
@@ -447,7 +447,3 @@ aside, nav, article, figure {
           #fbcatpic {
 	margin-top: 170px;
    }
-
-  .about {
-	margin-top:180px;
-}
