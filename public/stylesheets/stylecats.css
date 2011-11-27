@@ -141,7 +141,7 @@ body {
 
 
 body .background {
-       margin-top: 260px;
+       
 }
 
 
@@ -159,7 +159,7 @@ body .catwalklinks {
 body .catwalklinks a {
        margin-right: -5px;
        position: relative;
-       background-color: #ff5300;
+       background-color: red;
        padding-right: 30px;
        padding-left: 30px;
        padding-top: 7px;
@@ -359,8 +359,9 @@ aside, nav, article, figure {
   background: transparent;
   border: none;
   text-align: right;
-  padding-top: 15px;
+  padding-top: 200px;
   padding-left:300px;
+  margin-bottom:-241px;
   right:54px;
   cursor: default;
   position:relative; }
@@ -387,34 +388,30 @@ aside, nav, article, figure {
     .apple_pagination a:hover, .apple_pagination a:focus {
       text-decoration: underline; }
 
+	#carousel {
+				width: 350px;
+				height: 100px;
+				position: relative;
+			}
 
-		#carousel {
-			width: 500px;
-			height: 125px;
-			position: relative;
-		}
 
-		#carousel > .wrapper {
-			position: absolute;
-			top: 22px;
-		}
 
-		#carousel img {
-						border: 0;
-					}
+			#carousel img {                 
+							border: 0;
+						}
 
-					#ui-rcarousel-next, #ui-rcarousel-prev {
-						display: block;
-						position: absolute;
-					}
+						#ui-rcarousel-next, #ui-rcarousel-prev {
+							display: block;
+							position: absolute;
+						}
 
-					#ui-rcarousel-next {
-						top: 39px;
-						right: 0;
-					}
+						#ui-rcarousel-next {
+							top: 39px;
+							right: 0;
+						}
 
-					#ui-rcarousel-prev {
-						top: 39px;
-						left: 0;
-					}
+						#ui-rcarousel-prev {
+							top: 39px;
+							left: 0;
+						}
 
