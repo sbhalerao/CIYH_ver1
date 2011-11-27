@@ -1067,7 +1067,7 @@ $(document).ready(function (){
   
     jQuery(function($) {
 					$("#carousel").rcarousel({
-						visible: 2,
+						visible: 4,
 						step: 1,
 						width: 135,
 						height: 80,
