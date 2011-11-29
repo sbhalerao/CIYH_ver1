@@ -178,7 +178,7 @@ $(document).ready(function (){
 	data:{ backimg: backimg},
 	success: function(json, status, xhr)
 	{ // alert ('Success')
-	 $("#droppable").find("img").attr("src", backimg);
+	 $("#droppable").find("img").attr("src", 'http://high-robot-603.heroku.com/images/'+backimg);
 	},
 	error: function(data, status, xhr){alert('Failure1')}
 	});
