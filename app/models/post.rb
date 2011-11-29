@@ -265,7 +265,7 @@ class Post < ActiveRecord::Base
       
       #since the carousel img click sends full http address we are removing parts of it
        backimg_add= params[:backimg]
-        @post.update_attributes(:backimg => "#{RAILS_ROOT}/public" + backimg_add)
+        @post.update_attributes(:backimg => "#{RAILS_ROOT}/public/images/" + backimg_add)
      end
            
    
