@@ -1045,7 +1045,7 @@ $(document).ready(function (){
 
  // alert('Handler for .click() called.');
   //var backimg=$(this).parent().find("img").attr("src"); 
-  var backimg=e.target.src.split("small-")[1];
+  var backimg=e.target.src.split("small-")[0]+e.target.src.split("small-")[1];
 	$.ajax({
 	type: 'POST',
 	url: 'http://high-robot-603.heroku.com/jmsg',
@@ -1053,7 +1053,7 @@ $(document).ready(function (){
 	data:{ backimg: backimg},
 	success: function(json, status, xhr)
 	{ // alert ('Success')
-	 $("#droppable").find("img").attr("src", backimg);
+	 $("#droppable").find("img").attr("src",backimg);
 	},
 	error: function(data, status, xhr){alert('Failure1')}
 	});
