@@ -28,6 +28,7 @@ body {
 	background-color: #99FFFF;
 	height:178px;
 	width:100%;
+	z-index:1;
 }
 .top-point {
 	position:relative;
@@ -189,9 +190,7 @@ body .sharelink a {
 }
 
 .submitlink {
-       margin-left: 745px;
        position: relative;
-       background-color: #ff5300;
        padding-right: 30px;
        padding-left: 30px;
        padding-top: 7px;
@@ -201,6 +200,15 @@ body .sharelink a {
        color: #fff;
        font-weight: bold;
        margin-bottom: 20px;
+       margin-left: 743px;
+       background-color: red;
+       top: -487px;
+       moz-border-radius: 10px;
+       -webkit-border-radius: 10px;
+       -khtml-border-radius: 10px;
+       border-radius: 10px;
+       border: 0;
+       font-size: 15px;
 }
 
 
