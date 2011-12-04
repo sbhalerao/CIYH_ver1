@@ -15,3 +15,4 @@ module ActionDispatch
       alias_method_chain :render_exception, :template
   end
 end
+
