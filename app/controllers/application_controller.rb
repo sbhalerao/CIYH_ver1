@@ -2,15 +2,7 @@ class ApplicationController < ActionController::Base
   
   protect_from_forgery
   
-  #adding customer error pages for 404 and 500 errors 
-  unless ActionController::Base.consider_all_requests_local
-      rescue_from Exception, :with => :render_error
-      rescue_from ActiveRecord::RecordNotFound, :with => :render_not_found
-      rescue_from ActionController::RoutingError, :with => :render_not_found
-      rescue_from ActionController::UnknownController, :with => :render_not_found
-      rescue_from ActionController::UnknownAction, :with => :render_not_found
-  end
-  
+
   
   layout "main"
   
@@ -26,6 +18,16 @@ class ApplicationController < ActionController::Base
     def current_user  
       @current_user ||= User.find(session[:user_id]) if session[:user_id]  
     end
+    
+    #adding customer error pages for 404 and 500 errors 
+    unless ActionController::Base.consider_all_requests_local
+        rescue_from Exception, :with => :render_error
+        rescue_from ActiveRecord::RecordNotFound, :with => :render_not_found
+        rescue_from ActionController::RoutingError, :with => :render_not_found
+        rescue_from ActionController::UnknownController, :with => :render_not_found
+        rescue_from ActionController::UnknownAction, :with => :render_not_found
+    end
+    
     
  # to render 404 and 500 error pages   
     private
