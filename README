@@ -22,6 +22,23 @@
   --------------Post Model------------------
 1. The Post model has following members
 
+ avatar - is the attached file on Amazon S3 bucket "catsinyourhats".
+
+
+
+
+2. Methods:
+
+updatepost(post) -- Combines all the images (img_all ImageList) into a final image using rmagick "flatten_images"
+Image files for the arrays are set in these methods
+
+
+setCoordinates(post,params) --
+
+params[:pid] is catn or hatn. This helps to choose whose coordinates to set 
+params[:rid] is catn or hatn. This helps to choose whose size to set 
+
+If backimg is set using rCarousel, update backimg attribute for the model
 
 
 
@@ -36,9 +53,15 @@
 Logic to Create or Retrieve new user is given in SessionController#create
 
 2. Passes the token of current_user to Fb_graph gem to post to FB
+
 3. current_user - Either retrieve user or make a new user. Logic given in application_controller 
  @current_user ||= User.find(session[:user_id]) if session[:user_id]   in application controller
 
+
+
+---------------Catwalk Model-----------------------
+Paperclip file :catpic which is stored in Amazon S3 bucket 'catsinyourhats'
+Cannot create new model without presence of :catpic whose types can be jpeg, png, or gif
 
 
 -------------Members only areas------------------
@@ -61,7 +84,7 @@ The Rack middleware intercepts when the path is /auth/facebook?redirect_to=/catw
 
 -------------------Header/Layout ---------------------
 
-main.html.erb layout is used for all actions except CIYH game which is PostsController#new 
+main.html.erb layout is used for all actions. For the CIYH game, cats and hats images are included at top of _form.html.erb before including the all.js (javascript files combined).
 
 
 -----------------CIYH game ---------------------------
@@ -69,6 +92,8 @@ When cat or hat is dragged send the id of the image and the size of the resized 
 If a cat or hat is moved, set the moved id to 1 and include the image in the image array 
 When cat or hat image is resized, send the id of the image and the size of the resized image
 When page is resized, send the x and y offset co-ordinates of the background image
+rCarousel is used to display the background images
+When an image in rCarousel is clicked, send the filename using Ajax and store in backimg attribute.
 Combine the image array into one image 
 
 Paperclip is used to store the image on Amazon S3
