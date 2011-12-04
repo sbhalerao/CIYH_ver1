@@ -34,7 +34,7 @@ class ApplicationController < ActionController::Base
 
       def render_not_found(exception)
         #log_error(exception)
-        render :template => "/error/404.html.erb", :status => 404
+        render 'error/404.html.erb', :status => 404
       end
 
       def render_error(exception)
