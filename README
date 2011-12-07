@@ -105,5 +105,7 @@ Paperclip is used to store the image on Amazon S3
 Allows only jpeg, png, gif
 
 
-
+------------------Custom error pages -----------------
+Custom error pages implemented in Rails using ActionDispatch (as escape from exception cannot be handled in actionController,but is handled in Rake middleware instead of rails 3)
+refer to http://accuser.cc/posts/1-rails-3-0-exception-handling
 
