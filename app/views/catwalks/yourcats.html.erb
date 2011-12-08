@@ -45,7 +45,8 @@
 <h3><div id="votecount<%=catwalk.id %>"> <%=catwalk.votes_for %>  </div> </h3>
 
 <h1>Name of Cat: <%= catwalk.catname %></h1>
-<h2>Posted by <%= (catwalk.user).name %> </h2>
+<% displayname= (catwalk.user).name.split[0] + " " + (catwalk.user).name.split[1][0] + "." %>
+<h2>Posted by <%= displayname %> </h2>
 
 </div>
 </div>
