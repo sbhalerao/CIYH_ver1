@@ -7,8 +7,23 @@
 
 
 
-  <%= javascript_include_tag :defaults, "jquery.rails.js", "jquery.fancybox-1.3.4.pack.js", "jquery.nivo.slider.pack.js","jquery.ui.tough-punch.min.js","jquery.ui.rcarousel.min.js", "google_analytics.js", :cache => true%>
+  <%= javascript_include_tag :defaults, "jquery.rails.js", "jquery.fancybox-1.3.4.pack.js", "jquery.nivo.slider.pack.js","jquery.ui.tough-punch.min.js","jquery.ui.rcarousel.min.js", :cache => true%>
   <%= csrf_meta_tag %>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-22921884-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
 </head>
 <body>
 
