@@ -1,7 +1,7 @@
 <%= form_for(@catwalk, :html => { :multipart => true }) do |f| %>
   <% if @catwalk.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@catwalk.errors.count, "error") %> prohibited this post from being saved:</h2>
+      <h3><%= pluralize(@catwalk.errors.count, "error") %> prohibited this post from being saved:</h3>
 
       <ul>
       <% @catwalk.errors.full_messages.each do |msg| %>
@@ -14,7 +14,7 @@
 
 
   <div class="field">
-   
+    <%= f.label "Image of Cat" %>
     <%= f.file_field :catpic %>
   </div> 
   <br/>
