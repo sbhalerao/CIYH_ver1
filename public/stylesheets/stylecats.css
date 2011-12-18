@@ -402,7 +402,8 @@ aside, nav, article, figure {
   background: transparent;
   border: none;
   text-align: right;
-  padding: 1em;
+  padding-top:5px;
+  padding-bottom:5px;
   right:54px;
   cursor: default;
   position:relative; }
