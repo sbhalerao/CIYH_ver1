@@ -17,7 +17,7 @@
 	<% # Logic for displaying cats for voting in 4 column format %>
 	
 <div class="apple_pagination">
-	<%= will_paginate @catwalks, :container => false %>
+	<%= will_paginate @catwalks %>
 	</div>
 <%# Upload the cats using Fancbox form      %>
 <div class="catwalklinks">
@@ -57,7 +57,7 @@
 
 <% end %>
 <div class="apple_pagination">
-<%= will_paginate @catwalks, :container => false %>
+<%= will_paginate @catwalks %>
 </div>
 
 </div>
