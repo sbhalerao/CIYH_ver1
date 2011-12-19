@@ -25,7 +25,7 @@ $("#.cat img").load(function () {
  							stop: function(event, ui) { 
 	                            $.ajax({
 						        type: 'POST',
-						        url: 'http://high-robot-603.heroku.com/jmsg',
+						        url: 'http://catsinyourhats.com/jmsg',
 								dataType: 'json',
 						        data:{ width: ui.size["width"], height: ui.size["height"], rid:$(this).parent().attr('id')},
 								success: function(json, status, xhr)
@@ -57,7 +57,7 @@ $("#.cat img").load(function () {
         $( this ).find( "p" ).hide();
 		$.ajax({
 	        type: 'POST',
-	        url: 'http://high-robot-603.heroku.com/jmsg',
+	        url: 'http://catsinyourhats.com/jmsg',
 			dataType: 'json',
 	        data:{ top: ui.offset["top"], left: ui.offset["left"], pid: (ui.draggable).attr("id") },
 			success: function(json, status, xhr)

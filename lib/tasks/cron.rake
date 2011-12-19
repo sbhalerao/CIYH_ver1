@@ -6,7 +6,7 @@ task :cron => :environment do
   puts "trying out cron"
   require 'uri'
   require 'net/http'
-   uri = URI.parse('http://high-robot-603.heroku.com/')
+   uri = URI.parse('http://catsinyourhats.com/')
   Net::HTTP.get(uri)
   puts "cron executed"
 end

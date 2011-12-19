@@ -24,7 +24,7 @@ $.ajaxSetup({
 
 $.ajax({
 type: 'POST',
-url: 'http://high-robot-603.heroku.com/jmsg',
+url: 'http://catsinyourhats.com/jmsg',
 dataType: 'json',
 data:{ width: ui.size["width"], height: ui.size["height"], rid:$(this).parent().attr('id')},
 success: function(json, status, xhr)
@@ -45,7 +45,7 @@ $("#.cat img").resizable({ handles:'n,e,s,w,ne,se,nw,sw' , maxHeight: 300, aspec
 
 $.ajax({
 type: 'POST',
-url: 'http://high-robot-603.heroku.com/jmsg',
+url: 'http://catsinyourhats.com/jmsg',
 dataType: 'json',
 data:{ width: ui.size["width"], height: ui.size["height"], rid:$(this).parent().attr('id')},
 success: function(json, status, xhr)
@@ -86,7 +86,7 @@ $("#hat2").draggable({containment: "#droppable", snap:false, cursor: "move"});
         var offset1=$("#droppable").offset();
 $.ajax({
 type: 'POST',
-url: 'http://high-robot-603.heroku.com/jmsg',
+url: 'http://catsinyourhats.com/jmsg',
 dataType: 'json',
 data:{ top: ui.offset["top"], left: ui.offset["left"], pid: (ui.draggable).attr("id"), backx: offset1.left, backy: offset1.top  },
 success: function(json, status, xhr)
@@ -108,7 +108,7 @@ error: function(data, status, xhr){alert('Failure')}
 	var offset1 = $("#droppable").offset();
 	$.ajax({
 	type: 'POST',
-	url: 'http://high-robot-603.heroku.com/jmsg',
+	url: 'http://catsinyourhats.com/jmsg',
 	dataType: 'json',
 	data:{ backx: offset1.left, backy: offset1.top  },
 	success: function(json, status, xhr)
@@ -173,7 +173,7 @@ $(document).ready(function (){
   var backimg=e.target.src.split("small-")[0]+e.target.src.split("small-")[1];
 	$.ajax({
 	type: 'POST',
-	url: 'http://high-robot-603.heroku.com/jmsg',
+	url: 'http://catsinyourhats.com/jmsg',
 	dataType: 'json',
 	data:{ backimg: backimg},
 	success: function(json, status, xhr)
