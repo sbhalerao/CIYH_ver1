@@ -50,7 +50,7 @@ class Post < ActiveRecord::Base
     # Dimension is the square dimension of each image 
      dimension_cat1= (@post.cat1h) > (@post.cat1w)?(@post.cat1h):(@post.cat1w)
      img_all[1]=img_all[1].resize_to_fit(dimension_cat1,dimension_cat1)
-     img_all[1].page=Rectangle.new(@post.cat1h, @post.cat1w, @post.cat1x, (@post.cat1y)-(@post.backy))
+     img_all[1].page=Rectangle.new(@post.cat1h, @post.cat1w, (@post.cat1x)-(@post.backx), (@post.cat1y)-(@post.backy))
      # 80 is subtracted to get the y co-ordinate wrt back image. Cat1y is wrt top left of page
 
      # Repeating for cat2
