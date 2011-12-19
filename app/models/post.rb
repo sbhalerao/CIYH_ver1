@@ -50,34 +50,34 @@ class Post < ActiveRecord::Base
     # Dimension is the square dimension of each image 
      dimension_cat1= (@post.cat1h) > (@post.cat1w)?(@post.cat1h):(@post.cat1w)
      img_all[1]=img_all[1].resize_to_fit(dimension_cat1,dimension_cat1)
-     img_all[1].page=Rectangle.new(@post.cat1h, @post.cat1w, @post.cat1x, (@post.cat1y)-(@post.backy))
+     img_all[1].page=Rectangle.new(@post.cat1h, @post.cat1w, (@post.cat1x)-(@post.backx), (@post.cat1y)-(@post.backy))
      # 80 is subtracted to get the y co-ordinate wrt back image. Cat1y is wrt top left of page
 
      # Repeating for cat2
      dimension_cat2= (@post.cat2h) > (@post.cat2w)?(@post.cat2h):(@post.cat2w)
       img_all[2]=img_all[2].resize_to_fit(dimension_cat2,dimension_cat2)
-      img_all[2].page=Rectangle.new(@post.cat2h, @post.cat2w, @post.cat2x, (@post.cat2y)-(@post.backy))
+      img_all[2].page=Rectangle.new(@post.cat2h, @post.cat2w, (@post.cat2x)-(@post.backx), (@post.cat2y)-(@post.backy))
 
      #Repeating for cat3
      dimension_cat3= (@post.cat3h) > (@post.cat3w)?(@post.cat3h):(@post.cat3w)
         img_all[3]=img_all[3].resize_to_fit(dimension_cat3,dimension_cat3)
-        img_all[3].page=Rectangle.new(@post.cat3h, @post.cat3w, @post.cat3x, (@post.cat3y)-(@post.backy))
+        img_all[3].page=Rectangle.new(@post.cat3h, @post.cat3w, (@post.cat3x)-(@post.backx), (@post.cat3y)-(@post.backy))
 
        #Repeating for cat4 
         dimension_cat4= (@post.cat4h) > (@post.cat4w)?(@post.cat4h):(@post.cat4w)
         img_all[4]=img_all[4].resize_to_fit(dimension_cat4,dimension_cat4)
-        img_all[4].page=Rectangle.new(@post.cat4h, @post.cat4w, @post.cat4x, (@post.cat4y)-(@post.backy))
+        img_all[4].page=Rectangle.new(@post.cat4h, @post.cat4w, (@post.cat4x)-(@post.backx), (@post.cat4y)-(@post.backy))
         # 80 is subtracted to get the y co-ordinate wrt back image. Cat1y is wrt top left of page
 
         # Repeating for cat5
         dimension_cat5= (@post.cat5h) > (@post.cat5w)?(@post.cat5h):(@post.cat5w)
          img_all[5]=img_all[5].resize_to_fit(dimension_cat5,dimension_cat5)
-         img_all[5].page=Rectangle.new(@post.cat5h, @post.cat5w, @post.cat5x, (@post.cat5y)-(@post.backy))
+         img_all[5].page=Rectangle.new(@post.cat5h, @post.cat5w, (@post.cat5x)-(@post.backx), (@post.cat5y)-(@post.backy))
 
         #Repeating for cat3
         dimension_cat6= (@post.cat6h) > (@post.cat6w)?(@post.cat6h):(@post.cat6w)
            img_all[6]=img_all[6].resize_to_fit(dimension_cat6,dimension_cat6)
-           img_all[6].page=Rectangle.new(@post.cat6h, @post.cat6w, @post.cat6x, (@post.cat6y)-(@post.backy))
+           img_all[6].page=Rectangle.new(@post.cat6h, @post.cat6w, (@post.cat6x)-(@post.backx), (@post.cat6y)-(@post.backy))
 
 
      # When adding more cats or hats, change the image number index
