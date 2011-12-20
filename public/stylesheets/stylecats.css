@@ -309,14 +309,9 @@ height: 1000px;
 
 .single-grid .single-img
 {
-	    display: table;
-	 	position:relative;
-		   top: 10px;
-		   left:14px;
-	           height:128px;
-	           width: 170px;
-		   background: url(/images/checkered.png) no-repeat top left;
-		overflow: hidden;
+	    display: table-cell;
+	 	vertical-align:middle;
+	    text-align: center;
 		border:none;
 }
 
