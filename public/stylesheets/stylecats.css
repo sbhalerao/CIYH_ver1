@@ -317,6 +317,7 @@ height: 1000px;
 	           width: 170px;
 		   background: url(/images/checkered.png) no-repeat top left;
 		overflow: hidden;
+		border:none;
 }
 
 
