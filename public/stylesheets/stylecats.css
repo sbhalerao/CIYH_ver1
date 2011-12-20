@@ -300,6 +300,8 @@ height: 1000px;
  	position:relative;
 	   top: 17px;
 	   left:14px;
+	   height: 170px;
+	width: 128px;
 	   background: url(/images/checkered.png) no-repeat top left;
 	overflow: hidden;
 	
@@ -307,9 +309,14 @@ height: 1000px;
 
 .single-grid .single-img
 {
-	display: table-cell;
-	vertical-align: middle;
-	text-align: center;
+	    display: table;
+	 	position:relative;
+		   top: 10px;
+		   left:14px;
+	           height:128px;
+	           width: 170px;
+		   background: url(/images/checkered.png) no-repeat top left;
+		overflow: hidden;
 }
 
 
