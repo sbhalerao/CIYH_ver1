@@ -32,8 +32,11 @@
 <% # if catwalk.id >= 17 %>
 <div class="onesec-hor-upper">
 <div class="onesec-hor">
+<div class="single-grid">
+<div class="single-img">
 <%= link_to (image_tag (catwalk.catpic.url(:thumb))), catwalk.catpic.url %>
-
+</div>
+</div>
 <h2> </h2>
 <% if current_user.voted_on?(catwalk) %>
 <div class="liked">

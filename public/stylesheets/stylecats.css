@@ -295,15 +295,23 @@ height: 1000px;
 
 }
 
-.onesec-hor img{
+.single-grid {
+	 display: table;
  	position:relative;
 	   top: 17px;
 	   left:14px;
-	   
-	  
-	   border-style: none;
-  
+	   background: url(/images/checkered.png) no-repeat top left;
+	overflow: hidden;
+	
+	}
+
+.single-grid .single-img
+{
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
 }
+
 
 .onesec-hor-upper h1 {
    float:none;
