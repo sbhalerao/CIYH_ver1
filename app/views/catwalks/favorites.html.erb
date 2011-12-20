@@ -30,9 +30,11 @@
 <% if (current_user.voted_on?(catwalk))  %>
 <div class="onesec-hor-upper">
 <div class="onesec-hor">
-<%= link_to (image_tag (catwalk.catpic.url)), catwalk.catpic.url %>
-
-
+<div class="single-grid">
+<div class="single-img">
+<%= link_to (image_tag (catwalk.catpic.url(:thumb))), catwalk.catpic.url %>
+</div>
+</div>
 <% if current_user.voted_on?(catwalk) %>
 <div class="liked">
 <%= link_to "like",voteup_path(:id => catwalk.id), :remote => true  %>
