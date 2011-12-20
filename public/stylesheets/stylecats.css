@@ -319,6 +319,9 @@ height: 1000px;
 		
 }
 
+.single-grid .single-img img{
+ border:none;	
+}
 
 .onesec-hor-upper h1 {
    float:none;
