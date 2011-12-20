@@ -312,7 +312,7 @@ height: 1000px;
 	    display: table-cell;
 	 	vertical-align:middle;
 	    text-align: center;
-		border:none;
+		border:0;
 }
 
 
