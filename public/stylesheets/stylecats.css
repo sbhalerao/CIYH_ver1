@@ -322,6 +322,7 @@ height: 1000px;
 
 .onesec-hor-upper h1 {
    float:none;
+   padding-top: 5px;
    padding-left: 14px;
    font-size: 12px;
   
