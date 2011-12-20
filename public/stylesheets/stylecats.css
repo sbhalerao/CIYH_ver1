@@ -305,6 +305,7 @@ height: 1000px;
 	   background: url(/images/checkered.png) no-repeat top left;
 	overflow: hidden;
 	border:0 none;
+	border-collapse:collapse;
 	}
 
 .single-grid .single-img
@@ -315,7 +316,7 @@ height: 1000px;
 		border:0 none;
 		border-style:none;
 		text-decoration: none;
-		border-collapse:collapse;
+		
 }
 
 
