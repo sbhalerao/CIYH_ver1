@@ -1,4 +1,4 @@
-#cat1.cat {  width: 1px; background: transparent; text-align:center; position:relative; margin: 0 auto 0 auto; z-index:1;}
+#cat1.cat {  width: 1px; background: transparent; text-align:center; position:relative; margin: 0 auto 0 auto; left: 400px; z-index:1;}
 #cat2.cat {  width: 1px; background: transparent; text-align:center; position:relative; margin: 0 auto 0 auto; z-index:1;}
 #cat3.cat {  width: 1px; background: transparent; text-align:center; position:relative; margin: 0 auto 0 auto; z-index:1;}
 
