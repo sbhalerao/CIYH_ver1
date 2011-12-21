@@ -3,10 +3,11 @@
 
 
 <div id="fbcatpic">
-<%= image_tag @post.avatar.url %>
+<%= image_tag @post.avatar.url %> <br/><br/>
+
+<%= link_to 'Make another creation', new_post_path %> 
+<%= link_to 'Home', root_path %>
 </div>
 
 
 
-<%= link_to 'Make another creation', new_post_path %> |
-<%= link_to 'Home', root_path %>
