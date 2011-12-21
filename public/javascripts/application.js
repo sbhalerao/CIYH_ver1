@@ -99,12 +99,14 @@ error: function(data, status, xhr){alert('Failure')}
     });
 
 
-// wait before sending backx and backy first time window is loaded
-  waitCoord;
 
 //wait before sending co-ordinates of the background image after window resize
    var resizeTimer;
 	$(window).resize(waitCoord);
+	
+	// wait before sending backx and backy first time window is loaded
+	  waitCoord;
+	
 	
 	// function that waits before doing ajax transmit of backx and backy
 	
