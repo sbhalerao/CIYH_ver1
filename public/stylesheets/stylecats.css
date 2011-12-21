@@ -198,7 +198,7 @@ body .sharelink a {
        margin-bottom: 20px;
 }
 
-.submitlink, .fbcatpic a {
+.submitlink, #fbcatpic a {
        position: relative;
        padding-right: 30px;
        padding-left: 30px;
