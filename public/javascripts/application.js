@@ -104,8 +104,8 @@ error: function(data, status, xhr){alert('Failure')}
    var resizeTimer;
 	$(window).resize(waitCoord);
 	
-	// wait before sending backx and backy first time window is loaded
-	 $(window).load(waitCoord);
+	// sending backx and backy first time window is loaded
+	 $(window).load(doSomething);
 	
 	
 	// function that waits before doing ajax transmit of backx and backy
