@@ -198,7 +198,7 @@ body .sharelink a {
        margin-bottom: 20px;
 }
 
-.submitlink {
+.submitlink, .fbcatpic a {
        position: relative;
        padding-right: 30px;
        padding-left: 30px;
@@ -484,7 +484,7 @@ aside, nav, article, figure {
 
           #fbcatpic {
 	display: block;
-	margin: 170px auto 0 auto;
+	margin: 208px auto 0 auto;
 	width: 645px;
    }
 
