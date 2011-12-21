@@ -170,7 +170,7 @@ body .catwalklinks {
 }
 
 body .catwalklinks a {
-       margin-right: -5px;
+       margin-right: 10px;
 	   position: relative;
        padding-right: 30px;
        padding-left: 30px;
