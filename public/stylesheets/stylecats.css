@@ -171,8 +171,7 @@ body .catwalklinks {
 
 body .catwalklinks a {
        margin-right: -5px;
-       position: relative;
-       background-color: red;
+	   position: relative;
        padding-right: 30px;
        padding-left: 30px;
        padding-top: 7px;
@@ -180,7 +179,14 @@ body .catwalklinks a {
        text-decoration: none;
        text-align: center;
        color: #fff;
-       font-size: 12px;
+       font-weight: bold;
+       background-color: red;
+       moz-border-radius: 10px;
+       -webkit-border-radius: 10px;
+       -khtml-border-radius: 10px;
+       border-radius: 10px;
+       border: 0;
+       font-size: 15px;
        margin-bottom: 20px;
 }
 
