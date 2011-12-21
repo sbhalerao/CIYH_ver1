@@ -237,6 +237,10 @@ body .sharelink a {
        border: 0;
        font-size: 15px;
       }
+ .submitlink:hover, #fbcatpic a:hover {
+ 	   background: #33CCCC;
+       color: #fff;
+ }
 
 /* body .signin {
        background-image:url(/images/backsignin.png);
