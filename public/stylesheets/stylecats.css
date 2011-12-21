@@ -219,7 +219,24 @@ body .sharelink a {
        border: 0;
        font-size: 15px;
 }
-
+#fbcatpic a {
+	   position: relative;
+       padding-right: 30px;
+       padding-left: 30px;
+       padding-top: 7px;
+       padding-bottom: 7px;
+       text-decoration: none;
+       text-align: center;
+       color: #fff;
+       font-weight: bold;
+       background-color: red;
+       moz-border-radius: 10px;
+       -webkit-border-radius: 10px;
+       -khtml-border-radius: 10px;
+       border-radius: 10px;
+       border: 0;
+       font-size: 15px;
+      }
 
 /* body .signin {
        background-image:url(/images/backsignin.png);
