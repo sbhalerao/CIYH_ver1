@@ -169,8 +169,12 @@ body .catwalklinks {
        margin-top: 210px;
 }
 
+#uploadcat {
+	margin-right: 7px;
+}
+
 body .catwalklinks a {
-       margin-right: 10px;
+       margin-right: 2px;
 	   position: relative;
        padding-right: 30px;
        padding-left: 30px;
@@ -186,7 +190,7 @@ body .catwalklinks a {
        -khtml-border-radius: 10px;
        border-radius: 10px;
        border: 0;
-       font-size: 15px;
+       font-size: 14px;
        margin-bottom: 20px;
 }
 
