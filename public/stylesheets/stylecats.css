@@ -1,18 +1,18 @@
-#cat1.cat {  width: 1px; background: transparent; text-align:center; position:relative; top: 646px; left: 97px; margin: 0 auto 0 auto; z-index:1;}
-#cat2.cat {  width: 1px; background: transparent; text-align:center; position:relative; top: 528px; left: 158px; margin: 0 auto 0 auto; z-index:1;}
-#cat3.cat {  width: 1px; background: transparent; text-align:center; position:relative; top: 527px; left: 272px; margin: 0 auto 0 auto; z-index:1;}
+#cat1.cat {  width: 1px; background: transparent; text-align:center; position:relative; top: 526px; left: 97px; margin: 0 auto 0 auto; z-index:1;}
+#cat2.cat {  width: 1px; background: transparent; text-align:center; position:relative; top: 408px; left: 158px; margin: 0 auto 0 auto; z-index:1;}
+#cat3.cat {  width: 1px; background: transparent; text-align:center; position:relative; top: 407px; left: 272px; margin: 0 auto 0 auto; z-index:1;}
 
-#cat4.cat {  width: 1px; background: transparent; text-align:center; position:relative; top: 341px; left: 215px; margin: 0 auto 0 auto; z-index:1;}
-#cat5.cat {  width: 1px; background: transparent; text-align:center; position:relative; top: 319px; left: 173px; margin: 0 auto 0 auto; z-index:1;}
-#cat6.cat {  width: 1px; background: transparent; text-align:center; position:relative; top: 225px; left: 52px; margin: 0 auto 0 auto; z-index:1;}
+#cat4.cat {  width: 1px; background: transparent; text-align:center; position:relative; top: 221px; left: 215px; margin: 0 auto 0 auto; z-index:1;}
+#cat5.cat {  width: 1px; background: transparent; text-align:center; position:relative; top: 199px; left: 173px; margin: 0 auto 0 auto; z-index:1;}
+#cat6.cat {  width: 1px; background: transparent; text-align:center; position:relative; top: 105px; left: 52px; margin: 0 auto 0 auto; z-index:1;}
 
-#hat1.cat {  width: 1px; background: transparent; text-align:center; position:relative; top: -62px; left: 293px; margin: 0 auto 0 auto; z-index:1;}
-#hat2.cat {  width: 1px; background: transparent; text-align:center; position:relative; top: -189px; left: 205px; margin: 0 auto 0 auto; z-index:1;}
-#hat3.cat {  width: 1px; background: transparent; text-align:center; position:relative; top: -186px; left: 140px; margin: 0 auto 0 auto; z-index:1;}
+#hat1.cat {  width: 1px; background: transparent; text-align:center; position:relative; top: -182px; left: 293px; margin: 0 auto 0 auto; z-index:1;}
+#hat2.cat {  width: 1px; background: transparent; text-align:center; position:relative; top: -309px; left: 205px; margin: 0 auto 0 auto; z-index:1;}
+#hat3.cat {  width: 1px; background: transparent; text-align:center; position:relative; top: -306px; left: 140px; margin: 0 auto 0 auto; z-index:1;}
 
-#hat4.cat {  width: 1px; background: transparent; text-align:center; position:relative; top: -411px; left: 215px; margin: 0 auto 0 auto; z-index:1;}
-#hat5.cat {  width: 1px; background: transparent; text-align:center; position:relative; top: -455px; left: 62px; margin: 0 auto 0 auto; z-index:1;}
-#hat6.cat {  width: 1px; background: transparent; text-align:center; position:relative; top: -440px; left: 55px; margin: 0 auto 0 auto; z-index:1;}
+#hat4.cat {  width: 1px; background: transparent; text-align:center; position:relative; top: -531px; left: 215px; margin: 0 auto 0 auto; z-index:1;}
+#hat5.cat {  width: 1px; background: transparent; text-align:center; position:relative; top: -575px; left: 62px; margin: 0 auto 0 auto; z-index:1;}
+#hat6.cat {  width: 1px; background: transparent; text-align:center; position:relative; top: -560px; left: 55px; margin: 0 auto 0 auto; z-index:1;}
 
 
 
@@ -79,7 +79,7 @@ body {
 	margin-right: auto;
 	position: relative;
 	width: 995px;
-	top: -840px;
+	top: -960px;
 	margin-bottom: -1030px;
 }
 
