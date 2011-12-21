@@ -483,7 +483,9 @@ aside, nav, article, figure {
 						}
 
           #fbcatpic {
-	margin-top: 170px;
+	display: block;
+	margin: 170px auto 0 auto;
+	width: 645px;
    }
 
 .field
