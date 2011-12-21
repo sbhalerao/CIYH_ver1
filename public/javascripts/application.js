@@ -98,12 +98,22 @@ error: function(data, status, xhr){alert('Failure')}
       }
     });
 
+
+// wait before sending backx and backy first time window is loaded
+  waitCoord;
+
+//wait before sending co-ordinates of the background image after window resize
    var resizeTimer;
-	$(window).resize (function() {
+	$(window).resize(waitCoord);
+	
+	// function that waits before doing ajax transmit of backx and backy
+	
+	function waitCoord() {
 		clearTimeout(resizeTimer, 100);
 		resizeTimer=setTimeout(doSomething,100);
-			});
-	 
+			}
+	
+	//send the backx backy co-rodinates via ajax 
 	function doSomething(){
 	var offset1 = $("#droppable").offset();
 	$.ajax({
