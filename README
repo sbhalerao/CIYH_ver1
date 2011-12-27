@@ -103,9 +103,24 @@ Paperclip is used to store the image on Amazon S3
 ------------------Catwalks----------------------------
 Paperclip is used to store the image on Amazon S3
 Allows only jpeg, png, gif
+Added "thumb" size : 170px x 128 px for display in catwalks index page
 
 
 ------------------Custom error pages -----------------
 Custom error pages implemented in Rails using ActionDispatch (as escape from exception cannot be handled in actionController,but is handled in Rake middleware instead of rails 3)
 refer to http://accuser.cc/posts/1-rails-3-0-exception-handling
+
+This was done by adding an initializer "showexceptions.rb" and a new controller "ErrorsController"
+
+-Added "not found", "unprocessable_entry" and "internal_server_error" pages
+- Need to change the message slightly to be more user responsive
+
+
+--------------------------Ajax errors --------------------
+Need to find:
+When do Ajax errors happen? Is it because of server update? 
+Is it a browser issues (firefox vs safari)?
+Does it happen when FB token refreshes? or the user does not use app for long time?
+Does it happen does server side protection against ajax? (wrongly applied settings)
+
 
