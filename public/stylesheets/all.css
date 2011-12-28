@@ -528,6 +528,10 @@ aside, nav, article, figure {
 	margin-top:5px;
 }
 
+a:active {
+    outline: none;
+}
+
 /*
  * FancyBox - jQuery Plugin
  * Simple and fancy lightbox alternative
