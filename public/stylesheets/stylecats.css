@@ -528,6 +528,6 @@ aside, nav, article, figure {
 	margin-top:5px;
 }
 
-a:active {
-    outline: none;
+a:active,a:focus {
+outline: none;
 }
