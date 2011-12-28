@@ -1,7 +1,7 @@
 class Catwalk < ActiveRecord::Base
   belongs_to :user
   acts_as_voteable
-  has_attached_file :catpic, :styles => { :thumb => "170x128>"},
+  has_attached_file :catpic, :styles => { :thumb => "170x128>", :upload => "400x300>"},
    :path =>"/catpics/:id/:style/:basename.:extension",
    :storage => :s3,
        :bucket => 'catsinyourhats',
