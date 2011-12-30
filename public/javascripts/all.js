@@ -946,12 +946,12 @@ $("#cat2").draggable({containment:"#droppable", snap:false, cursor: "move"});
 	    $("#cat6").draggable({containment:"#droppable", snap:false, cursor: "move"});
  
 // Making all hats draggable
-    $("#hat1").draggable({snap:false, cursor: "move"});
-$("#hat2").draggable({snap:false, cursor: "move"});
-    $("#hat3").draggable({snap:false, cursor: "move"});
-	  $("#hat4").draggable({snap:false, cursor: "move"});
-	$("#hat5").draggable({snap:false, cursor: "move"});
-	    $("#hat6").draggable({snap:false, cursor: "move"});
+    $("#hat1").draggable({containment:"#droppable", snap:false, cursor: "move"});
+$("#hat2").draggable({containment:"#droppable", snap:false, cursor: "move"});
+    $("#hat3").draggable({containment:"#droppable", snap:false, cursor: "move"});
+	  $("#hat4").draggable({containment:"#droppable", snap:false, cursor: "move"});
+	$("#hat5").draggable({containment:"#droppable", snap:false, cursor: "move"});
+	    $("#hat6").draggable({containment:"#droppable", snap:false, cursor: "move"});
 
   
   
