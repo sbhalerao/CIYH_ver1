@@ -950,7 +950,7 @@ $("#cat2").draggable({containment:"#droppable", snap:false, cursor: "move"});
 $("#hat2").draggable({containment:"#droppable", snap:false, cursor: "move"});
     $("#hat3").draggable({containment:"#droppable", snap:false, cursor: "move"});
 	  $("#hat4").draggable({containment:"#droppable", snap:false, cursor: "move"});
-	$("#hat5").draggable({containment:"#droppable", snap:false, cursor: "move"});
+	$("#hat5").draggable({containment:"#droppable,#couch", snap:false, cursor: "move"});
 	    $("#hat6").draggable({containment:"#droppable", snap:false, cursor: "move"});
 
   
