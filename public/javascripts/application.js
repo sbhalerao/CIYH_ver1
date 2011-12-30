@@ -67,7 +67,7 @@ error: function(data, status, xhr){ //alert('Failure')
 $("#cat2").draggable({containment:"#droppable", snap:false, cursor: "move"});
     $("#cat3").draggable({containment:"#droppable", snap:false, cursor: "move"});
 	    $("#cat4").draggable({containment:"#droppable", snap:false, cursor: "move"});
-	$("#cat5").draggable({containment:"#background1", snap:false, cursor: "move"});
+	$("#cat5").draggable({snap:false, cursor: "move"});
 	    $("#cat6").draggable({containment:"#droppable", snap:false, cursor: "move"});
  
 // Making all hats draggable
@@ -80,7 +80,7 @@ $("#hat2").draggable({containment:"#droppable", snap:false, cursor: "move"});
 
   
   
-  $( "#droppable","#couch",".#background" ).droppable({
+  $( "#droppable","#couch","#background1" ).droppable({
       drop: function( event, ui ) {
         $( this ).find( "p" ).hide();
         var offset1=$("#droppable").offset();
