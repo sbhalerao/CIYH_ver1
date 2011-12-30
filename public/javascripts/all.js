@@ -938,12 +938,12 @@ error: function(data, status, xhr){ //alert('Failure')
   
 // Making all cats draggable
    
-    $("#cat1").draggable({snap:false, cursor: "move"});
-$("#cat2").draggable({snap:false, cursor: "move"});
-    $("#cat3").draggable({snap:false, cursor: "move"});
-	    $("#cat4").draggable({snap:false, cursor: "move"});
-	$("#cat5").draggable({snap:false, cursor: "move"});
-	    $("#cat6").draggable({snap:false, cursor: "move"});
+    $("#cat1").draggable({containment:"#droppable", snap:false, cursor: "move"});
+$("#cat2").draggable({containment:"#droppable", snap:false, cursor: "move"});
+    $("#cat3").draggable({containment:"#droppable", snap:false, cursor: "move"});
+	    $("#cat4").draggable({containment:"#droppable", snap:false, cursor: "move"});
+	$("#cat5").draggable({containment:"#droppable", snap:false, cursor: "move"});
+	    $("#cat6").draggable({containment:"#droppable", snap:false, cursor: "move"});
  
 // Making all hats draggable
     $("#hat1").draggable({snap:false, cursor: "move"});
@@ -972,24 +972,6 @@ error: function(data, status, xhr){alert('Failure')}
 });
       }
     });
-
-	  $( "#background" ).droppable({
-	      drop: function( event, ui ) {
-	        $( this ).find( "p" ).hide();
-	        var offset1=$("#droppable").offset();
-	$.ajax({
-	type: 'POST',
-	url: 'http://catsinyourhats.com/jmsg',
-	dataType: 'json',
-	data:{ top: ui.offset["top"], left: ui.offset["left"], pid: (ui.draggable).attr("id"), backx: offset1.left, backy: offset1.top  },
-	success: function(json, status, xhr)
-	{ // alert ('Success')
-	//$("#show_message").html("hello world");
-	},
-	error: function(data, status, xhr){alert('Failure')}
-	});
-	      }
-	    });
 
 
 
