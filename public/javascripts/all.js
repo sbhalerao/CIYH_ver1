@@ -973,6 +973,24 @@ error: function(data, status, xhr){alert('Failure')}
       }
     });
 
+	  $( "#background" ).droppable({
+	      drop: function( event, ui ) {
+	        $( this ).find( "p" ).hide();
+	        var offset1=$("#droppable").offset();
+	$.ajax({
+	type: 'POST',
+	url: 'http://catsinyourhats.com/jmsg',
+	dataType: 'json',
+	data:{ top: ui.offset["top"], left: ui.offset["left"], pid: (ui.draggable).attr("id"), backx: offset1.left, backy: offset1.top  },
+	success: function(json, status, xhr)
+	{ // alert ('Success')
+	//$("#show_message").html("hello world");
+	},
+	error: function(data, status, xhr){alert('Failure')}
+	});
+	      }
+	    });
+
 
 
 //wait before sending co-ordinates of the background image after window resize
