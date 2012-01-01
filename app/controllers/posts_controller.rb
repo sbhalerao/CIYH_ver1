@@ -104,6 +104,8 @@ class PostsController < ApplicationController
              FbGraph::User.me(current_user.token).photo!(
           
              :url => @post.avatar.url
+             :message => 'Made using Cats in Your Hats - http://catsinyourhats.com'
+             
             )
              
       end  
