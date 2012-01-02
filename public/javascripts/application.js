@@ -193,7 +193,7 @@ $(document).ready(function (){
 	 $("#droppable").find("img").attr("src",backimg);
 	},
 	error: function(data, status, xhr){jsonValue = jQuery.parseJSON( xhr.responseText );
-	alert(jsonValue.Message)};
+	alert(jsonValue.Message);}
 	});
 	
 
