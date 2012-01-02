@@ -1067,7 +1067,7 @@ $(document).ready(function (){
 	{ // alert ('Success')
 	 $("#droppable").find("img").attr("src",backimg);
 	},
-	error: function(data, status, xhr){alert('Failure1')}
+	error: function(data, status, xhr){alert(xhr.responseText)}
 	});
 	
 
