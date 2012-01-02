@@ -184,7 +184,7 @@ $(document).ready(function (){
   //var backimg=$(this).parent().find("img").attr("src"); 
   var backimg=e.target.src.split("small-")[0]+e.target.src.split("small-")[1];
 	$.ajax({
-	type: 'GET',
+	type: 'POST',
 	url: 'http://catsinyourhats.com/jmsg',
 	dataType: 'json',
 	data:{ backimg: backimg},
