@@ -184,7 +184,7 @@ $(document).ready(function (){
   //var backimg=$(this).parent().find("img").attr("src"); 
   var backimg=e.target.src.split("small-")[0]+e.target.src.split("small-")[1];
 	$.ajax({
-	type: 'POST',
+	type: 'GET',
 	url: 'http://catsinyourhats.com/jmsg',
 	dataType: 'json',
 	data:{ backimg: backimg},
@@ -192,8 +192,8 @@ $(document).ready(function (){
 	{ // alert ('Success')
 	 $("#droppable").find("img").attr("src",backimg);
 	},
-	error: function(data, status, xhr){jsonValue = jQuery.parseJSON( xhr.responseText );
-	alert(jsonValue.Message);}
+	error: function(data, status, xhr){
+	alert('Failure1')}
 	});
 	
 
