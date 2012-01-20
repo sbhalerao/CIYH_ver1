@@ -15,18 +15,18 @@ $(window).load(function() {
             <div id="slider" class="nivoSlider">
 
       <%# Comment1: First image linked to Cats in Hats game %>
-		<% if current_user %>
+		<% if true %>
 		   <%= link_to image_tag("/images/slider.jpg"), new_post_path %> 
-         <% else %>    
-         <a id="various4" href="#signin4" title=""> <img src="/images/slider.jpg" alt="" /></a>
+         <%  else %>    
+         <a id="various4" href="#signin4" title=""> <img src="/images/slider.jpg" alt="" /></a> 
         
        <% end %>
                 
          <%# Comment2: Second image linked to Catwalks voting %>    	
-                  <% if current_user %>
-				   <%= link_to image_tag("/images/slider1.jpg"), catwalks_path %> 
-		           <% else %>    
-                   <a id="various3" href="#signin3" title=""> <img src="/images/slider1.jpg" alt="" /></a>
+                  <%  if current_user %>
+				   <%=  link_to image_tag("/images/slider1.jpg"), catwalks_path %> 
+		           <%  else %>    
+                   <a id="various3" href="#signin3" title=""> <img src="/images/slider1.jpg" alt="" /></a> 
                
                  <% end %>
 

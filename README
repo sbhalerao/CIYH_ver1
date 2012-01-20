@@ -8,6 +8,8 @@
 
 
 
+
+
 ==== Making page more responsive
 1. All the js files are combined into all.js while serving using :cache => true in the javascript_include_tag
 2. All the css files are combined into all.css while serving using :cache => true in the stylesheets_include_tag
@@ -117,10 +119,15 @@ This was done by adding an initializer "showexceptions.rb" and a new controller 
 
 
 --------------------------Ajax errors --------------------
-Need to find:
-When do Ajax errors happen? Is it because of server update? 
-Is it a browser issues (firefox vs safari)?
-Does it happen when FB token refreshes? or the user does not use app for long time?
-Does it happen does server side protection against ajax? (wrongly applied settings)
+Need to find: Ajax POST were not successful because CSRF protection was enabled and only http://catsinyourhats.com was the valid source of such requests. So Ajax POST requests from http://www.catsinyourhats.com failed
+
+To fix this, added code to the ApplicationController to do 301 redirect to http://catsinyourhats.com 
+
+if request.env['HTTP_HOST']=! catsinyourhats.com
+redirect_to "http://catsinyourhats.com"
+end
+
+--------------------------------------------------------------
+
 
 

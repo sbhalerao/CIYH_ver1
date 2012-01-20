@@ -1,6 +1,6 @@
 class CatwalksController < ApplicationController
  
- before_filter :authenticate 
+ # before_filter :authenticate 
   
   #to determine layout. Since new and show are in popbox, they need no header
   layout :determine_layout

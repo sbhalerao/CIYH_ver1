@@ -55,8 +55,8 @@
    <div class="nav">
     
 
-     	<% if current_user %>
-		   <%= link_to "Cat Game", new_post_path %>
+     	<% if true %>
+		   <%=  link_to "Cat Game", new_post_path %>
         <% else %>
  	<a id="various1" href="#signin1" title=""> Cat Game </a>
   	<div style="display: none;">
@@ -68,7 +68,7 @@
             </div> 
 		 <% end %>
 		
-	<% if current_user %>
+	<% if true %>
 	   <%= link_to 'Cat Walk', catwalks_path %>
 	  <% else %>
 	<a id="various2" href="#signin2" title="">Cat Walk </a>
