@@ -7,7 +7,7 @@ class PostsController < ApplicationController
   
   # GET /posts
   # GET /posts.xml
-#  before_filter :authenticate, :except => [:index, :front_page]
+  before_filter :authenticate, :except => [:index, :front_page]
 #layout :determine_layout
  layout "main"
  
