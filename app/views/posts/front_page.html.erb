@@ -44,13 +44,16 @@ $(window).load(function() {
 <%# The divs for fancybox popup after clicking slider img is kept outside. If its included with slider div, images appear twice %>
 
                <div style="display: none;">
-					<div id="signin4" style="width: 200px; height: 100px;overflow: auto; text-align: center;line-height: 2.5em;">
-			       Please sign into Facebook
-						<%= link_to "Sign in using Facebook", "/auth/facebook?redirect_to=/posts/new" %>
+					<div id="signin4" style="width: 200px; height: 100px;overflow: hidden; text-align: center;line-height: 1.5em; font-size: 12px;">
+			    	<a href="/auth/facebook?redirect_to=/posts/new">Sign in using Facebook</a> <br>
 
-					</div>
-			</div>
+	                               <p style="white-space: pre; font-size: 10px;">    We won't share anything 
+	    without your permission.</p>
+
+
+						</div></div>
    	
+						       
 			   <div style="display: none;">
 						<div id="signin3" style="width: 200px; height: 100px;overflow: auto; text-align: center;line-height: 2.5em;">
 				        Please sign into Facebook
