@@ -59,27 +59,28 @@
      	<% if current_user %>
 		   <%= link_to "Put hats on cat", new_post_path %>
         <% else %>
- 	<a id="various1" href="#signin" title="">Put hats on cats </a></li>
-  	<div style="display: none;">
-				<div id="signin" style="width: 200px; height: 100px;overflow: auto; text-align: center;line-height: 2.5em;">
-		        Please sign into Facebook. 
-					<%= link_to "Sign in using Facebook", "/auth/facebook?redirect_to=/posts/new" %>
-						
+ 		<a id="various1" href="#signin1" title=""> Cat Game </a>
+	  	<div style="display: none;">
+					<div id="signin1" style="width: 200px; height: 100px;overflow: auto; font-size: 10px; text-align: center;line-height: 1.5em;">
+
+				<br />		<%= link_to "Sign in using Facebook", "/auth/facebook?redirect_to=/posts/new" %>
+					<br /> <br />	We promise not to share anything on your Facebook profile without your permission.		
+					</div>
+	            </div> 
+			 <% end %>
+
+		<% if current_user %>
+		   <%= link_to 'Cat Walk', catwalks_path %>
+		  <% else %>
+		<a id="various2" href="#signin2" title="">Cat Walk </a>
+		<div style="display: none;">
+				<div id="signin2" style="width: 200px; height: 100px;overflow: auto; font-size: 10px; text-align: center;line-height: 1.5em;">
+
+				<br />	<%= link_to "Sign in using Facebook", "/auth/facebook?redirect_to=/catwalks" %>
+				<br /> <br />	We promise not to share anything on your Facebook profile without your permission.
+
 				</div>
-            </div> 
-		 <% end %>
-		
-	<% if current_user %>
-	   <%= link_to 'Cat Walk', catwalks_path %>
-	  <% else %>
-	<a id="various2" href="#signin2" title="">Cat Walk </a></li>
-	<div style="display: none;">
-			<div id="signin2" style="width: 200px; height: 100px;overflow: auto; text-align: center;line-height: 2.5em;">
-	        Please sign into Facebook.  
-				<%= link_to "Sign in using Facebook", "/auth/facebook?redirect_to=/catwalks" %>
-				
-			</div>
-	</div>
+		</div>
        <% end %>    
            <a href="#">Chuckles</a>
            <a href="#">Shop</a>
