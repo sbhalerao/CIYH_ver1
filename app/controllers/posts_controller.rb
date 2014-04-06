@@ -153,7 +153,7 @@ end
 # code for the front_page of the website
 def front_page
   respond_to do |format|
-    format.html # front_page.html.erb
+    format.html # opens front_page.html.erb
   end
 end
 
